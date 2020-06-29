@@ -4,9 +4,9 @@
 mkdir badico-cloud
 cd badico-cloud
 ```
-## 2: clone this repo to this folder as `infra`
+## 2: clone this repo
 ```
-git clone git@github.com
+git clone https://github.com/badico-cloud-hub/badico-website
 ```
 ## 3: open the terminal and install the dependencies 
 
