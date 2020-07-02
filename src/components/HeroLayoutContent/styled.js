@@ -79,6 +79,10 @@ export const Buttons = styled.div`
     color: #27debf;
   }
 
+  .call:focus, .contact:focus{
+    outline: none;
+  }
+
   ${media.greaterThan("medium")`
     flex-direction: row;
 
