@@ -4,8 +4,11 @@ import * as S from "./styled"
 const HeroLayoutContent = () => {
   return (
     <S.ContentWrapper>
-      <h1>IT department Headache-free for startups</h1>
-      <p>We are your IT department</p>
+      <div className="container">
+        <h1>IT department Headache-free for startups</h1>
+        <p>We are your IT department</p>
+      </div>
+
       <S.Buttons>
         <button type="button" className="contact">
           Contact us
