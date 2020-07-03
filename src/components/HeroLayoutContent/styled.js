@@ -72,6 +72,16 @@ export const Buttons = styled.div`
   display: flex;
   flex-direction: column;
 
+  .link{
+    text-decoration: none;
+    color: #27debf;
+  }
+  
+  .link2 {
+    text-decoration: none;
+    color: #02293f;
+  }
+
   .contact {
     height: 1.5rem;
     background-color: transparent;
@@ -169,3 +179,4 @@ ${media.greaterThan("huge")`
 
 `}
 `
+
