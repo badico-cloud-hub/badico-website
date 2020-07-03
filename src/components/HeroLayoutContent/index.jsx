@@ -1,5 +1,6 @@
 import React from "react"
 import * as S from "./styled"
+import {Link} from 'gatsby';
 
 const HeroLayoutContent = () => {
   return (
@@ -10,12 +11,16 @@ const HeroLayoutContent = () => {
       </div>
 
       <S.Buttons>
+      <Link to="https://wellingtondomingosgomes.typeform.com/to/U119jLZD" className="link" target="_blank">
         <button type="button" className="contact">
           Contact us
         </button>
+        </Link>
+        <Link to="https://calendly.com/s/HARwspdG" className="link2" target="_blank">
         <button type="button" className="call">
-          Schedule a call
+          Schedule a call 
         </button>
+        </Link>
       </S.Buttons>
     </S.ContentWrapper>
   )
