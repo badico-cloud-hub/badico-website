@@ -1,7 +1,7 @@
 import React from "react"
 import * as S from "./styled"
-import { Link } from "gatsby"
 import Typeform from "../Typeform/index"
+import Calendly from "../Calendly"
 
 const HeroLayoutContent = () => {
   return (
@@ -13,15 +13,9 @@ const HeroLayoutContent = () => {
 
       <S.Buttons>
         <Typeform />
-        <Link
-          to="https://calendly.com/s/HARwspdG"
-          className="link2"
-          target="_blank"
-        >
-          <button type="button" className="call">
-            Schedule a call
-          </button>
-        </Link>
+        <button className="call">
+          <Calendly />
+        </button>
       </S.Buttons>
     </S.ContentWrapper>
   )
