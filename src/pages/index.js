@@ -1,15 +1,15 @@
 import React from "react"
+
+import CraftmanshipLayout from "../components/CraftmanshipLayout/index"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroLayout from "../components/HeroLayout/index"
-import * as S from "../styled"
 
 const IndexPage = () => (
   <Layout>
-    <S.Page>
-      <SEO title="Home" />
-      <HeroLayout />
-    </S.Page>
+    <SEO title="Home" />
+    <HeroLayout />
+    <CraftmanshipLayout />
   </Layout>
 )
 
