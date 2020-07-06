@@ -15,7 +15,7 @@ export const HeroWrapper = styled.div`
     margin: 0;
     z-index: 2;
     position: absolute;
-    right: 0;
+    right: 35px;
     top: 250px;
   }
 
