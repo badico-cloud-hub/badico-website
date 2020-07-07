@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import media from "styled-media-query";
 
 export const ContentWrapper = styled.div`
   font-family: GalanoGrotesque;
@@ -24,12 +25,53 @@ export const ContentWrapper = styled.div`
     z-index: -1;
   }
 
-  h2 {
-    text-transform: uppercase;
-    color: transparent;
-  }
+  ${media.greaterThan("570px")`
+    h1{
+      font-size: 1.2rem;
+    }
+  `}
 
-  p {
-    color: transparent;
+  ${media.greaterThan("760px")`
+    h1{
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 2.5rem;
+    }
+
+    h1:after {
+      width: 90px;
+      height: 90px;
+      border: solid 13px #27debf;
+      top: -45%;
+      left: -3%;
+    }
+  `}
+
+  ${media.greaterThan("850px")`
+  h1:after {
+    left: 0%;
   }
+  `}
+  ${media.greaterThan("880px")`
+  h1:after {
+    left: 4%;
+  }
+  `}
+
+  ${media.greaterThan("885px")`
+  h1:after {
+    left: -4%;
+  }
+  `}
+  ${media.greaterThan("913px")`
+  h1:after {
+    left: -2%;
+  }
+  `}
+  
+  ${media.greaterThan("971px")`
+  h1{
+    font-size: 1.9rem;
+  }
+  `}
 `
