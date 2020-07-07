@@ -3,6 +3,14 @@ module.exports = {
     title: `Badico Cloud Engineering`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    copyright: `© 2020 Badico Cloud. All rights reserved.`,
+    socialMedia: {
+      github: "https://github.com/badico-cloud-hub",
+      facebook: "https://www.facebook.com/",
+      twitter: "https://twitter.com/",
+      youtube: "https://www.youtube.com/",
+      linkedin: "https://www.linkedin.com/company/badico/",
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
