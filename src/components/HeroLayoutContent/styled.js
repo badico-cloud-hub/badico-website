@@ -71,7 +71,8 @@ export const ContentWrapper = styled.div`
 export const Buttons = styled.div`
   display: flex;
   flex-direction: column;
-
+  
+  
   .contact {
     height: 1.5rem;
     background-color: transparent;
@@ -104,16 +105,27 @@ export const Buttons = styled.div`
     font-family: GalanoGrotesque;
     font-weight: 500;
     width: 6rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    padding-bottom: 0.2rem;
     color: #02293f;
     border: 1px solid #27debf;
-  }
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+    a{
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #02293f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  .call:hover {
-    background-color: #02293f;
-    color: #27debf;
+    &:hover{
+      background-color: #02293f;
+      a{
+        color: #27debf;
+      }
+    }
   }
 
   .call:focus,
@@ -169,3 +181,4 @@ ${media.greaterThan("huge")`
 
 `}
 `
+

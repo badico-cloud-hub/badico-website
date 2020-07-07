@@ -1,5 +1,7 @@
 import React from "react"
 import * as S from "./styled"
+import Typeform from "../Typeform/index"
+import Calendly from "../Calendly"
 
 const HeroLayoutContent = () => {
   return (
@@ -10,11 +12,9 @@ const HeroLayoutContent = () => {
       </div>
 
       <S.Buttons>
-        <button type="button" className="contact">
-          Contact us
-        </button>
-        <button type="button" className="call">
-          Schedule a call
+        <Typeform />
+        <button className="call">
+          <Calendly />
         </button>
       </S.Buttons>
     </S.ContentWrapper>
