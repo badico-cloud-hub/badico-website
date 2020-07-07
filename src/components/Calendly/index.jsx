@@ -13,7 +13,7 @@ class Calendly extends Component {
     return (
       <PopupText
         className="popup"
-        url="https://calendly.com/s/HARwspdG"
+        url="https://calendly.com/badico"
         text="Schedule A Call"
         />
     )
