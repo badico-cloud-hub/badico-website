@@ -1,5 +1,5 @@
 import React from "react";
-import Logobadico from "../../images/logobadico.svg";
+import Logobadico from "../../images/logo.svg";
 
 import * as S from "./styled";
 
