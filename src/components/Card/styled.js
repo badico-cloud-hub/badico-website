@@ -93,8 +93,30 @@ export const CardWrapper = styled.div`
     }
   `}
 
-  ${media.greaterThan("1200px")`
-    width: 18%;
-    height: 170px
+  ${media.greaterThan("1024px")`
+    width: 21%;
+    height: 170px;
+
+    div p{
+      font-size: 1rem;
+    }
+  `}
+
+  ${media.greaterThan("1350px")`
+    height: 200px;
+
+    div p{
+      font-size: 1.25rem;
+    }
+  `}
+
+  ${media.greaterThan("1440px")`
+  width: 19%;
+  height: 210px;
+  `}
+
+  ${media.greaterThan("1580px")`
+  width: 17%;
+  height: 210px;
   `}
 `
