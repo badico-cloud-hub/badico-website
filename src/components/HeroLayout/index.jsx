@@ -11,7 +11,7 @@ const HeroLayout = () => {
     <S.HeroWrapper className="container-wave" >
       <HeroLayoutContent className="content"/>
       <div className="imgWrapper">
-        <HeroImg className="heroImg" />
+        <HeroImg className="heroImg" />Oi
       </div>
       <div className="imgBallWrapper">
         <Ball className="ball"/>
