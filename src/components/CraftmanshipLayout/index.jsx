@@ -2,15 +2,15 @@ import React from "react"
 
 import Cards from "../Cards/index"
 import CraftmanshipLayoutContent from "../CraftmanshipLayoutContent/index"
-import * as S from "./styled"
+import Wrapper from "./wrapper";
 
 const CraftmanshipLayout = () => {
   return (
     <>
-      <S.CraftmanshipLayoutWrapper>
+      <Wrapper>
         <CraftmanshipLayoutContent />
         <Cards />
-      </S.CraftmanshipLayoutWrapper> 
+      </Wrapper> 
     </>
   )
 }
