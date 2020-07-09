@@ -5,7 +5,7 @@ import * as S from "./styled"
 const Card = props => {
   return (
     <S.CardWrapper>
-      <div>
+      <div className="container">
         <p>
           {props.content}
           <strong>{props.bold}</strong>

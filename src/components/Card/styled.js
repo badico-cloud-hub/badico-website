@@ -9,12 +9,12 @@ export const CardWrapper = styled.div`
   padding: 0.4rem;
   position: relative;
 
-  div {
+  .container {
     width: 100%;
     height: 100%;
   }
 
-  div:after {
+  .container:after {
     content: "";
     border: solid 5px #dbf5e7;
     border-radius: 14px;
@@ -28,7 +28,7 @@ export const CardWrapper = styled.div`
     left: -9%;
   }
 
-  div p {
+  .container p {
     font-family: GalanoGrotesque;
     font-size: 0.7rem;
   }
@@ -38,23 +38,23 @@ export const CardWrapper = styled.div`
   height: 135px;
   
 
-  div{
+  .container{
     height: 100%;
   }
 
-  div p{
+  .container p{
     font-size: 0.9rem;
   }
   `}
 
   ${media.greaterThan("500px")`
-  div:after{
+  .container:after{
     left: -6%;
     width: 105%;
     height: 106%;
   }
 
-  div p{
+  .container p{
     font-size: 1rem;
   }
   `}
@@ -62,17 +62,17 @@ export const CardWrapper = styled.div`
   ${media.greaterThan("600px")`
   height: 160px;
 
-  div:after{
+  .container:after{
     left: -5%;
   }
 
-  div p{
+  .container p{
     font-size: 1.17rem;
   }
   `}
 
   ${media.greaterThan("660px")`
-   div p{
+   .container p{
       font-size: 1.1rem;
     }
   `}
@@ -88,7 +88,7 @@ export const CardWrapper = styled.div`
   ${media.greaterThan("1000px")`
     width: 20%;
 
-    div p{
+    .container p{
       font-size: 0.9rem;
     }
   `}
@@ -97,7 +97,7 @@ export const CardWrapper = styled.div`
     width: 21%;
     height: 170px;
 
-    div p{
+    .container p{
       font-size: 1rem;
     }
   `}
@@ -105,7 +105,7 @@ export const CardWrapper = styled.div`
   ${media.greaterThan("1350px")`
     height: 200px;
 
-    div p{
+    .container p{
       font-size: 1.25rem;
     }
   `}
