@@ -1,23 +1,23 @@
 import React from "react"
-import * as S from "./styled"
+import { ContentWrapper, Container, Title, Text, Buttons, Call } from "./ContentWrapper"
 import Typeform from "../Typeform/index"
 import Calendly from "../Calendly"
 
 const HeroLayoutContent = () => {
   return (
-    <S.ContentWrapper>
-      <div className="container">
-        <h1>IT department Headache-free for startups</h1>
-        <p>We are your IT department</p>
-      </div>
+    <ContentWrapper>
+      <Container>
+        <Title>IT department Headache-free for startups</Title>
+        <Text>We are your IT department</Text>
+      </Container>
 
-      <S.Buttons>
-        <Typeform />
-        <button className="call">
+      <Buttons>
+        <Typeform/>
+        <Call>
           <Calendly />
-        </button>
-      </S.Buttons>
-    </S.ContentWrapper>
+        </Call>
+      </Buttons>
+    </ContentWrapper>
   )
 }
 
