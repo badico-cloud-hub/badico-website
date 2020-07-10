@@ -23,22 +23,25 @@ export const FooterWrapper = styled.div`
 
     .logo{
       display: flex;
-      width: 160px;
+      width: 150px;
       margin: 0 0 0 2.5rem;
     }
   `}
 
-  ${media.greaterThan("832px")`
+  ${media.greaterThan("823px")`
     .logo{
-      width: 170px;
-      margin: 0 0 0 2.5rem;
+      margin: 0 0 0 3.1rem;
     }
   `}
 
-  ${media.greaterThan("910px")`
+  ${media.greaterThan("899px")`
   .logo{
-    width: 180px;
-    margin: 0 0 0 2.5rem;
+    margin: 0 0 0 3.75rem;
+  }
+  `}
+  ${media.greaterThan("1283px")`
+  .logo{
+    margin: 0 0 0 4.5rem;
   }
   `}
 `
@@ -83,7 +86,7 @@ export const Contact = styled.div`
   display: flex;
   flex-direction: column;
   widht: 100%;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
   font-size: 0.7rem;
   font-family: GalanoGrotesque;
   font-weight: 300;

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import * as S from "./styled"
-import Logobadico from "../../images/logobadico.svg"
+import Logobadico from "../../images/logo.svg"
 
 const Footer = () => {
   const {
