@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div`
+export default styled.div`
   background-color: #02293f;
 
   .logo{
