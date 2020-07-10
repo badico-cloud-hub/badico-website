@@ -7,7 +7,7 @@ export const CardWrapper = styled.div`
   border: 4px solid #27debf;
   background-color: transparent;
   border-radius: 14px;
-  padding: 0.4rem;
+  padding: 0.3rem;
   position: relative;
 
   ${media.greaterThan("450px")`
@@ -85,7 +85,8 @@ export const Container = styled.div`
   ${media.greaterThan("600px")`
     left: -5%;
     padding-top: .6rem;
-    padding-right: 1rem;
+    padding-left: .6rem;
+    padding-right: .3rem;
 
   `}
 `
