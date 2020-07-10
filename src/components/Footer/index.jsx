@@ -61,8 +61,8 @@ const Footer = () => {
       </S.Social>
       <S.Contact>
         <S.Adress>
-          <p>143 castle road 517 </p>
-          <p>district, kiyev port south Canada</p>
+          <p>Rijnlaan 41A, 3522BC</p>
+          <p>Utrecht, Utrecht, NL</p>
         </S.Adress>
         <S.Mail>
           <p className="number">+55 11 941738544</p>
