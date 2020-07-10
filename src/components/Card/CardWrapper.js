@@ -2,7 +2,8 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const CardWrapper = styled.div`
-  width: 43%;
+  width: 44%;
+  height: 135px;
   border: 4px solid #27debf;
   background-color: transparent;
   border-radius: 14px;
@@ -53,6 +54,7 @@ export const CardWrapper = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  padding-top: .3rem;
 
   :after {
     content: "";
@@ -82,11 +84,15 @@ export const Container = styled.div`
 
   ${media.greaterThan("600px")`
     left: -5%;
+    padding-top: .6rem;
+    padding-right: 1rem;
+
   `}
 `
 export const Content = styled.p`
   font-family: GalanoGrotesque;
   font-size: 0.7rem;
+  margin: 0.3rem;
 
   ${media.greaterThan("450px")`
     font-size: 0.9rem;
@@ -102,6 +108,7 @@ export const Content = styled.p`
 
   ${media.greaterThan("660px")`
     font-size: 1.1rem;
+    margin: 0.6rem;
   `}
 
   ${media.greaterThan("1000px")`
