@@ -2,22 +2,21 @@ import React from "react";
 import HeroLayoutContent from "../HeroLayoutContent/index";
 import { HeroImg } from "../../images/components/HeroImg/index";
 import Ball from "../../images/bolinhas.svg"
-import * as S from "./styled";
+import { HeroWrapper, Img, ImgBall } from "./styled";
 
 
 
 const HeroLayout = () => {
   return (
-    <S.HeroWrapper className="container-wave" >
+    <HeroWrapper>
       <HeroLayoutContent className="content"/>
-      <div className="imgWrapper">
-        <HeroImg className="heroImg" />Oi
-      </div>
-      <div className="imgBallWrapper">
+      <Img>
+        <HeroImg className="heroImg" />
+      </Img>
+      <ImgBall>
         <Ball className="ball"/>
-      </div>
-      
-    </S.HeroWrapper>
+      </ImgBall>
+    </HeroWrapper>
   )
 }
 
