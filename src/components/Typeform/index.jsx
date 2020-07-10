@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import * as typeformEmbed from "@typeform/embed"
+import TypeformButton from "./TypefromButton"
 
 class Typeform extends Component {
   componentDidMount() {
@@ -21,9 +22,9 @@ class Typeform extends Component {
   }
   render() {
     return (
-        <button id="bt-popup" className="contact">
+        <TypeformButton id="bt-popup" >
           Contact Us
-        </button>
+        </TypeformButton>
     )
   }
 }

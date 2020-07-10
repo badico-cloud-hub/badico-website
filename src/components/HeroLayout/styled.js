@@ -9,48 +9,19 @@ export const HeroWrapper = styled.div`
   z-index: 1;
   position: relative;
 
-  .imgWrapper {
-    width: 70%;
-    align-self: flex-end;
-    margin: 0;
-    z-index: 2;
-    position: absolute;
-    right: 0;
-    top: 250px;
-  }
-
-  .imgBallWrapper { 
-    position: absolute;
-    bottom: 100px;
-    z-index: 0;
-    width: 1px;
-    overflow: hidden;
-  }
-
-
-
-  ${media.greaterThan("medium")`
-    height: 400px;
+  ${media.greaterThan("400px")`
+    height: 550px;
     flex-direction: row;
     padding: 0 5%;
     overflow: hidden;
     position: relative;
-
-    .imgWrapper{
-      min-width: 200px;
-      width: 60%;
-      display: inline;
-      position: absolute;
-      top: 0px;
-      right: 10px;
-    }
 
     .imgBallWrapper{
       z-index: 1;
       width: 20%;
       position: absolute;
       top: 100px;
-      right: -90px;
+      right: -100px;
     }
 
     .ball{
@@ -59,46 +30,156 @@ export const HeroWrapper = styled.div`
     }
   `}
 
-  ${media.greaterThan("1024px")`
-    height: 500px;
+  ${media.greaterThan("510px")`
+    height: 550px;
+  `}
+  ${media.greaterThan("600px")`
+    height: 550px;
+  `}
 
-    .imgWrapper{
+  ${media.greaterThan("768px")`
+  height: 500px;
+  `}
+
+  ${media.greaterThan("1070px")`
+  height: 600px;
+`}
+
+${media.greaterThan("1270px")`
+  height: 650px;
+`}
+
+${media.greaterThan("1400px")`
+  height: 750px;
+`}
+`
+
+export const Img = styled.div`
+  width: 70%;
+  align-self: flex-end;
+  margin: 0;
+  z-index: 2;
+  position: absolute;
+  right: 8%;
+  top: 50%;
+
+  ${media.greaterThan("400px")`
+      min-width: 200px;
+      width: 65%;
+      display: inline;
+      position: absolute;
+      top: 45%;
+      right: 10%;
+  `}
+
+  ${media.greaterThan("510px")`
         min-width: 200px;
-        width: 50%;
+        width: 70%;
         display: inline;
         position: absolute;
-        top: 0;
-        right: 50px;
+        top: 35%;
+        right: 10%;
         z-index: 2;
-    }
+  `}
 
-    .imgBallWrapper{
+  ${media.greaterThan("600px")`
+      min-width: 200px;
+      width: 65%;
+      display: inline;
+      position: absolute;
+      top: 30%;
+      right: 10%;
+      z-index: 2;
+  `}
+
+  ${media.greaterThan("700px")`
+      min-width: 200px;
+      max-width: 60%;
+      display: inline;
+      position: absolute;
+      top: 30%;
+      right: 10%;
+      z-index: 2;
+  `}
+
+  ${media.greaterThan("768px")`
+      min-width: 200px;
+      max-width: 60%;
+      top: 0%;
+      right: 5%;
+  `}
+
+
+
+  ${media.greaterThan("850px")`{
+      width: 55%;
+  `}
+
+  ${media.greaterThan("940px")`
+    width: 50%;
+`}
+  ${media.greaterThan("1070px")`
+    width: 55%;
+`}
+
+${media.greaterThan("1400px")`
+    width: 50%;
+`}
+
+${media.greaterThan("1500px")`
+    width: 45%;
+`}
+`
+
+export const ImgBall = styled.div`
+  position: absolute;
+  bottom: 100px;
+  z-index: 0;
+  width: 1px;
+  overflow: hidden;
+
+  ${media.greaterThan("400px")`
+      z-index: 1;
+      width: 20%;
+      position: absolute;
+      top: 100px;
+      right: -100px;
+
+    .ball{
+      width: 100%;
+      height: 100%;
+    }
+  `}
+
+  ${media.greaterThan("510px")`
       z-index: 1;
       width: 15%;
       position: absolute;
       top: 100px;
-      right: -80px;
-    }
+      right: -100px;
   `}
-  ${media.greaterThan("1300px")`
-    height: 650px;
-    
-    .imgWrapper{
-      min-width: 200px;
-      width: 50%;
-      display: inline;
-      position: absolute;
-      top: 0;
-      right: 50px;
-      z-index: 2;
-    }
 
-    .imgBallWrapper{
+  ${media.greaterThan("600px")`
       z-index: 1;
       width: 15%;
       position: absolute;
       top: 100px;
       right: -130px;
     }
+  `}
+
+  ${media.greaterThan("700px")`
+      z-index: 1;
+      width: 15%;
+      position: absolute;
+      top: 100px;
+      right: -130px;
+  `}
+
+  ${media.greaterThan("768px")`
+      width: 20%;
+      position: absolute;
+      top: 15%;
+      right: -12%;
   `}
 `
