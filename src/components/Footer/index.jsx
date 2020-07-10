@@ -31,21 +31,33 @@ const Footer = () => {
     <S.FooterWrapper>
       <S.Social>
         <h1>Social Share</h1>
-        <a href={github} target="_blank" rel="noreferrer">
-          <S.GitHubIcon />
-        </a>
-        <a href={facebook} target="_blank" rel="noreferrer">
-          <S.FacebookIcon />
-        </a>
-        <a href={twitter} target="_blank" rel="noreferrer">
-          <S.TwitterIcon />
-        </a>
-        <a href={youtube} target="_blank" rel="noreferrer">
-          <S.YoutubeIcon />
-        </a>
-        <a href={linkedin} target="_blank" rel="noreferrer">
-          <S.LinkedinIcon />
-        </a>
+        <ul>
+          <li>
+            <a href={github} target="_blank" rel="noreferrer">
+              <S.GitHubIcon />
+            </a>
+          </li>
+          <li>
+            <a href={facebook} target="_blank" rel="noreferrer">
+              <S.FacebookIcon />
+            </a>
+          </li>
+          <li>
+            <a href={twitter} target="_blank" rel="noreferrer">
+              <S.TwitterIcon />
+            </a>
+          </li>
+          <li>
+            <a href={youtube} target="_blank" rel="noreferrer">
+              <S.YoutubeIcon />
+            </a>
+          </li>
+          <li>
+            <a href={linkedin} target="_blank" rel="noreferrer">
+              <S.LinkedinIcon />
+            </a>
+          </li>
+        </ul>
       </S.Social>
       <S.Contact>
         <S.Adress>
@@ -60,9 +72,17 @@ const Footer = () => {
       <Logobadico className="logo" alt="Badico's logo" />
       <S.Copy>{copyright}</S.Copy>
       <S.Nav>
-        <a href="">Privacy Policy </a>
-        <a href="">Customer Support</a>
-        <a href="">Careers</a>
+        <ul>
+          <li>
+            <a href="">Privacy Policy </a>
+          </li>
+          <li>
+            <a href="">Customer Support</a>
+          </li>
+          <li>
+            <a href="">Careers</a>
+          </li>
+        </ul>
       </S.Nav>
     </S.FooterWrapper>
   )

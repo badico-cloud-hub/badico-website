@@ -45,11 +45,17 @@ export const FooterWrapper = styled.div`
 export const Social = styled.div`
   margin-top: 1rem;
   display: inline;
+
   h1 {
     text-align: center;
     font-size: 1rem;
     font-family: "GalanoGrotesque";
     font-weight: 600;
+  }
+
+  ul{
+    display: flex;
+    list-style: none;
   }
 
   ${media.greaterThan("760px")`
@@ -153,6 +159,11 @@ export const Nav = styled.nav`
   display: none;
   font-family: GalanoGrotesque;
   font-weight: 300;
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
   a {
     color: #e5e5e5;
     font-size: 0.7rem;
