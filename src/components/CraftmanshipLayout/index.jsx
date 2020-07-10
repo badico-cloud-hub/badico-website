@@ -1,17 +1,16 @@
 import React from "react"
 
-import Cards from "../Cards/index"
-import CraftmanshipLayoutContent from "../CraftmanshipLayoutContent/index"
-import Wrapper from "./wrapper";
+//import Cards from "../Cards/index"
+//import CraftmanshipLayoutContent from "../CraftmanshipLayoutContent/index"
+import Wrapper from "./CraftWrapper"
 
 const CraftmanshipLayout = () => {
   return (
-    <>
-      <Wrapper>
-        <CraftmanshipLayoutContent />
-        <Cards />
-      </Wrapper> 
-    </>
+  
+      <div>
+        {/*<CraftmanshipLayoutContent />
+        <Cards />*/}
+      </div>
   )
 }
 
