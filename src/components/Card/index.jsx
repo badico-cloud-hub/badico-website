@@ -1,18 +1,18 @@
-import React from "react"
+import React from "react";
 
-import * as S from "./styled"
+import { CardWrapper, Content, Container } from "./CardWrapper";
 
 const Card = props => {
   return (
-    <S.CardWrapper>
-      <div className="container">
-        <p>
+    <CardWrapper>
+      <Container>
+        <Content>
           {props.content}
           <strong>{props.bold}</strong>
-        </p>
-      </div>
-    </S.CardWrapper>
+        </Content>
+      </Container>
+    </CardWrapper>
   )
 }
 
-export default Card
+export default Card;
