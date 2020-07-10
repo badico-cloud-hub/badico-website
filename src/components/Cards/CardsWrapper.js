@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-export const CardsWrapper = styled.article`
+export default styled.article`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
