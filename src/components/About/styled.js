@@ -14,8 +14,9 @@ export const AboutUs = styled.div`
   }
 
   h2 {
+    text-transform: uppercase;
     color: #27DEBF;
-    width: 50%;
+    width: 60%;
     position: relative;
     font-size: 1.5rem;
     text-align: center;
@@ -53,7 +54,7 @@ export const AboutUs = styled.div`
   }
 
   h2:after {
-    width: 9rem;
+    width: 10rem;
     left: 0;
     top: 100%;
   }
@@ -70,10 +71,6 @@ export const AboutUs = styled.div`
 
   h2 {
     margin-left: 2rem;
-  }
-
-  h2:after {
-    width: 9rem;
   }
 
   p {
