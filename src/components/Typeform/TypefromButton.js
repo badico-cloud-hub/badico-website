@@ -11,9 +11,7 @@ export default styled.button`
   font-family: GalanoGrotesque;
   font-weight: 500;
   width: 6rem;
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-  padding-bottom: 0.2rem;
+  padding: 0rem 0.7rem 0.2rem 0.7rem;
   color: #27debf;
   border: 1px solid #27debf;
   transition: transform .2s linear;
@@ -24,10 +22,6 @@ export default styled.button`
 
   :focus {
     outline: none;
-  }
-
-  p{
-    margin: auto 0;
   }
 
   ${media.greaterThan("medium")`
@@ -49,8 +43,5 @@ ${media.greaterThan("huge")`
     height: 3.5rem;
     font-size: 1.15rem;
     margin-left: 0;
-    p{
-      margin-bottom: 3px;
-    }
 `}
 `
