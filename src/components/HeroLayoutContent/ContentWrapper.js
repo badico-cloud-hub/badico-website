@@ -81,6 +81,7 @@ export const Call = styled.button`
   background-color: #27debf;
   margin-left: 2rem;
   margin-top: 0.7rem;
+  padding: 0;
   border-radius: 38px;
   font-size: 0.58rem;
   font-family: GalanoGrotesque;
@@ -91,21 +92,19 @@ export const Call = styled.button`
   display: flex;
   align-itens: center;
   justify-content: center;
+  transition: transform .2s linear;
+
+  &:hover {
+   transform: scaleX(1.1) scale(1.1);
+  }
   a {
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: #02293f;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-
-  &:hover {
-    background-color: #02293f;
-    a {
-      color: #27debf;
-    }
+    margin-top: 3.5px;
   }
 
   :focus{
@@ -116,17 +115,26 @@ export const Call = styled.button`
     width: 7rem;
     height: 1.8rem;
     font-size: .7rem;
+    a{
+      margin-top: 4px;
+    }
   `}
 
   ${media.greaterThan("1024px")`
     width: 9rem;
     height: 2.5rem;
     font-size: .8rem;
+    a{
+      margin-top: 7px;
+    }
 `}
 
 ${media.greaterThan("huge")`
     width: 12rem;
     height: 3.5rem;
     font-size: 1.15rem;
+    a{
+      margin-top: 9.5px;
+    }
 `}
 `
