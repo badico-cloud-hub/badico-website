@@ -1,6 +1,9 @@
 import React from "react"
 import LanguageProvider from "../providers/LanguageProvider"
 import Layout from "../components/Layout/"
+
+import Team from "../components/Team/index"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroLayout from "../components/HeroLayout"
 import Companies from "../components/Companies"
@@ -30,6 +33,7 @@ const IndexPage = () => {
           <TechStacks language={language} />
           <Capacities language={language} />
           <Cases language={language} />
+          <Team language={language}/>
           <About language={language} />
         </Layout>
       </LanguageProvider>
