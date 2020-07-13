@@ -16,14 +16,18 @@ export default styled.button`
   padding-bottom: 0.2rem;
   color: #27debf;
   border: 1px solid #27debf;
+  transition: transform .2s linear;
 
   :hover {
-    background-color: #27debf;
-    color: #02293f;
+    transform: scaleX(1.1) scale(1.1);
   }
 
   :focus {
     outline: none;
+  }
+
+  p{
+    margin: auto 0;
   }
 
   ${media.greaterThan("medium")`
@@ -45,5 +49,8 @@ ${media.greaterThan("huge")`
     height: 3.5rem;
     font-size: 1.15rem;
     margin-left: 0;
+    p{
+      margin-bottom: 3px;
+    }
 `}
 `
