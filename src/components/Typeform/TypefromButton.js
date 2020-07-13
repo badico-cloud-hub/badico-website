@@ -2,6 +2,7 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export default styled.button`
+align-items: center;
   height: 1.5rem;
   background-color: transparent;
   margin-left: 2rem;
@@ -42,6 +43,7 @@ ${media.greaterThan("huge")`
     width: 12rem;
     height: 3.5rem;
     font-size: 1.15rem;
+    padding-bottom: 0.25rem;
     margin-left: 0;
 `}
 `

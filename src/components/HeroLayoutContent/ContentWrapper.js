@@ -134,7 +134,7 @@ ${media.greaterThan("huge")`
     height: 3.5rem;
     font-size: 1.15rem;
     a{
-      margin-top: 9.5px;
+      margin-top: 10px;
     }
 `}
 `
