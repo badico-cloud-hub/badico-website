@@ -19,7 +19,7 @@ export default styled.button`
   transition: transform .2s linear;
 
   :hover {
-    transform: scaleX(1.1) scale(1.1);
+    transform: scaleX(1.03) scale(1.03);
   }
 
   :focus {

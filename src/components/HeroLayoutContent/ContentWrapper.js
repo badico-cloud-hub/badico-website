@@ -23,7 +23,7 @@ export const ContentWrapper = styled.div`
   `}
 `
 export const Container = styled.div`
-padding: 0;
+  padding: 0;
 `
 export const Title = styled.h1`
   margin-top: 5rem;
@@ -95,7 +95,7 @@ export const Call = styled.button`
   transition: transform .2s linear;
 
   &:hover {
-   transform: scaleX(1.1) scale(1.1);
+   transform: scaleX(1.03) scale(1.03);
   }
   a {
     width: 100%;
