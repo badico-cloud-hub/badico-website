@@ -1,5 +1,6 @@
 import React from "react"
 
+import Team from "../components/Team/index"
 import CraftmanshipLayout from "../components/CraftmanshipLayout/index"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,7 +12,11 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HeroLayout />
     <CraftmanshipLayout />
+<<<<<<< HEAD
     <About />
+=======
+    <Team/>
+>>>>>>> feat(pages): add component team on page
   </Layout>
 )
 
