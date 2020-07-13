@@ -2,7 +2,9 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export default styled.button`
-align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 1.5rem;
   background-color: transparent;
   margin-left: 2rem;
