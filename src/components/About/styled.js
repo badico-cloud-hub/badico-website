@@ -9,16 +9,18 @@ export const AboutUs = styled.div`
   overflow: hidden;
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    color: #02293F;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
     text-transform: uppercase;
     color: #27DEBF;
-    width: 60%;
+    width: 50%;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 600;
     margin: 0 auto 2rem auto;
@@ -47,14 +49,17 @@ export const AboutUs = styled.div`
   ${media.greaterThan("768px")`
   h1 {
       margin-left: 0.3rem;
+      margin-bottom: 2.5rem;
   }
   h2 {
     text-align: left;
     margin-left: 1.5rem;
+    margin-bottom: 2.2rem;
+
   }
 
   h2:after {
-    width: 10rem;
+    width: 7.8rem;
     left: 0;
     top: 100%;
   }
@@ -62,7 +67,8 @@ export const AboutUs = styled.div`
   p {
     font-weight: 300;
     margin-left: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    color: #151d41;
   }
     `}
 
@@ -75,15 +81,10 @@ export const AboutUs = styled.div`
 
   p {
     margin-left: 2rem;
-    font-size: 1rem;
   }
     `}
 
     ${media.greaterThan("1200px")`
     padding: 3rem;
-
-    p {
-        font-size: 1.2rem;
-    }
     `}
 `
