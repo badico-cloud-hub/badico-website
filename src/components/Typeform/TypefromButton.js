@@ -14,7 +14,6 @@ export default styled.button`
   font-family: GalanoGrotesque;
   font-weight: 500;
   width: 6rem;
-  padding-bottom: 3px;
   color: #27debf;
   border: 1px solid #27debf;
   transition: transform .2s linear;
