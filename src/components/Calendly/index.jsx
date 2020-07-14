@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import { PopupText } from "react-calendly";
-
+import React, { Component } from "react"
+import { PopupText } from "react-calendly"
 
 class Calendly extends Component {
   componentDidMount() {
@@ -14,8 +13,8 @@ class Calendly extends Component {
       <PopupText
         className="popup"
         url="https://calendly.com/badico"
-        text="Schedule A Call"
-        />
+        text="Schedule a call"
+      />
     )
   }
 }
