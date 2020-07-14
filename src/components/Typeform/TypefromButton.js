@@ -5,6 +5,7 @@ export default styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   height: 1.5rem;
   background-color: transparent;
   margin-left: 2rem;
@@ -14,7 +15,6 @@ export default styled.button`
   font-family: GalanoGrotesque;
   font-weight: 500;
   width: 6rem;
-  padding: 0rem 0.7rem 0rem 0.7rem;
   color: #27debf;
   border: 1px solid #27debf;
   transition: transform .2s linear;
@@ -45,7 +45,6 @@ ${media.greaterThan("huge")`
     width: 12rem;
     height: 3.5rem;
     font-size: 1.15rem;
-    padding-bottom: 0.25rem;
     margin-left: 0;
 `}
 `
