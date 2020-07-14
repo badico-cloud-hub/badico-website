@@ -1,17 +1,20 @@
-import React from "react";
+import React from "react"
 import Members from "../Members/index"
-import { TeamWrapper, Title, Description } from "./TeamWrapper"
+import { TeamWrapper, Container, Title, Description } from "./TeamWrapper"
 
 const Team = () => {
   return (
     <TeamWrapper>
-      <Title>Meet Our Team</Title>
-      <Description>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-      </Description>
+      <Container>
+        <Title>Meet Our Team</Title>
+        <Description>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+        </Description>
+      </Container>
+
       <Members/>
     </TeamWrapper>
   )
 }
 
-export default Team;
+export default Team
