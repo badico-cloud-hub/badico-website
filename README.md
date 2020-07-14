@@ -1,4 +1,4 @@
-![Netlify Status](https://api.netlify.com/api/v1/badges/726e4ac9-cfe7-4d63-8546-3e55fc12f10e/deploy-status)](https://app.netlify.com/sites/sharp-curie-48585a/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/726e4ac9-cfe7-4d63-8546-3e55fc12f10e/deploy-status)](https://app.netlify.com/sites/sharp-curie-48585a/deploys)
 
 # How to prepare the machine
 
