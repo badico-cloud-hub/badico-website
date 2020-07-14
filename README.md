@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/726e4ac9-cfe7-4d63-8546-3e55fc12f10e/deploy-status)](https://app.netlify.com/sites/sharp-curie-48585a/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/726e4ac9-cfe7-4d63-8546-3e55fc12f10e/deploy-status)](https://app.netlify.com/sites/sharp-curie-48585a/deploys) [![Maintainability](https://api.codeclimate.com/v1/badges/e4b0a2b87bcd87ef8936/maintainability)](https://codeclimate.com/repos/5f0e27ae61528d0161002764/maintainability)
 
 # How to prepare the machine
 
