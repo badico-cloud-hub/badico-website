@@ -1,16 +1,27 @@
 import React from "react"
+import {
+  MemberWrapper,
+  ImgProfile,
+  Content,
+  Name,
+  PositionContainer,
+  Position,
+  Description,
+} from "./MemberWrapper"
 
 const Member = props => {
   return (
-    <div>
-      <div>
-        <img src="https://via.placeholder.com/150"/>
-        <h1>{props.name}</h1>
-        <h2>{props.position}</h2>
-        <p>{props.description}</p>
-      </div>
-    </div>
+    <MemberWrapper>
+      <ImgProfile src="https://via.placeholder.com/150" />
+      <Content>
+        <Name>{props.name}</Name>
+        <PositionContainer>
+          <Position>{props.position}</Position>
+          <Description>{props.description}</Description>
+        </PositionContainer>
+      </Content>
+    </MemberWrapper>
   )
 }
 
-export default Member;
+export default Member
