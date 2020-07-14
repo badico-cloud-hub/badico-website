@@ -21,7 +21,7 @@ class Typeform extends Component {
     })
   }
   render() {
-    return <TypefromButton id="bt-popup">Contact Us</TypefromButton>
+    return <TypefromButton id="bt-popup">Contact us</TypefromButton>
   }
 }
 
