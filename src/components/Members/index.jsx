@@ -1,9 +1,10 @@
 import React from "react"
 import Member from "../Member/index"
+import { MembersWrapper } from "./MembersWrapper"
 
 const Members = () => {
   return (
-    <div>
+    <MembersWrapper>
       <Member
         img=""
         name="Lucas Badico"
@@ -22,7 +23,7 @@ const Members = () => {
         position="Fullstack Engineer"
         description="REST API, Frontend Integrations, AWS Developer"
       />
-    </div>
+    </MembersWrapper>
   )
 }
 
