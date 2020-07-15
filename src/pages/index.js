@@ -1,6 +1,5 @@
 import React from "react"
 import LanguageProvider from "../providers/LanguageProvider"
-import Layout from "../components/Layout/"
 
 import Team from "../components/Team/index"
 import Layout from "../components/layout"
