@@ -12,11 +12,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HeroLayout />
     <CraftmanshipLayout />
-<<<<<<< HEAD
+    <Team />
     <About />
-=======
-    <Team/>
->>>>>>> feat(pages): add component team on page
   </Layout>
 )
 
