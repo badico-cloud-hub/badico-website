@@ -15,7 +15,7 @@ const About = () => {
       <p>
         If your company doesn't just want to develop na application, but build a
         product that proudly generates knowledge and impact, we can and want to
-        help you.
+        help you.a
       </p>
     </S.AboutUs>
   )
