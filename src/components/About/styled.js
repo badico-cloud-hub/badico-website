@@ -5,7 +5,6 @@ export const AboutUs = styled.div`
   background: #ffffff;
   font-family: GalanoGrotesque;
   margin: 2rem;
-  position: relative;
   overflow: hidden;
 
   h1 {
