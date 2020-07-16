@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate="Badico Cloud Engineering | Your IT saveguard"
+      titleTemplate="Badico Cloud Engineering | Your IT departament"
       meta={[
         {
           name: `description`,
