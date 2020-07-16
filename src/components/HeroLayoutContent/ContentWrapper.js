@@ -8,6 +8,7 @@ export const ContentWrapper = styled.div`
 
   ${media.greaterThan("medium")`
       width: 40%;
+      margin-left: 2rem;
     `}
 
   ${media.greaterThan("1024px")`
@@ -22,9 +23,7 @@ export const ContentWrapper = styled.div`
     height: 400px;
   `}
 `
-export const Container = styled.div`
-  padding: 0;
-`
+
 export const Title = styled.h1`
   margin-top: 5rem;
   margin-left: 2rem;

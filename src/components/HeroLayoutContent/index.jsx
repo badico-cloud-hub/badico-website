@@ -6,10 +6,10 @@ import Calendly from "../Calendly"
 const HeroLayoutContent = () => {
   return (
     <ContentWrapper>
-      <Container>
+      <div>
         <Title>IT department Headache-free for startups</Title>
         <Text>We are your IT department</Text>
-      </Container>
+      </div>
 
       <Buttons>
         <Typeform/>
