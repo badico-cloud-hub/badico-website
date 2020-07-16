@@ -10,6 +10,7 @@ export const FooterWrapper = styled.div`
   color: #ffffff;
   height: 100%;
   border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
 
   .logo {
     display: none;
@@ -21,9 +22,20 @@ export const FooterWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
+    .mainFooter{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .baseFooter{
+      display: flex;
+      justify-content: space-between;
+    }
+
     .logo{
       display: flex;
-      width: 150px;
+      width: 120px;
       margin: 0 0 0 2.5rem;
     }
   `}
@@ -46,25 +58,38 @@ export const FooterWrapper = styled.div`
   `}
 `
 export const Social = styled.div`
+  display: flex;
+  flex-direction: column;
   margin-top: 1rem;
-  display: inline;
+  margin-bottom: 1rem;
 
   h1 {
     text-align: center;
-    font-size: 1rem;
+    font-size: .9rem;
     font-family: "GalanoGrotesque";
     font-weight: 600;
+    
   }
 
   ul{
     display: flex;
     list-style: none;
+    justify-content: center;
+    
   }
 
   ${media.greaterThan("760px")`
-  margin: 3rem 4rem;
+      margin: 3rem 0 0 4rem;
+      width: 300px;
+
+
     h1 {
+      text-align: left;
       font-size: 1.3rem;
+    }
+
+    ul{
+      justify-content: start;
     }
   `}
 
@@ -85,61 +110,25 @@ export const Social = styled.div`
 export const Contact = styled.div`
   display: flex;
   flex-direction: column;
-  widht: 100%;
-  margin: 1rem 0rem;
+  width: 310px;
+  margin: 0 1rem 1rem 1rem;
   font-size: 0.7rem;
   font-family: GalanoGrotesque;
   font-weight: 300;
-  margin-bottom: 1rem;
   color: #e5e5e5;
 
   ${media.greaterThan("760px")`
-  margin: 0rem 1.5rem;
+  margin: 3rem 1.5rem 0 1.5rem;
   font-size: 0.7rem;
   `}
 
   ${media.greaterThan("832px")`
-  margin: 0rem 1.7rem;
   font-size: 0.8rem;
   `}
 
   ${media.greaterThan("910px")`
-  margin: 0rem 2rem;
   font-size: 0.9rem;
-  `}
-
-  ${media.greaterThan("958px")`
-  margin: 0rem 3rem;
-  font-size: 0.9rem;
-  `}
-
-  ${media.greaterThan("986px")`
-  margin: 0rem 4rem;
-  font-size: 0.9rem;
-  `}
-
-  ${media.greaterThan("1020px")`
-  margin: 0rem 5rem;
-  `}
-
-  ${media.greaterThan("1045px")`
-  margin: 0rem 6rem;
-  `}
-
-  ${media.greaterThan("1080px")`
-  margin: 0rem 6rem 0rem 17rem;
-  `}
-  ${media.greaterThan("1294px")`
-  margin-left: 22rem;
-  `}
-  ${media.greaterThan("1340px")`
-  margin-left: 24rem;
-  `}
-  ${media.greaterThan("1374px")`
-  margin-left: 30rem;
-  `}
-  ${media.greaterThan("1500px")`
-  margin-left: 35rem;
+  width: 320px;
   `}
 `
 export const Adress = styled.div`
@@ -176,7 +165,7 @@ export const Nav = styled.nav`
 
   ${media.greaterThan("760px")`
     display: flex;
-    margin: 0rem 1.4rem 0.3rem 0rem;
+    margin: .8rem 1.4rem 0.3rem 0rem;
   `}
 
   ${media.greaterThan("832px")`
@@ -196,10 +185,12 @@ export const Copy = styled.div`
   font-family: GalanoGrotesque;
   font-weight: 500;
   font-size: 0.6rem;
-  margin: 0.5rem 0rem;
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
 
   ${media.greaterThan("760px")`
   font-size: 0.7rem;
+  margin-top: 1.3rem;
   `}
 
   ${media.greaterThan("832px")`
@@ -209,7 +200,7 @@ export const Copy = styled.div`
 
 export const GitHubIcon = styled(Icons.Github)`
   margin-right: 10px;
-  width: 1.8rem;
+  width: 1.6rem;
   color: white;
   display: inline-block;
   &:hover {
@@ -218,7 +209,7 @@ export const GitHubIcon = styled(Icons.Github)`
 `
 export const FacebookIcon = styled(Icons.FacebookSquare)`
   margin-right: 10px;
-  width: 1.8rem;
+  width: 1.6rem;
   color: white;
   &:hover {
     color: gray;
@@ -226,7 +217,7 @@ export const FacebookIcon = styled(Icons.FacebookSquare)`
 `
 export const TwitterIcon = styled(Icons.Twitter)`
   margin-right: 10px;
-  width: 1.8rem;
+  width: 1.6rem;
   color: white;
   &:hover {
     color: gray;
@@ -234,7 +225,7 @@ export const TwitterIcon = styled(Icons.Twitter)`
 `
 export const YoutubeIcon = styled(Icons.Youtube)`
   margin-right: 10px;
-  width: 1.8rem;
+  width: 1.6rem;
   color: white;
   &:hover {
     color: gray;
@@ -242,7 +233,7 @@ export const YoutubeIcon = styled(Icons.Youtube)`
 `
 export const LinkedinIcon = styled(Icons.LinkedinSquare)`
   margin-right: 10px;
-  width: 1.8rem;
+  width: 1.6rem;
   color: white;
   &:hover {
     color: gray;

@@ -2,6 +2,8 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const HeroWrapper = styled.div`
+  width: 100%;
+  margin: 0 auto;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@ export const HeroWrapper = styled.div`
   ${media.greaterThan("400px")`
     height: 550px;
     flex-direction: row;
-    padding: 0 5%;
+    margin-right: 5%;
     overflow: hidden;
     position: relative;
 
@@ -103,8 +105,7 @@ export const Img = styled.div`
   `}
 
   ${media.greaterThan("768px")`
-      min-width: 200px;
-      max-width: 60%;
+      width: 820px;
       top: 0%;
       right: 5%;
   `}
@@ -127,8 +128,15 @@ ${media.greaterThan("1400px")`
 `}
 
 ${media.greaterThan("1500px")`
-    width: 45%;
+    width: 820px;
+
 `}
+
+${media.greaterThan("2200px")`
+    right: 15%;
+
+`}
+
 `
 
 export const ImgBall = styled.div`
