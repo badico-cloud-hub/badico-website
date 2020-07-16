@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={"Badico Cloud Engineering | Your IT saveguard"}
       titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
