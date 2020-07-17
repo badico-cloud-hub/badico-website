@@ -78,8 +78,9 @@ export const Title = styled.h1`
   font-weight: 500;
   font-size: 1.5rem;
   color: #02293f;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   ${media.greaterThan("940px")`
     font-size: 2rem;
+    margin-bottom: 5rem;
   `}
 `
