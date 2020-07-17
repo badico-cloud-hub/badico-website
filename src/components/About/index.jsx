@@ -29,7 +29,6 @@ const About = () => {
         product, from the first design to the final product for users. Our
         methodology allows us to integrate companies in a homogeneous way,
         building and developing the company's technology department together.
-        Hello
       </p>
       <p>
         If your company doesn't just want to develop na application, but build a
