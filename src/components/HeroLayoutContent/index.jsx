@@ -1,7 +1,7 @@
 import React from "react"
-import { ContentWrapper, Container, Title, Text, Buttons, Call } from "./ContentWrapper"
-import Typeform from "../Typeform/index"
+import { ContentWrapper, Title, Text, Buttons, Call } from "./ContentWrapper"
 import Calendly from "../Calendly"
+//import Typeform from "../Typeform/index"
 
 const HeroLayoutContent = () => {
   return (
@@ -12,7 +12,7 @@ const HeroLayoutContent = () => {
       </div>
 
       <Buttons>
-        <Typeform/>
+        {/*<Typeform/>*/}
         <Call>
           <Calendly />
         </Call>
