@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate="Badico Cloud Engineering | Your IT departament"
+      titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
