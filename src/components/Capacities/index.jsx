@@ -18,7 +18,7 @@ const Capacities = () => {
         <Cards>
           <Images>
             <Mobile className="img mobile" />
-            <p className="mobileText">Mobile development with fluter</p>
+            <p className="mobileText">Mobile development with flutter</p>
           </Images>
           <Images>
             <Web className="img" />
