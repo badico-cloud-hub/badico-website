@@ -2,9 +2,8 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const CapacitiesWrapper = styled.div`
-  margin: 1rem 2rem;
+  margin: 6rem 2rem;
   font-family: GalanoGrotesque;
-  font-weight: 500;
 
   ${media.greaterThan("760px")`
   margin: 9rem 3rem;
@@ -26,7 +25,7 @@ export const Images = styled.div`
   margin-top: 1rem;
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin: 0;
     padding: 0.1rem;
     height: 42px;
@@ -74,13 +73,10 @@ export const Images = styled.div`
 `
 
 export const Title = styled.h1`
-  font-family: GalanoGrotesque;
   font-weight: 500;
   font-size: 1.5rem;
   color: #02293f;
-  margin-bottom: 2.5rem;
   ${media.greaterThan("940px")`
-    font-size: 2rem;
     margin-bottom: 5rem;
   `}
 `
