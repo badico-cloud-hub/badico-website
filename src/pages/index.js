@@ -8,7 +8,7 @@ import About from "../components/About"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Badico Cloud Engineering | Your IT departament" />
     <HeroLayout />
     <CraftmanshipLayout />
     <About />
