@@ -1,18 +1,22 @@
 import React from "react"
-import ButtonStyle from "./ButtonStyle"
+import FloatWrap from "./FloatWrap"
 import Calendly from "../Calendly"
 import Typeform from "../Typeform/index"
 import { Chat } from "../../images/components/Chat/index"
 
 const FloatingButton = () => {
   return (
-    <ButtonStyle>
-      <div className="buttonsFilho">
-        <Typeform/>
-        <button><Calendly/></button>
+    <FloatWrap>
+      <div className="icon">
+        <Chat className="chat" />
       </div>
-      <Chat className = "chat"/>
-    </ButtonStyle>
+      <div className="buttonsFilho">
+        <Typeform />
+        <button>
+          <Calendly />
+        </button>
+      </div>
+    </FloatWrap>
   )
 }
 
