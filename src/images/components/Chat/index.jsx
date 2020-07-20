@@ -8,7 +8,7 @@ const Chat = () => {
             query {
                 img: file(relativePath: {eq: "chat.png"}) {
                     childImageSharp {
-                        fixed(width: 50, height: 50) {
+                        fixed(width: 25, height: 25) {
                             ...GatsbyImageSharpFixed
                         }
                     }
