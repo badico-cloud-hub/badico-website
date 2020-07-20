@@ -94,7 +94,6 @@ export const Call = styled.button`
   transition: transform .2s linear;
 
   &:hover {
-   transform: scaleX(1.03) scale(1.03);
    background: #27debf;
    a{
     color: #02293f;
