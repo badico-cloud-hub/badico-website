@@ -3,6 +3,10 @@ import styled from "styled-components"
 export default styled.button`
   color: #FFF; 
   font-family: GalanoGrotesque;
+
+  :focus {
+    outline: none;
+  }
 `
 
 /*export default styled.button`
