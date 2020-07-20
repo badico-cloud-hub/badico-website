@@ -12,6 +12,10 @@ const ButtonStyle = styled.div`
   left: 80%;
   z-index: 1;
   box-shadow: 0 0 7px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   
   .buttonsFilho{
       position: absolute;
@@ -23,7 +27,8 @@ const ButtonStyle = styled.div`
       padding: 0 12px 4px 12px;
       display: none;
       z-index: auto;
-      padding-left: 1.2rem;
+      padding-left: 1rem;
+      padding-top: .1rem;
   }
   
   .buttonsFilho button{
@@ -38,7 +43,7 @@ const ButtonStyle = styled.div`
     height: 100%;
     font-family: GalanoGrotesque;
     text-decoration: none;
-    padding-left: .6rem;
+    padding-left: 1rem;
   }
   
   button:focus{
@@ -63,6 +68,7 @@ const ButtonStyle = styled.div`
     left: -290px;
     top: 17px;
     height: 40px;
+    padding-left: 2.1rem;
   }
 
   .buttonsFilho button{
