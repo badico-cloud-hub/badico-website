@@ -45,6 +45,10 @@ z-index: 1;
   padding: 0 0 .25rem 0;
 }
 
+.contact:focus {
+  outline: none;
+}
+
 .buttonsFilho button a{
   color: #FFF;
   width: 100%;
@@ -54,8 +58,10 @@ z-index: 1;
   padding-left: 1.5rem;
 }
 
-.icon:hover ~ .buttonsFilho{
-  display: block;
+:hover{
+  .buttonsFilho{
+    display: block;
+  }
 }
 `
 
