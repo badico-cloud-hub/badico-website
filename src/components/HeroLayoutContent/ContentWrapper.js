@@ -77,7 +77,7 @@ export const Buttons = styled.div`
 
 export const Call = styled.button`
   height: 1.5rem;
-  background-color: #27debf;
+  background-color: transparent;
   margin-left: 2rem;
   margin-top: 0.7rem;
   padding: 0;
@@ -86,7 +86,7 @@ export const Call = styled.button`
   font-family: GalanoGrotesque;
   font-weight: 500;
   width: 6rem;
-  color: #02293f;
+  color: #27debf;
   border: 1px solid #27debf;
   display: flex;
   align-items: center;
@@ -94,13 +94,16 @@ export const Call = styled.button`
   transition: transform .2s linear;
 
   &:hover {
-   transform: scaleX(1.03) scale(1.03);
+   background: #27debf;
+   a{
+    color: #02293f;
+   }
   }
   a {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: #02293f;
+    color: #27debf;
     display: flex;
     align-items: center;
     justify-content: center;

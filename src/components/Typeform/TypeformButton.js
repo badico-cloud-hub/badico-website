@@ -1,7 +1,15 @@
 import styled from "styled-components"
-import media from "styled-media-query"
 
 export default styled.button`
+  color: #FFF; 
+  font-family: GalanoGrotesque;
+
+  :focus {
+    outline: none;
+  }
+`
+
+/*export default styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,3 +56,4 @@ ${media.greaterThan("huge")`
     margin-left: 0;
 `}
 `
+*/
