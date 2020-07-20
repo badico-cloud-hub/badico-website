@@ -9,6 +9,7 @@ top: 90%;
 right: 5%;
 width: 300px;
 z-index: 1;
+cursor: pointer;
 
 .icon{
   background: #27debf;
