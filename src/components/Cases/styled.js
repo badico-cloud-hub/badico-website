@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Case = styled.div`
   display: flex;
-  margin: 0 2rem 5.5rem 2rem;
+  margin: 0 2rem 3.5rem 2rem;
 `
 
 export const CaseWrapper = styled.div`
