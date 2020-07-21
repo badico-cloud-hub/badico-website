@@ -19,7 +19,8 @@ const Gallery = () => {
         <Carousel
           additionalTransfrom={0}
           arrows
-          autoPlaySpeed={3000}
+          autoPlay
+          autoPlaySpeed={2000}
           centerMode={true}
           removeArrowOnDeviceType={["desktop", "mobile", "tablet"]}
           className=""
