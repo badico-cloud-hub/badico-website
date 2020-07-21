@@ -72,7 +72,6 @@ export const AboutUs = styled.div`
     `}
 
   ${media.greaterThan("950px")`
-  padding: 2.5rem;
 
   h2 {
     margin-left: 2rem;
