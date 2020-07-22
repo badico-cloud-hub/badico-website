@@ -93,6 +93,10 @@ export const Call = styled.button`
   justify-content: center;
   transition: transform .2s linear;
 
+  div div{
+    display: none;
+  }
+
   &:hover {
    background: #27debf;
    a{
