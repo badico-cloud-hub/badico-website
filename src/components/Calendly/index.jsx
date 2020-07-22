@@ -1,20 +1,20 @@
 import React, { Component } from "react"
 import { PopupText } from "react-calendly"
+import Calendar from "../../images/calendar.svg"
 
 class Calendly extends Component {
-  componentDidMount() {
-    // whatever stuff you need here
-  }
-  componentWillUnmount() {
-    // whatever cleanup stuff you need here
-  }
+  
   render() {
     return (
-      <PopupText
+      <div>
+        <PopupText
         className="popup"
         url="https://calendly.com/badico"
-        text="Schedule a call"
-      />
+        text="Schedule a call"/>
+        <div className="iconCalendar">
+          <Calendar />
+        </div>
+      </div>
     )
   }
 }
