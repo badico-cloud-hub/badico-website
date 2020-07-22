@@ -22,11 +22,12 @@ const FloatingButton = () => {
         <div className="iconCalendar">
           <Calendar />
         </div>
+
         <button className="call">
           <Calendly />
         </button>
         <div className="iconEmail">
-          <Email/>
+          <Email />
         </div>
       </div>
     </FloatWrap>
