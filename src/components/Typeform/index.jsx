@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import * as typeformEmbed from "@typeform/embed"
 import TypeformButton from "./TypeformButton"
+import Email from "../../images/email.svg"
 
 class Typeform extends Component {
   componentDidMount() {
@@ -16,12 +17,20 @@ class Typeform extends Component {
         },
       }
     )
-    document.getElementById("bt-popup").addEventListener("click", function () {
+    document.getElementById("bt-popup").addEventListener( "click", function () {
       popup1.open()
     })
   }
   render() {
-    return <TypeformButton id="bt-popup">Contact us</TypeformButton>
+    return (
+      <div id="bt-popup">
+        <TypeformButton >Contact us</TypeformButton>
+        <div className="iconEmail">
+            <Email />
+        </div>
+      </div>
+      
+    )
   }
 }
 
