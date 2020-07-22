@@ -18,17 +18,15 @@ const FloatingButton = () => {
         <Chat className="chat" />
       </div>
       <div className="buttonsFilho">
-        <Typeform className="contact" />
-        <div className="iconCalendar">
-          <Calendar />
-        </div>
+        <Typeform className="contact">
+          
+        </Typeform>
 
         <button className="call">
-          <Calendly />
+          <Calendly>
+  
+          </Calendly>
         </button>
-        <div className="iconEmail">
-          <Email />
-        </div>
       </div>
     </FloatWrap>
   )
