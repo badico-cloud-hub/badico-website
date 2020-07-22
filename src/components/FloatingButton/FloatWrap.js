@@ -86,6 +86,10 @@ const FloatWrap = styled.div`
     display: none;
   }
 
+  .buttonsFilho button{
+    height: 27px;
+  }
+
   .iconCalendar{
     background: #fff;
     width: 50px;
@@ -96,7 +100,7 @@ const FloatWrap = styled.div`
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 60px;
+    bottom: 59px;
     right: 100px;
     z-index: 3;
   }
@@ -129,7 +133,7 @@ const FloatWrap = styled.div`
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 125px;
+    bottom: 129px;
     right: 20px;
     z-index: 3;
   }  
