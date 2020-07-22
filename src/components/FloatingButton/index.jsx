@@ -11,9 +11,14 @@ const FloatingButton = () => {
         <Chat className="chat" />
       </div>
       <div className="buttonsFilho">
-        <Typeform />
-        <button>
-          <Calendly />
+        <Typeform className="contact">
+          
+        </Typeform>
+
+        <button className="call">
+          <Calendly>
+  
+          </Calendly>
         </button>
       </div>
     </FloatWrap>
