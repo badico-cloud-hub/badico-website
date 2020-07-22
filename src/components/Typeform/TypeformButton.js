@@ -12,7 +12,6 @@ export default styled.button`
   right: 45px;
   width: 150px;
   padding-right: 3rem;
-  padding-bottom: 0.3rem;
   border-radius: 13px;
   
   :focus {
