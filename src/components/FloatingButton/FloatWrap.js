@@ -110,7 +110,6 @@ const FloatWrap = styled.div`
     bottom: 70px;
     border-radius: 13px;
     font-size: .8rem;
-    padding-bottom: 0.3rem; 
     padding-right: 2rem;
   }
 
