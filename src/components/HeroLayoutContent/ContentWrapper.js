@@ -47,7 +47,7 @@ ${media.greaterThan("huge")`
 `
 
 export const Text = styled.p`
-  margin-left: 2rem;
+  margin: 0 2rem;
   font-size: 0.9rem;
   font-family: GalanoGrotesque;
   font-weight: 300;

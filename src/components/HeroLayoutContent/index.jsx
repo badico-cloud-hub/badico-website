@@ -7,8 +7,11 @@ const HeroLayoutContent = () => {
   return (
     <ContentWrapper>
       <div>
-        <Title>IT department Headache-free for startups</Title>
-        <Text>We are your IT department</Text>
+        <Title>We are your IT department</Title>
+        <Text>
+          A Headache-free IT department. We take care of the tech side, so you
+          can focus on the Business side.
+        </Text>
       </div>
 
       <Buttons>
