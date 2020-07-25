@@ -10,9 +10,9 @@ import FloatingButton from "../components/FloatingButton/index"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Badico Cloud Engineering | Your IT departament" />
+    <SEO title="Badico Cloud Engineering | We are you IT departament" />
     <HeroLayout />
-    <FloatingButton/>
+    <FloatingButton />
     <CraftmanshipLayout />
     <Capacities />
     <About />
