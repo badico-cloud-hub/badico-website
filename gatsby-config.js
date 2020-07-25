@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Badico Cloud Engineering`,
-    description: `A Headache-free IT department. We take care of the tech side, so you can focus on the Business side.`,
+    description: `A Headache-free IT department. We take care of the tech side, so you can focus on the Business side. We don’t tell you what to do, we do it with you.`,
     author: `@gatsbyjs`,
     copyright: `© 2020 Badico Cloud. All rights reserved.`,
     socialMedia: {
