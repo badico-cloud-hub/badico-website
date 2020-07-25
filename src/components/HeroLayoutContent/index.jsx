@@ -10,7 +10,8 @@ const HeroLayoutContent = () => {
         <Title>We are your IT department</Title>
         <Text>
           A Headache-free IT department. We take care of the tech side, so you
-          can focus on the Business side.
+          can focus on the Business side. We don’t tell you what to do, we do it
+          with you.
         </Text>
       </div>
 
