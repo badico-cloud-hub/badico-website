@@ -53,11 +53,13 @@ export const Text = styled.p`
   font-weight: 300;
 
   ${media.greaterThan("medium")`
-    margin: 2rem 0;
+    margin: 2rem 2rem 2rem 0;
   `}
 
   ${media.greaterThan("1024px")`
     font-size: 1rem;
+    margin: 2rem 0;
+
 `}
 
 ${media.greaterThan("huge")`
