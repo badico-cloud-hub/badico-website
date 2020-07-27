@@ -25,7 +25,7 @@ const Header = () => {
           </button>
           <nav class="drop-content">
             <ul>
-              <li>
+              {/*<li>
                 <a href="#">Home</a>
               </li>
               <li>
@@ -39,7 +39,7 @@ const Header = () => {
               </li>
               <li>
                 <a href="#">Blog</a>
-              </li>
+              </li>*/}
               <li>
                 <a href="#about">About us</a>
               </li>
