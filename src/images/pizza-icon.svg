@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115.55" height="115.55" viewBox="0 0 115.55 115.55">
+  <defs>
+    <filter id="Elipse_448-2" x="0" y="0" width="115.55" height="115.55" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_75_1" data-name="Componente 75 – 1" transform="translate(9 6)">
+    <g id="Grupo_1349" data-name="Grupo 1349">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Elipse_448-2)">
+        <circle id="Elipse_448-2-2" data-name="Elipse 448-2" cx="48.775" cy="48.775" r="48.775" transform="translate(9 6)" fill="#02293f"/>
+      </g>
+    </g>
+    <path id="Caminho_1374" data-name="Caminho 1374" d="M1675.33-241.935a22.15,22.15,0,0,0-22.154,22.146,22.15,22.15,0,0,0,22.146,22.154,22.15,22.15,0,0,0,22.154-22.146v-.005H1675.33Z" transform="translate(-1629.65 271.661)" fill="#fff"/>
+    <path id="Caminho_1375" data-name="Caminho 1375" d="M1680.608-247.93v22.146h22.146a22.146,22.146,0,0,0-22.146-22.146Z" transform="translate(-1628.732 271.46)" fill="#fff"/>
+  </g>
+</svg>
