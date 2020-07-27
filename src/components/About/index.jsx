@@ -4,7 +4,7 @@ import * as S from "./styled"
 
 const About = () => {
   return (
-    <S.AboutUs>
+    <S.AboutUs id="about">
       <Container>
         <h1>About us</h1>
         <h2>Who We are</h2>
