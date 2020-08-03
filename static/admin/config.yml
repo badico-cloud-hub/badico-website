@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: badico-cloud-hub/badico-website
-  branch: epic/blog # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
   site_domain: badico.cloud
 
 publish_mode: editorial_workflow
