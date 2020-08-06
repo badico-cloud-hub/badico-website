@@ -36,10 +36,10 @@ const Header = () => {
               </li>
               <li>
                 <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
               </li>*/}
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
               <li>
                 <a href="#about">About us</a>
               </li>
