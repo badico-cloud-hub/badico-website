@@ -11,6 +11,9 @@ export default function Template({
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
+        <h3>{frontmatter.tag}</h3>
+        <h3>{frontmatter.author}</h3>
+        <h3>{frontmatter.type}</h3>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -28,6 +31,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        type
+        tag
+        author
       }
     }
   }
