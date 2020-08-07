@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path")
 
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   if (stage === "build-html") {
@@ -15,17 +15,19 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   }
 }
 
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = require.resolve(`./src/components/TemplatePost/index.jsx`)
+  const blogPostTemplate = require.resolve(
+    `./src/components/TemplatePost/index.jsx`
+  )
 
-  const result = await graphql(`
+  const resultCase = await graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
+        filter: { frontmatter: { value: { eq: "use-case" } } }
       ) {
         edges {
           node {
@@ -38,16 +40,33 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const resultPost = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+        filter: { frontmatter: { value: { eq: "post" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
 
   // Handle errors
-  if (result.errors) {
+  if (resultPost.errors && resultCase.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  resultPost.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.slug,
+      path: `/blog/${node.frontmatter.slug}`,
       component: blogPostTemplate,
       context: {
         // additional data can be passed via context
@@ -55,4 +74,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  resultCase.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: `/usecase/${node.frontmatter.slug}`,
+      component: blogPostTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.frontmatter.slug,
+      },
+    })
+  })
+
 }
