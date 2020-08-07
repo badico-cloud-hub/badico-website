@@ -11,14 +11,22 @@ const IndexPage = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
-  return <div>{Posts}</div>
+  return (
+    <>
+      <div>{Posts}</div>
+      <a href="/usecase">Use case</a>
+    </>
+  )
 }
 
 export default IndexPage
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+  {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { value: { eq: "post" } } }
+    ) {
       edges {
         node {
           id
@@ -27,6 +35,9 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+            type
+            tag
+            author
           }
         }
       }
