@@ -19,6 +19,13 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-186430025-1",
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
     },
     {
