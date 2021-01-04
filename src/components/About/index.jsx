@@ -15,7 +15,7 @@ const About = () => {
           building and developing the company's technology department together.
         </p>
         <p>
-          If your company doesn't just want to develop na application, but build
+          If your company doesn't just want to develop an application, but build
           a product that proudly generates knowledge and impact, we can and want
           to help you.
         </p>
