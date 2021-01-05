@@ -8,7 +8,7 @@ const Footer = () => {
   const {
     site: {
       siteMetadata: {
-        socialMedia: { github, facebook, twitter, youtube, linkedin },
+        socialMedia: { github, linkedin },
         copyright,
       },
     },
@@ -18,9 +18,6 @@ const Footer = () => {
         siteMetadata {
           socialMedia {
             github
-            facebook
-            twitter
-            youtube
             linkedin
           }
           copyright
@@ -40,7 +37,7 @@ const Footer = () => {
                   <S.GitHubIcon />
                 </a>
               </li>
-              <li>
+              {/*<li>
                 <a href={facebook} target="_blank" rel="noreferrer">
                   <S.FacebookIcon />
                 </a>
@@ -54,7 +51,7 @@ const Footer = () => {
                 <a href={youtube} target="_blank" rel="noreferrer">
                   <S.YoutubeIcon />
                 </a>
-              </li>
+              </li>*/}
               <li>
                 <a href={linkedin} target="_blank" rel="noreferrer">
                   <S.LinkedinIcon />
