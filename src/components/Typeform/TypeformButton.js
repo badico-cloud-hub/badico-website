@@ -1,12 +1,29 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export default styled.button`
-  color: #FFF; 
   font-family: GalanoGrotesque;
-
+  font-size: .8rem;
+  color: #000;
+  border: none;
+  background: #fff;
+  position: fixed;
+  bottom: 140px;
+  right: 45px;
+  width: 150px;
+  padding-right: 3rem;
+  border-radius: 13px;
+  
   :focus {
     outline: none;
   }
+  ${media.greaterThan("760px")`
+  color: #FFF; 
+  width: 60px;
+  top: 0;
+  left: 0;
+  
+  `};
 `
 
 /*export default styled.button`
