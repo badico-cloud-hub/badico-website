@@ -157,13 +157,12 @@ const FloatWrap = styled.div`
   right: 30px;
   bottom: 40px;
   overflow: hidden;
-  width: 260px;
+  width: 280px;
   height: 30px;
   border-radius: 20px;
   background: #27debf;
   z-index: 1;
-  padding-left: 1.5rem;
-  padding-top: .1rem;
+  padding-left: 1rem;
 }
 
 .call{
@@ -175,29 +174,29 @@ const FloatWrap = styled.div`
   font-size: .8rem;
   background: transparent;
   border: none;
-  padding: 0 0 .25rem 0;
+  padding: 0;
   position: relative;
+  width: 100px;
 }
-
 
 .buttonsFilho button a{
   color: #FFF;
-  width: 100%;
-  height: 100%;
   font-family: GalanoGrotesque;
   text-decoration: none;
+  font-size: .8rem;
 }
 
 .buttonsFilho button:focus{
   outline: none;
 }
 
+.iconCalendar, .iconEmail{
+  display: none;
+}
+
 :hover{
   .buttonsFilho{
-    display: block;
-  }
-  .buttonsFilho .iconCalendar, .buttonsFilho .iconEmail{
-    display: none;
+    display: flex;
   }
   .cloud{
     display: none;
