@@ -75,7 +75,6 @@ export const Social = styled.div`
     display: flex;
     list-style: none;
     justify-content: center;
-    
   }
 
   ${media.greaterThan("760px")`
@@ -89,7 +88,8 @@ export const Social = styled.div`
     }
 
     ul{
-      justify-content: start;
+      justify-content: center;
+      width: 150px;
     }
   `}
 
