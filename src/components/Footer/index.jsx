@@ -60,10 +60,10 @@ const Footer = () => {
             </ul>
           </S.Social>
           <S.Contact>
-            <S.Adress>
+            {/*<S.Adress>
               <p>Rijnlaan 41A, 3522BC</p>
               <p>Utrecht, Utrecht, NL</p>
-            </S.Adress>
+            </S.Adress>*/}
             <S.Mail>
               <p className="number">+55 11 941738544</p>
               <p className="email">lucas@badico.cloud</p>
