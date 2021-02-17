@@ -26,7 +26,7 @@ const Capacities = () => {
           </Images>
           <Images>
             <Clean className="img" />
-            <p>Clean software arquiteture</p>
+            <p>Clean software architeture</p>
           </Images>
           <Images>
             <Infra className="img" />
@@ -34,15 +34,15 @@ const Capacities = () => {
           </Images>
           <Images>
             <Cloud className="img" />
-            <p>Cloud arquiteture</p>
+            <p>Cloud architeture</p>
           </Images>
           <Images>
             <Serverless className="img" />
-            <p>Serverless arquiteture</p>
+            <p>Serverless architeture</p>
           </Images>
           <Images>
             <Continuos className="img" />
-            <p>Continuos integration and delivery</p>
+            <p>Continuous integration and delivery</p>
           </Images>
           <Images>
             <Ux className="img" />

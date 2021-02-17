@@ -25,10 +25,10 @@ export const Images = styled.div`
   margin-top: 1rem;
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin: 0;
-    padding: 0.1rem;
     height: 42px;
+    width: 90%;
   }
 
   .img {
@@ -48,10 +48,9 @@ export const Images = styled.div`
     }
 
     p{
-      padding: 0 0.5rem;
-      width: 90%;
       height: 40%;
-      font-size: 0.9rem;
+      max-width: 210px;
+      max-height: 60px;
     }
     .img {
       max-width: 160px;
@@ -65,11 +64,7 @@ export const Images = styled.div`
   }
   `}
 
-  ${media.greaterThan("940px")`
-  p {
-    max-width: 210px;
-  }
-  `}
+  
 `
 
 export const Title = styled.h1`
