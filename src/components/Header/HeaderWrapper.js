@@ -2,8 +2,8 @@ import styled, { css } from "styled-components"
 import media from "styled-media-query"
 
 export const HeaderWrapper = styled.div`
-  background-color: #02293f;
-  font-family: GalanoGrotesque;
+  background: #0E273B 0% 0% no-repeat padding-box;
+  opacity: 1;
   display: flex;
   position: sticky;
   top: 0;
@@ -31,7 +31,7 @@ export const HeaderWrapper = styled.div`
 
   .menu-drop {
     display: inline-block;
-    float: right;
+    float: left;
     margin-top: 32px;
     margin-right: 30px;
 
@@ -49,7 +49,8 @@ export const HeaderWrapper = styled.div`
   .open {
     border: none;
     cursor: pointer;
-    background-color: #02293f;
+    background: #0E273B 0% 0% no-repeat padding-box;
+    opacity: 1;
     padding: 10px;
     font-size: 15px;
     color: white;
@@ -67,9 +68,9 @@ export const HeaderWrapper = styled.div`
     padding: 10px;
     font-size: 15px;
     color: black;
-    position: relative;
-    bottom: 0px;
-    right: 0px;
+    position: absolute;
+    right: 39px;
+    top: 39px;
 
     :focus {
       outline: none;
