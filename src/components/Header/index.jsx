@@ -4,14 +4,14 @@ import Container from "../Container/index"
 import MenuIcon from "../../images/menu.svg"
 import Close from "../../images/close.svg"
 import { HeaderWrapper } from "./HeaderWrapper"
+import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
 
-const Header = () => {
+const Header = () => {''
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <HeaderWrapper isOpen={isOpen}>
       <Container>
-        <Logobadico className="logo" alt="Badico's logo" />
         <div class="menu-drop">
           <div className="back"></div>
           <button
@@ -21,7 +21,7 @@ const Header = () => {
               setIsOpen(true)
             }}
           >
-            <MenuIcon />
+            <MenuRoundedIcon style={{fontSize: '38px'}}/>
           </button>
           <nav class="drop-content">
             <ul>
@@ -54,6 +54,7 @@ const Header = () => {
             <Close />
           </button>
         </div>
+        <Logobadico className="logo" alt="Badico's logo" />
       </Container>
     </HeaderWrapper>
   )
