@@ -25,12 +25,12 @@ export const ContentWrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   margin-left: 2rem;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.8rem;
-  font-family: GalanoGrotesque;
-  font-weight: 500;
+  font-size: 2.125rem;
+  font-weight: 400;
+  width: 76%;
 
   ${media.greaterThan("medium")`
     font-size: 2rem;
@@ -48,9 +48,8 @@ ${media.greaterThan("huge")`
 
 export const Text = styled.p`
   margin: 0 2rem;
-  font-size: 0.9rem;
-  font-family: GalanoGrotesque;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
 
   ${media.greaterThan("medium")`
     margin: 2rem 0;
@@ -70,6 +69,23 @@ export const Buttons = styled.div`
   display: flex;
   flex-direction: column;
 
+  div button{
+    width: 8.71875rem;
+    height: 2.351875rem;
+    position: relative;
+    top: 20px;
+    left: 32px;
+    border-radius: 20px;
+    padding: 0;
+    background-color: transparent;
+    color: #27debf;
+    border: 1.5px solid #27debf;
+  }
+
+  div div{
+    display: none;
+  }
+
   ${media.greaterThan("medium")`
     flex-direction: row;
   `}
@@ -83,7 +99,6 @@ export const Call = styled.button`
   padding: 0;
   border-radius: 38px;
   font-size: 0.58rem;
-  font-family: GalanoGrotesque;
   font-weight: 500;
   width: 6rem;
   color: #27debf;
