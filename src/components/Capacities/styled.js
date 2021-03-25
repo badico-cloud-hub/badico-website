@@ -3,7 +3,6 @@ import media from "styled-media-query"
 
 export const CapacitiesWrapper = styled.div`
   margin: 6rem 2rem;
-  font-family: GalanoGrotesque;
 
   ${media.greaterThan("760px")`
   margin: 5rem 3rem 4rem 3rem;

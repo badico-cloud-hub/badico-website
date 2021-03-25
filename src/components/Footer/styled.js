@@ -66,7 +66,6 @@ export const Social = styled.div`
   h1 {
     text-align: center;
     font-size: .9rem;
-    font-family: "GalanoGrotesque";
     font-weight: 600;
     
   }
@@ -113,7 +112,6 @@ export const Contact = styled.div`
   width: 310px;
   margin: 0 1rem 1rem 1rem;
   font-size: 0.7rem;
-  font-family: GalanoGrotesque;
   font-weight: 300;
   color: #e5e5e5;
 
@@ -149,7 +147,6 @@ export const Mail = styled.div`
 `
 export const Nav = styled.nav`
   display: none;
-  font-family: GalanoGrotesque;
   font-weight: 300;
 
   ul {
@@ -182,7 +179,6 @@ export const Nav = styled.nav`
 `
 
 export const Copy = styled.div`
-  font-family: GalanoGrotesque;
   font-weight: 500;
   font-size: 0.6rem;
   margin: 1rem 0 0.5rem 0;

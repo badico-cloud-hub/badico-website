@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const ContentWrapper = styled.div`
-  font-family: GalanoGrotesque;
 
   ${media.greaterThan("760px")`
   padding-top: 3rem;

@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export default styled.button`
-  font-family: GalanoGrotesque;
   font-size: .8rem;
   color: #000;
   border: none;
@@ -37,7 +36,6 @@ export default styled.button`
   margin-top: 0.7rem;
   border-radius: 38px;
   font-size: 0.58rem;
-  font-family: GalanoGrotesque;
   font-weight: 500;
   width: 6rem;
   color: #27debf;

@@ -91,7 +91,6 @@ export const Container = styled.div`
   `}
 `
 export const Content = styled.p`
-  font-family: GalanoGrotesque;
   font-size: 0.7rem;
   margin: 0.3rem;
 

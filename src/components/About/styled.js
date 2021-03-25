@@ -3,7 +3,6 @@ import media from "styled-media-query"
 
 export const AboutUs = styled.div`
   background: #ffffff;
-  font-family: GalanoGrotesque;
   margin: 2rem;
   overflow: hidden;
 
