@@ -4,10 +4,11 @@ import media from "styled-media-query"
 export const HeroWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  background: #02293f;
+  background: #0E273B 0% 0% no-repeat padding-box;
+  opacity: 1;
   z-index: 1;
   position: relative;
 
@@ -57,86 +58,14 @@ ${media.greaterThan("1400px")`
 `
 
 export const Img = styled.div`
-  width: 70%;
-  align-self: flex-end;
+  width: 312px;
   margin: 0;
   z-index: 2;
   position: absolute;
+  top: 280px;
   right: 8%;
-  top: 50%;
 
-  ${media.greaterThan("400px")`
-      min-width: 200px;
-      width: 65%;
-      display: inline;
-      position: absolute;
-      top: 45%;
-      right: 10%;
-  `}
-
-  ${media.greaterThan("510px")`
-        min-width: 200px;
-        width: 70%;
-        display: inline;
-        position: absolute;
-        top: 35%;
-        right: 10%;
-        z-index: 2;
-  `}
-
-  ${media.greaterThan("600px")`
-      min-width: 200px;
-      width: 65%;
-      display: inline;
-      position: absolute;
-      top: 30%;
-      right: 10%;
-      z-index: 2;
-  `}
-
-  ${media.greaterThan("700px")`
-      min-width: 200px;
-      max-width: 60%;
-      display: inline;
-      position: absolute;
-      top: 30%;
-      right: 10%;
-      z-index: 2;
-  `}
-
-  ${media.greaterThan("768px")`
-      width: 820px;
-      top: 0%;
-      right: 5%;
-  `}
-
-
-
-  ${media.greaterThan("850px")`{
-      width: 55%;
-  `}
-
-  ${media.greaterThan("940px")`
-    width: 50%;
-`}
-  ${media.greaterThan("1070px")`
-    width: 55%;
-`}
-
-${media.greaterThan("1400px")`
-    width: 50%;
-`}
-
-${media.greaterThan("1500px")`
-    width: 820px;
-
-`}
-
-${media.greaterThan("2200px")`
-    right: 15%;
-
-`}
-
+  
 `
 
 export const ImgBall = styled.div`
