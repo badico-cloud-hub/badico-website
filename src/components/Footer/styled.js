@@ -6,7 +6,8 @@ export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #02293f;
+  background: #0E273B 0% 0% no-repeat padding-box;
+  opacity: 1;
   color: #ffffff;
   height: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -146,7 +147,7 @@ export const Mail = styled.div`
     margin: 0 1rem;
   }
 
-  p:last-child{
+  p:last-child {
     margin-top: 0.5rem;
   }
 `
@@ -248,4 +249,4 @@ export const InstagramIcon = styled(Icons.InstagramAlt)`
   &:hover {
     color: gray;
   }
-  `
+`
