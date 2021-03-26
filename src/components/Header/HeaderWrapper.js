@@ -10,9 +10,13 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   z-index: 3;
 
-  .logo {
+  .logo{
     margin: 2rem 0 1rem 2rem;
     width: 150px;
+  }
+
+  .logo g text tspan{
+    font-family: 'Clarika' !important;
   }
 
   .back {
