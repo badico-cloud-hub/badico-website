@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const CardWrapper = styled.div`
   width: 44%;
-  height: 135px;
+  height: 164px;
   border: 4px solid #27debf;
   background-color: transparent;
   border-radius: 14px;
@@ -91,7 +91,7 @@ export const Container = styled.div`
   `}
 `
 export const Content = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   margin: 0.3rem;
 
   ${media.greaterThan("450px")`
