@@ -10,6 +10,7 @@ module.exports = {
       twitter: "https://twitter.com/",
       youtube: "https://www.youtube.com/",
       linkedin: "https://www.linkedin.com/company/badico/",
+      instagram: "https://www.instagram.com/badicocloud/"
     },
   },
   plugins: [
