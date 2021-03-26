@@ -5,14 +5,18 @@ export const HeaderWrapper = styled.div`
   background: #0E273B 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
+  justify-content: center;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 3;
 
   .logo{
-    margin: 2rem 0 1rem 2rem;
+    margin: 2rem 0 0 0;
     width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .logo g text tspan{
