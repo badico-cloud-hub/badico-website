@@ -8,17 +8,18 @@ export const AboutUs = styled.div`
 
   h1 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #02293F;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   h2 {
     text-transform: uppercase;
     color: #27DEBF;
-    width: 50%;
+    width: 35%;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.0625rem;
     text-align: center;
     font-weight: 600;
     margin: 0 auto 2rem auto;
@@ -36,12 +37,6 @@ export const AboutUs = styled.div`
     top: 100%;
     margin-top: 0.5rem;
     opacity: 0.1;
-  }
-
-  p {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: #151d41;
   }
 
   ${media.greaterThan("768px")`
@@ -85,4 +80,10 @@ export const AboutUs = styled.div`
     ${media.greaterThan("1200px")`
     padding: 3rem;
     `}
+`
+export const Text = styled.p`
+  font-weight: 500;
+  font-size: 0.875rem;
+  width: ${props => props.width};
+  color: #151d41;
 `
