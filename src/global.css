@@ -100,17 +100,17 @@ nav,
 section {
   display: block;
 }
-html{
+*{
   font-family: 'Roboto';
 }
 body {
   line-height: 1;
 }
 
-/*@font-face {
+@font-face {
     font-family: 'Clarika';
-    src: url('../public/static/fonts/Clarika/The-Refinery-Clarika-Geo-Regular.woff') format('woff');
+    src: url('../public/static/fonts/Clarika/The-Refinery-Clarika-Geo-Regular.otf');
 
     font-weight: 300;
     font-style: normal;
-}*/
+}
