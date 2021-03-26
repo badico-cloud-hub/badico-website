@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const AboutUs = styled.div`
   background: #ffffff;
-  margin: 2rem;
+  margin: 7rem 2rem 2rem 2rem;
   overflow: hidden;
 
   h1 {
