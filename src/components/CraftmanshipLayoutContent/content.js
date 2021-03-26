@@ -62,11 +62,13 @@ export const ContentWrapper = styled.div`
 `
 
 export const Content = styled.h2`    
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     line-height: 1.6rem;
-    font-weight: bold;
-    width: 96%;
+    font-weight: 600;
+    width: 100%;
     position: relative;
+    text-align: center;
+    margin: 0 auto;
   
   :after {
     content: "";
@@ -74,12 +76,12 @@ export const Content = styled.h2`
     border: solid 6px #27debf;
     opacity: 68%;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     display: inline-block;
     position: absolute;
-    left: -13px;
-    top: -22px;
+    left: -26px;
+    top: -40px;
     z-index: -1;
   }
 
