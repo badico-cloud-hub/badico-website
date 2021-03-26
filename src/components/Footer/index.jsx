@@ -8,7 +8,7 @@ const Footer = () => {
   const {
     site: {
       siteMetadata: {
-        socialMedia: { github, linkedin },
+        socialMedia: { github, linkedin, instagram },
         copyright,
       },
     },
@@ -19,6 +19,7 @@ const Footer = () => {
           socialMedia {
             github
             linkedin
+            instagram
           }
           copyright
         }
@@ -57,15 +58,20 @@ const Footer = () => {
                   <S.LinkedinIcon />
                 </a>
               </li>
+              <li>
+                <a href={instagram} target="_blank" rel="noreferrer">
+                  <S.InstagramIcon />
+                </a>
+              </li>
             </ul>
           </S.Social>
           <S.Contact>
             {/*<S.Adress>
-              <p>Rijnlaan 41A, 3522BC</p>
-              <p>Utrecht, Utrecht, NL</p>
+              <p>Europe Head Quarters</p>
+              <p>Rijnlaan 41A, 3522BC, Utrecht, Utrecht, NL</p>
             </S.Adress>*/}
             <S.Mail>
-              <p className="number">+55 11 941738544</p>
+              <p className="number">+55 11 941 738 544</p>
               <p className="email">lucas@badico.cloud</p>
             </S.Mail>
           </S.Contact>
