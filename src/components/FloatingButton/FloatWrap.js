@@ -167,6 +167,7 @@ const FloatWrap = styled.div`
 .call{
   top: 0;
   left: 0;
+  background-color: #fff;
 }
 
 .buttonsFilho button{
