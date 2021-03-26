@@ -5,14 +5,14 @@ export const HeaderWrapper = styled.div`
   background: #0E273B 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
-  justify-content: center;
   position: sticky;
   top: 0;
   width: 100%;
+  height: 100px;
   z-index: 3;
 
   .logo{
-    margin: 2rem 0 0 0;
+    margin: 1.1875rem 0 0 0;
     width: 150px;
     position: absolute;
     left: 50%;
@@ -21,6 +21,7 @@ export const HeaderWrapper = styled.div`
 
   .logo g text tspan{
     font-family: 'Clarika' !important;
+    font-size: 1.4375rem;
   }
 
   .back {
@@ -59,7 +60,6 @@ export const HeaderWrapper = styled.div`
     cursor: pointer;
     background: #0E273B 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding: 10px;
     font-size: 15px;
     color: white;
 
@@ -119,6 +119,12 @@ export const HeaderWrapper = styled.div`
       margin-bottom: 0;
     }
   }
+
+  ${media.greaterThan("768px")`
+    .open{
+      margin-left: 4.9375rem
+    }
+  `}
 
   ${media.greaterThan("1024px")`
   .open, .close {
