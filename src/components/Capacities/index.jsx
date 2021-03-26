@@ -44,12 +44,13 @@ const Capacities = () => {
             <Continuos className="img" />
             <p>Continuous integration and delivery</p>
           </Images>
-          <Images width='92%'>
+          <Images width='92%' >
             <Ux className="img" />
             <p>UX strategy</p>
           </Images>
         </Cards>
       </Container>
+      <div id="about"></div>
     </CapacitiesWrapper>
   )
 }
