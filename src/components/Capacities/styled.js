@@ -11,8 +11,15 @@ export const CapacitiesWrapper = styled.div`
 
 export const Cards = styled.div`
   display: flex;
+  justify-content: center;
+  width: 311px;
+  margin: 0 auto;
   flex-wrap: wrap;
   height: 100%;
+
+  ${media.greaterThan('768px')`
+  width: 600px;
+  `}
 `
 export const Images = styled.div`
   display: flex;
@@ -20,7 +27,7 @@ export const Images = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 50%;
+  width: 148px;
   margin-top: 1rem;
 
   p {
@@ -38,8 +45,8 @@ export const Images = styled.div`
     width: 30%;
   }
 
-  ${media.greaterThan("760px")`
-    width: 25%;
+  ${media.greaterThan("768px")`
+    width: 260px;
     margin-top: 2rem;
 
     .mobile {
@@ -48,8 +55,12 @@ export const Images = styled.div`
 
     p{
       height: 40%;
-      max-width: 210px;
+      width: 100%;
+      max-width: 250px;
       max-height: 60px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: ${props => props.pMarginTop};
     }
     .img {
       max-width: 160px;
@@ -73,7 +84,9 @@ export const Title = styled.h1`
   color: #02293f;
   position: relative;
   top: 40px;
-  ${media.greaterThan("940px")`
-    margin-bottom: 5rem;
+  ${media.greaterThan("768px")`
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 3.5625rem;
   `}
 `
