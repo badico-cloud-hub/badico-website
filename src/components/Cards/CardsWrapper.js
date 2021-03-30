@@ -5,44 +5,30 @@ export default styled.article`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 2rem auto; 
+  max-width: 450px;
   position: relative;
 
   div:nth-child(1),
   div:nth-child(3) {
-    margin-right: 2rem;
+    margin-right: 1.8rem;
   }
 
   div:nth-child(3),
   div:nth-child(4) {
     margin-top: 1.5rem;
   }
+  ${media.greaterThan("768px")`
+  max-width: 700px;
 
-  ${media.greaterThan("450px")`
-    margin: 1rem;
-  `}
-  ${media.greaterThan("971px")`
-  div:nth-child(2){
-    margin-right: 2rem;
+  div:nth-child(1),
+  div:nth-child(3) {
+    margin-right: 3.35rem;
+  }
 
-  }
-  
-  div:nth-child(3){
-    margin-top: 0;
-    margin-right: 0;
-  }
+  div:nth-child(3),
   div:nth-child(4) {
-    margin-top: 1.5rem;
-  }
-  `}
-
-  ${media.greaterThan("1000px")`
-  div:nth-child(3){
-    margin-right: 2rem;
-  }
-
-  div:nth-child(4) {
-    margin-top: 0;
+    margin-top: 3.4375rem;
   }
   `}
 
