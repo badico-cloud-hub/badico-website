@@ -9,7 +9,7 @@ const HeroLayout = () => {
   return (
     <HeroWrapper>
       <Container>
-        <HeroLayoutContent className="content" />
+      <HeroLayoutContent className="content" />
         <Img>
           <HeroImg className="heroImg"/>
         </Img>

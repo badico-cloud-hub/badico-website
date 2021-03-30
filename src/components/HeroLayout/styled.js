@@ -7,41 +7,13 @@ export const HeroWrapper = styled.div`
   height: 600px;
   display: flex;
   flex-direction: column;
-  background: #0E273B 0% 0% no-repeat padding-box;
   opacity: 1;
   z-index: 1;
   position: relative;
-
-  ${media.greaterThan("400px")`
-    height: 550px;
-    flex-direction: row;
-    margin-right: 5%;
-    overflow: hidden;
-    position: relative;
-
-    .imgBallWrapper{
-      z-index: 1;
-      width: 20%;
-      position: absolute;
-      top: 100px;
-      right: -100px;
-    }
-
-    .ball{
-      width: 100%;
-      height: 100%;
-    }
-  `}
-
-  ${media.greaterThan("510px")`
-    height: 550px;
-  `}
-  ${media.greaterThan("600px")`
-    height: 550px;
-  `}
+  top: -100px;
 
   ${media.greaterThan("768px")`
-  height: 500px;
+    height: 810px;
   `}
 
   ${media.greaterThan("1070px")`
@@ -62,10 +34,14 @@ export const Img = styled.div`
   margin: 0;
   z-index: 2;
   position: absolute;
-  top: 280px;
+  top: 410px;
   right: 8%;
 
-  
+  ${media.greaterThan("768px")`
+    width: 536px;
+    top: 380px;
+    right: 2%;
+  `}  
 `
 
 export const ImgBall = styled.div`
@@ -74,44 +50,8 @@ export const ImgBall = styled.div`
   z-index: 0;
   width: 1px;
   overflow: hidden;
+  display: none;
 
-  ${media.greaterThan("400px")`
-      z-index: 1;
-      width: 20%;
-      position: absolute;
-      top: 100px;
-      right: -100px;
-
-    .ball{
-      width: 100%;
-      height: 100%;
-    }
-  `}
-
-  ${media.greaterThan("510px")`
-      z-index: 1;
-      width: 15%;
-      position: absolute;
-      top: 100px;
-      right: -100px;
-  `}
-
-  ${media.greaterThan("600px")`
-      z-index: 1;
-      width: 15%;
-      position: absolute;
-      top: 100px;
-      right: -130px;
-    }
-  `}
-
-  ${media.greaterThan("700px")`
-      z-index: 1;
-      width: 15%;
-      position: absolute;
-      top: 100px;
-      right: -130px;
-  `}
 
   ${media.greaterThan("768px")`
       width: 20%;
