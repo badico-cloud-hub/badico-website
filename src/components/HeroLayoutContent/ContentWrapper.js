@@ -5,10 +5,16 @@ export const ContentWrapper = styled.div`
   color: #fff;
   display: flex;
   flex-direction: column;
+  margin: 2rem 0 0 2.3125rem;
 
-  ${media.greaterThan("medium")`
-      width: 40%;
-      margin-left: 2rem;
+  .bgMobile{
+    position: absolute;
+    left: 0;
+  }
+
+  ${media.greaterThan("768px")`
+      width: 60%;
+      margin: 3rem 0 0 4.9375rem;
     `}
 
   ${media.greaterThan("1024px")`
@@ -24,44 +30,33 @@ export const ContentWrapper = styled.div`
   `}
 `
 
-export const Title = styled.h1`
-  margin-top: 3.5rem;
-  margin-left: 2rem;
+export const Text = styled.div`
+width: 100%;
+margin-top: 100px;
+z-index: 999;
+h1{
   -webkit-font-smoothing: antialiased;
   font-size: 2.125rem;
   font-weight: 400;
-  width: 76%;
 
-  ${media.greaterThan("medium")`
-    font-size: 2rem;
-    margin-left: 0;
-`}
-
-${media.greaterThan("1024px")`
-    font-size: 2.5rem;
-`}
-
-${media.greaterThan("huge")`
-    font-size: 3.2rem;
-  `}
-`
-
-export const Text = styled.p`
-  margin: 0 2rem;
+}
+  
+p{
+  margin: 1.5rem 0 0 0;
   font-size: 1rem;
   font-weight: 400;
 
-  ${media.greaterThan("medium")`
-    margin: 2rem 0;
-  `}
+}
 
-  ${media.greaterThan("1024px")`
-    font-size: 1rem;
-`}
+${media.greaterThan("768px")`
+h1{
+  font-size: 3rem;
+}
 
-${media.greaterThan("huge")`
-    font-size: 1.5rem;
-
+p{
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
 `}
 `
 
@@ -72,9 +67,10 @@ export const Buttons = styled.div`
   div button{
     width: 8.71875rem;
     height: 2.351875rem;
+    font-size: 0.875rem;
     position: relative;
     top: 20px;
-    left: 32px;
+    left: 0;
     border-radius: 20px;
     padding: 0;
     background-color: transparent;
@@ -86,8 +82,16 @@ export const Buttons = styled.div`
     display: none;
   }
 
-  ${media.greaterThan("medium")`
+  ${media.greaterThan("768px")`
     flex-direction: row;
+
+    div button{
+      left: 0;
+      width: 233px;
+      height: 63px;
+      border-radius: 30px;
+      font-size: 1.25rem;
+    }
   `}
 `
 
@@ -132,7 +136,7 @@ export const Call = styled.button`
     outline: none;
   }
 
-  ${media.greaterThan("medium")`
+  ${media.greaterThan("768px")`
     width: 7rem;
     height: 1.8rem;
     font-size: .7rem;
