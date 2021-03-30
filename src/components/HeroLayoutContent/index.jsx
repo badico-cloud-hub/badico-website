@@ -1,16 +1,17 @@
 import React from "react"
-import { ContentWrapper, Title, Text, Buttons, Call } from "./ContentWrapper"
+import { ContentWrapper, Text, Buttons, Call } from "./ContentWrapper"
 //import Calendly from "../Calendly"
 import Typeform from "../Typeform/index"
+import BgMobile from "../../images/bgMobile.svg"
 
 const HeroLayoutContent = () => {
   return (
     <ContentWrapper>
-      <div>
-        <Title>IT department Headache-free for startups</Title>
-        <Text>We are your IT department</Text>
-      </div>
-
+      <BgMobile className="bgMobile"/>
+      <Text>
+        <h1>IT department Headache-free for startups</h1>
+        <p>We are your IT department</p>
+      </Text>
       <Buttons>
         <Typeform className="contact"/>
         {/*<Call>
