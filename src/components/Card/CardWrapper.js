@@ -2,53 +2,21 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const CardWrapper = styled.div`
-  width: 44%;
-  height: 164px;
+  width: 133px;
+  height: 165px;
   border: 4px solid #27debf;
   background-color: transparent;
   border-radius: 14px;
   padding: 0.3rem;
   position: relative;
 
-  ${media.greaterThan("450px")`
-  width: 45%;
-  height: 135px;
+  ${media.greaterThan('768px')`
+  width: 262.4px;
+  height: 262.38px;
+  padding: 0.8rem;
+
   `}
 
-  ${media.greaterThan("600px")`
-  height: 160px;
-  `}
-
-  ${media.greaterThan("760px")`
-    width: 40%;
-  `}
-
-  ${media.greaterThan("971px")`
-    width: 25%;
-  `}
-
-  ${media.greaterThan("1000px")`
-    width: 20%;
-  `}
-
-  ${media.greaterThan("1024px")`
-    width: 21%;
-    height: 170px;
-  `}
-
-  ${media.greaterThan("1350px")`
-    height: 200px;
-  `}
-
-  ${media.greaterThan("1440px")`
-  width: 19%;
-  height: 210px;
-  `}
-
-  ${media.greaterThan("1580px")`
-  width: 17%;
-  height: 210px;
-  `}
 `
 
 export const Container = styled.div`
@@ -70,56 +38,22 @@ export const Container = styled.div`
     left: -9%;
   }
 
-  ${media.greaterThan("450px")`
-    height: 100%;
-  `}
-
-  ${media.greaterThan("500px")`
-  :after{
-    left: -6%;
-    width: 105%;
-    height: 106%;
+  ${media.greaterThan('768px')`
+  :after {
+    width: 103%;
+    height: 105%;
+    position: absolute;
+    top: 1%;
+    left: -15px;
   }
   `}
 
-  ${media.greaterThan("600px")`
-    left: -5%;
-    padding-top: .6rem;
-    padding-left: .6rem;
-    padding-right: .3rem;
-
-  `}
 `
 export const Content = styled.p`
   font-size: 0.875rem;
   margin: 0.3rem;
 
-  ${media.greaterThan("450px")`
-    font-size: 0.9rem;
-  `}
-
-  ${media.greaterThan("500px")`
-    font-size: 1rem;
-  `}
-
-  ${media.greaterThan("600px")`
-    font-size: 1.17rem;
-  `}
-
-  ${media.greaterThan("660px")`
-    font-size: 1.1rem;
-    margin: 0.6rem;
-  `}
-
-  ${media.greaterThan("1000px")`
-    font-size: 0.9rem;
-  `}
-
-  ${media.greaterThan("1024px")`
-    font-size: 1rem;
-  `}
-
-  ${media.greaterThan("1350px")`
-    font-size: 1.25rem;
+  ${media.greaterThan('768px')`
+  font-size: 1rem;
   `}
 `
