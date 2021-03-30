@@ -10,6 +10,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   height: 100px;
   z-index: 3;
+  border-radius: 0px 0px 25px 25px;
 
   .logo{
     margin: 1.1875rem 0 0 0;
@@ -122,6 +123,7 @@ export const HeaderWrapper = styled.div`
 
   ${media.greaterThan("768px")`
     .open{
+      padding: 0;
       margin-left: 4.9375rem
     }
   `}
