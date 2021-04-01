@@ -14,7 +14,7 @@ const Capacities = () => {
   return (
     <CapacitiesWrapper>
       <Container>
-        <Title>Capacities</Title>
+        <Title id="capacities">Capacities</Title>
         <Cards>
           <Images pMarginTop='10px' width='92%'>
             <Mobile className="img mobile" />
