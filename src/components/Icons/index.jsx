@@ -4,6 +4,7 @@ import {
   Twitter,
   Youtube,
   LinkedinSquare,
+  InstagramAlt
 } from "@styled-icons/boxicons-logos"
 
 const Icons = {
@@ -12,6 +13,7 @@ const Icons = {
   Twitter,
   Youtube,
   LinkedinSquare,
+  InstagramAlt,
 }
 
 export default Icons

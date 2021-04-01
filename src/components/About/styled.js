@@ -3,23 +3,22 @@ import media from "styled-media-query"
 
 export const AboutUs = styled.div`
   background: #ffffff;
-  font-family: GalanoGrotesque;
-  margin: 2rem;
+  margin: 7rem 2rem 2rem 2rem;
   overflow: hidden;
 
   h1 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    /* font-weight: 600; */
     color: #02293F;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   h2 {
-    text-transform: uppercase;
     color: #27DEBF;
-    width: 50%;
+    width: 35%;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: 600;
     margin: 0 auto 2rem auto;
@@ -28,21 +27,18 @@ export const AboutUs = styled.div`
   h2:after {
     content: "";
     display: inline-block;
-    background: #0FBF61;
+    background: rgba(15, 191, 97, 0.1);
     width: 100%;
     height: 0.5rem;
     border-radius: 5px;
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 0.5rem;
-    opacity: 0.1;
+    margin-top: 0.9rem;
   }
 
-  p {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: #151d41;
+  .text-about{
+    letter-spacing: -0.5px;
   }
 
   ${media.greaterThan("768px")`
@@ -53,20 +49,20 @@ export const AboutUs = styled.div`
   h2 {
     text-align: left;
     margin-left: 1.5rem;
-    margin-bottom: 2.2rem;
-
+    margin-bottom: 2.8rem;
   }
 
   h2:after {
-    width: 7.8rem;
+    width: 9.5rem;
+    height: 0.7rem;
     left: 0;
     top: 100%;
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #151d41;
   }
     `}
@@ -86,4 +82,10 @@ export const AboutUs = styled.div`
     ${media.greaterThan("1200px")`
     padding: 3rem;
     `}
+`
+export const Text = styled.p`
+  font-weight: 500;
+  font-size: 0.875rem;
+  width: ${props => props.width};
+  color: #151d41;
 `

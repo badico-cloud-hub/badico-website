@@ -2,192 +2,204 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const HeroWrapper = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  height: 500px;
   display: flex;
-  flex-direction: column;
-  background: #02293f;
-  z-index: 1;
+  align-items: center;
+  justify-content: center;
+
   position: relative;
 
-  ${media.greaterThan("400px")`
-    height: 550px;
-    flex-direction: row;
-    margin-right: 5%;
-    overflow: hidden;
-    position: relative;
-
-    .imgBallWrapper{
-      z-index: 1;
-      width: 20%;
-      position: absolute;
-      top: 100px;
-      right: -100px;
-    }
-
-    .ball{
-      width: 100%;
-      height: 100%;
-    }
-  `}
-
-  ${media.greaterThan("510px")`
-    height: 550px;
-  `}
-  ${media.greaterThan("600px")`
-    height: 550px;
-  `}
-
-  ${media.greaterThan("768px")`
-  height: 500px;
-  `}
-
-  ${media.greaterThan("1070px")`
+  width: 100%;
   height: 600px;
-`}
 
-${media.greaterThan("1270px")`
-  height: 650px;
-`}
+  margin-top: 80px;
 
-${media.greaterThan("1400px")`
-  height: 750px;
-`}
-`
+  .bgWave {
+    position: absolute;
+    top: -300px;
+    z-index: -1;
+  }
 
-export const Img = styled.div`
-  width: 70%;
-  align-self: flex-end;
-  margin: 0;
-  z-index: 2;
-  position: absolute;
-  right: 8%;
-  top: 50%;
+  svg {
+    width: 100%;
+  }
 
-  ${media.greaterThan("400px")`
-      min-width: 200px;
-      width: 65%;
-      display: inline;
-      position: absolute;
-      top: 45%;
-      right: 10%;
-  `}
+  .heroImg {
+    width: 35%;
+    height: 50vh;
+    margin-top: 30px;
+    margin-right: 2%;
+  }
 
-  ${media.greaterThan("510px")`
-        min-width: 200px;
-        width: 70%;
-        display: inline;
-        position: absolute;
-        top: 35%;
-        right: 10%;
-        z-index: 2;
-  `}
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    height: 560px;
+    background-color: #0e273b;
 
-  ${media.greaterThan("600px")`
-      min-width: 200px;
-      width: 65%;
-      display: inline;
-      position: absolute;
-      top: 30%;
-      right: 10%;
-      z-index: 2;
-  `}
+    .bgWave {
+      top: 250px;
+    }
 
-  ${media.greaterThan("700px")`
-      min-width: 200px;
-      max-width: 60%;
-      display: inline;
-      position: absolute;
-      top: 30%;
-      right: 10%;
-      z-index: 2;
-  `}
-
-  ${media.greaterThan("768px")`
-      width: 820px;
-      top: 0%;
-      right: 5%;
-  `}
-
-
-
-  ${media.greaterThan("850px")`{
+    .heroImg {
       width: 55%;
-  `}
+      height: 450px;
+      margin-top: -90px;
+      margin-left: 460px;
+      margin-right: 15%;
+    }
+  }
 
-  ${media.greaterThan("940px")`
-    width: 50%;
-`}
-  ${media.greaterThan("1070px")`
-    width: 55%;
-`}
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 560px;
+    background-color: #0e273b;
 
-${media.greaterThan("1400px")`
-    width: 50%;
-`}
+    .bgWave {
+      top: 250px;
+    }
 
-${media.greaterThan("1500px")`
-    width: 820px;
+    .heroImg {
+      width: 55%;
+      margin-top: -50px;
+      margin-left: 320px;
+    }
+  }
 
-`}
+  @media (max-width: 360px) {
+    flex-direction: column;
+    height: 400px;
+    background-color: #0e273b;
 
-${media.greaterThan("2200px")`
-    right: 15%;
+    .bgWave {
+      top: 330px;
+    }
 
-`}
+    .heroImg {
+      width: 70%;
+      height: 350px;
+      margin-top: 30px;
+      margin-left: 140px;
+    }
+  }
 
+  /* .ball{
+    width: 300px;
+    height: 300px;
+    right: -150px;
+    position: absolute;
+  } */
 `
+export const Info = styled.div`
+  width: 29%;
 
-export const ImgBall = styled.div`
-  position: absolute;
-  bottom: 100px;
-  z-index: 0;
-  width: 1px;
-  overflow: hidden;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-right: 14%;
 
-  ${media.greaterThan("400px")`
-      z-index: 1;
-      width: 20%;
-      position: absolute;
-      top: 100px;
-      right: -100px;
+  h1 {
+    font-size: 50px;
+  }
 
-    .ball{
-      width: 100%;
-      height: 100%;
+  @media (max-width: 1024px) {
+    margin-top: 290px;
+    margin-right: 440px;
+    width: 40%;
+
+    h1 {
+      font-size: 50px;
     }
-  `}
+  }
+  @media (max-width: 768px) {
+    margin-top: 210px;
+    margin-right: 300px;
+    width: 40%;
 
-  ${media.greaterThan("510px")`
-      z-index: 1;
-      width: 15%;
-      position: absolute;
-      top: 100px;
-      right: -100px;
-  `}
-
-  ${media.greaterThan("600px")`
-      z-index: 1;
-      width: 15%;
-      position: absolute;
-      top: 100px;
-      right: -130px;
+    h1 {
+      font-size: 40px;
     }
-  `}
+  }
 
-  ${media.greaterThan("700px")`
-      z-index: 1;
-      width: 15%;
-      position: absolute;
-      top: 100px;
-      right: -130px;
-  `}
+  @media (max-width: 360px) {
+    margin-top: 190px;
+    margin-right: 90px;
+    width: 60%;
 
-  ${media.greaterThan("768px")`
-      width: 20%;
-      position: absolute;
-      top: 15%;
-      right: -12%;
-  `}
+    h1 {
+      font-size: 30px;
+    }
+  }
+`
+export const Buttons = styled.div`
+  width: 100%;
+  margin-top: 25px;
+
+  .contact {
+    background-color: transparent;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border: 3px solid #27debf;
+    color: #27debf;
+  }
+
+  .call {
+    margin-left: 10px;
+
+    color: #0e273b;
+    font-weight: bold;
+    background-color: #27debf;
+
+    a {
+      color: #0e273b;
+      padding: 20px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+
+    .iconCalendar{
+      display: none;
+    }
+  }
+
+  @media (max-width: 1650px) and (min-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+
+    .call {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .contact {
+      width: 200px;
+      height: 50px;
+    }
+
+    .call {
+      display: none;
+    }
+  }
+  @media (max-width: 360px) {
+    .contact {
+      width: 200px;
+      height: 50px;
+    }
+
+    .call {
+      display: none;
+    }
+  }
+`
+export const Button = styled.button`
+  width: 234px;
+  height: 63px;
+
+  border: none;
+  border-radius: 30px;
+  :focus {
+    outline: none;
+  }
 `

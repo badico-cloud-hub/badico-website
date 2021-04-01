@@ -6,24 +6,31 @@ export const Container = styled.div`
   flex-direction: column;
   text-align: center;
   margin: 40px auto;
+  margin-top: 210px;
   max-width: 180px;
   box-sizing: border-box;
 
+  @media(min-width: 360px){
+    max-width: 384px;
+    margin-top: 210px;
+  }
+
   @media(min-width: 768px){
     max-width: 384px;
-    margin: 80px auto;
+    margin-top: 250px;
   }
 
   @media(min-width: 1024px){
     width: 100%;
     max-width: 870px;
-    margin: 99px auto;
+    margin: 120px auto;
+    margin-top: 330px;
   }
 
   @media(min-width: 1920px){
     width: 100%;
     max-width: 900px;
-    margin: 99px auto;
+    margin-top: 240px;
   }
 `;
 

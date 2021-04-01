@@ -2,8 +2,7 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const CapacitiesWrapper = styled.div`
-  margin: 6rem 2rem;
-  font-family: GalanoGrotesque;
+  margin: 4rem 2rem;
 
   ${media.greaterThan("760px")`
   margin: 5rem 3rem 4rem 3rem;
@@ -12,8 +11,15 @@ export const CapacitiesWrapper = styled.div`
 
 export const Cards = styled.div`
   display: flex;
+  justify-content: center;
+  width: 311px;
+  margin: 0 auto;
   flex-wrap: wrap;
   height: 100%;
+
+  ${media.greaterThan('768px')`
+  width: 600px;
+  `}
 `
 export const Images = styled.div`
   display: flex;
@@ -21,14 +27,14 @@ export const Images = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 50%;
+  width: 148px;
   margin-top: 1rem;
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
     margin: 0;
     height: 42px;
-    width: 90%;
+    width: ${props => props.width};
   }
 
   .img {
@@ -39,8 +45,8 @@ export const Images = styled.div`
     width: 30%;
   }
 
-  ${media.greaterThan("760px")`
-    width: 25%;
+  ${media.greaterThan("768px")`
+    width: 260px;
     margin-top: 2rem;
 
     .mobile {
@@ -49,8 +55,12 @@ export const Images = styled.div`
 
     p{
       height: 40%;
-      max-width: 210px;
+      width: 100%;
+      max-width: 250px;
       max-height: 60px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: ${props => props.pMarginTop};
     }
     .img {
       max-width: 160px;
@@ -68,10 +78,15 @@ export const Images = styled.div`
 `
 
 export const Title = styled.h1`
-  font-weight: 500;
-  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
   color: #02293f;
-  ${media.greaterThan("940px")`
-    margin-bottom: 5rem;
+  position: relative;
+  top: 40px;
+  ${media.greaterThan("768px")`
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 3.5625rem;
   `}
 `

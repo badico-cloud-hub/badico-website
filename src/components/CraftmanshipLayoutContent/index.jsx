@@ -6,8 +6,8 @@ const CraftmanshipLayoutContent = () => {
   return (
     <ContentWrapper>
       <Content>
-        We provide all the quality and infrastructure of a cutting-edge team to
-        our costumers
+        We deliver value every week to our clients. Value means code in
+        production ready.
       </Content>
     </ContentWrapper>
   )

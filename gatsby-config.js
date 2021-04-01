@@ -10,6 +10,7 @@ module.exports = {
       twitter: "https://twitter.com/",
       youtube: "https://www.youtube.com/",
       linkedin: "https://www.linkedin.com/company/badico/",
+      instagram: "https://www.instagram.com/badicocloud/"
     },
   },
   plugins: [
@@ -35,6 +36,15 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto\:400, 500, 700`, // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

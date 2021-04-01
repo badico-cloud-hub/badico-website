@@ -100,59 +100,17 @@ nav,
 section {
   display: block;
 }
+*{
+  font-family: 'Roboto';
+}
 body {
   line-height: 1;
 }
 
 @font-face {
-  font-family: "GalanoGrotesqueAlt";
-  src: url("../public/static/fonts/GalanoGrotesque/GalanoGrotesqueAlt-Medium.woff")
-    format("woff");
-
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GalanoGrotesque";
-  src: url("../public/static/fonts/GalanoGrotesque/GalanoGrotesque-SemiBold.woff")
-    format("woff");
-
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GalanoGrotesque";
-  src: url("../public/static/fonts/GalanoGrotesque/GalanoGrotesque-Medium.woff")
-    format("woff");
-
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GalanoGrotesque";
-  src: url("../public/static/fonts/GalanoGrotesque/GalanoGrotesque-Light.woff")
-    format("woff");
-
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GalanoGrotesque";
-  src: url("../public/static/fonts/GalanoGrotesque/GalanoGrotesque-Bold.woff")
-    format("woff");
-
-  font-weight: bold;
-  font-style: normal;
-}
-
-/*@font-face {
     font-family: 'Clarika';
-    src: url('../public/static/fonts/Clarika/The-Refinery-Clarika-Geo-Regular.woff') format('woff');
+    src: url('../public/static/fonts/Clarika/The-Refinery-Clarika-Geo-Regular.otf');
 
     font-weight: 300;
     font-style: normal;
-}*/
+}

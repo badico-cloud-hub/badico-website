@@ -6,7 +6,8 @@ export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #02293f;
+  background: #0E273B 0% 0% no-repeat padding-box;
+  opacity: 1;
   color: #ffffff;
   height: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -60,14 +61,12 @@ export const FooterWrapper = styled.div`
 export const Social = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
 
   h1 {
     text-align: center;
-    font-size: .9rem;
-    font-family: "GalanoGrotesque";
-    font-weight: 600;
+    font-size: 0.875rem;
+    font-weight: 400;
     
   }
 
@@ -112,10 +111,8 @@ export const Contact = styled.div`
   flex-direction: column;
   width: 310px;
   margin: 0 1rem 1rem 1rem;
-  font-size: 0.7rem;
-  font-family: GalanoGrotesque;
   font-weight: 300;
-  color: #e5e5e5;
+  color: #CACCCF;
 
   ${media.greaterThan("760px")`
   margin: 3rem 1.5rem 0 1.5rem;
@@ -134,6 +131,7 @@ export const Contact = styled.div`
 export const Adress = styled.div`
   margin-bottom: 0.7rem;
   display: inline;
+  font-size: 0.75rem;
 
   p {
     margin: 0 1rem;
@@ -142,14 +140,19 @@ export const Adress = styled.div`
 export const Mail = styled.div`
   margin-bottom: 0.5rem;
   display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
 
   p {
     margin: 0 1rem;
   }
+
+  p:last-child {
+    margin-top: 0.5rem;
+  }
 `
 export const Nav = styled.nav`
   display: none;
-  font-family: GalanoGrotesque;
   font-weight: 300;
 
   ul {
@@ -182,11 +185,11 @@ export const Nav = styled.nav`
 `
 
 export const Copy = styled.div`
-  font-family: GalanoGrotesque;
   font-weight: 500;
-  font-size: 0.6rem;
+  font-size: 0.625rem;
   margin: 1rem 0 0.5rem 0;
   text-align: center;
+  text-transform: uppercase;
 
   ${media.greaterThan("760px")`
   font-size: 0.7rem;
@@ -233,6 +236,14 @@ export const YoutubeIcon = styled(Icons.Youtube)`
 `
 export const LinkedinIcon = styled(Icons.LinkedinSquare)`
   margin-right: 10px;
+  width: 1.6rem;
+  color: white;
+  &:hover {
+    color: gray;
+  }
+`
+
+export const InstagramIcon = styled(Icons.InstagramAlt)`
   width: 1.6rem;
   color: white;
   &:hover {

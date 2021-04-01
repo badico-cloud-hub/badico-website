@@ -45,7 +45,6 @@ const NewFooter = () => {
           style={{
             textAlign: "center",
             fontSize: "1rem",
-            fontFamily: "GalanoGrotesque",
             fontWeight: "600",
           }}
         >
@@ -136,7 +135,6 @@ const NewFooter = () => {
           widht: "100%",
           margin: "2rem 0rem",
           fontSize: "0.7rem",
-          fontFamily: "GalanoGrotesque",
           fontWeight: "300",
           marginBottom: "1rem",
           color: "#e5e5e5",
@@ -163,7 +161,6 @@ const NewFooter = () => {
       />
       <div
         style={{
-          fontFamily: "GalanoGrotesque",
           fontWeight: "500",
           fontSize: "0.6rem",
           margin: "0.5rem 0rem",
@@ -174,7 +171,6 @@ const NewFooter = () => {
       <nav
         style={{
           display: "none",
-          fontFamily: "GalanoGrotesque",
           fontWeight: "300",
         }}
       >

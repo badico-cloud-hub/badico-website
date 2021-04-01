@@ -2,7 +2,7 @@ import React from "react"
 import FloatWrap from "./FloatWrap"
 import Calendly from "../Calendly"
 import Typeform from "../Typeform/index"
-import { Chat } from "../../images/components/Chat/index"
+import Chat from "../../images/chat.svg"
 import Calendar from "../../images/calendar.svg"
 import Email from "../../images/email.svg"
 

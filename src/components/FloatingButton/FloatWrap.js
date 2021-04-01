@@ -118,7 +118,6 @@ const FloatWrap = styled.div`
   }
 
   .call a{
-    font-family: GalanoGrotesque;
     color: #000;
     text-decoration: none;
   }
@@ -168,6 +167,7 @@ const FloatWrap = styled.div`
 .call{
   top: 0;
   left: 0;
+  background-color: #fff;
 }
 
 .buttonsFilho button{
@@ -181,7 +181,6 @@ const FloatWrap = styled.div`
 
 .buttonsFilho button a{
   color: #FFF;
-  font-family: GalanoGrotesque;
   text-decoration: none;
   font-size: .8rem;
 }
