@@ -17,20 +17,12 @@ class Typeform extends Component {
         },
       }
     )
-    document.getElementById("bt-popup").addEventListener( "click", function () {
+    document.getElementById("bt-popup").addEventListener("click", function () {
       popup1.open()
     })
   }
   render() {
-    return (
-      <div id="bt-popup">
-        <TypeformButton >Contact us</TypeformButton>
-        <div className="iconEmail">
-            <Email />
-        </div>
-      </div>
-      
-    )
+    return <div id="bt-popup">Contact us</div>
   }
 }
 
