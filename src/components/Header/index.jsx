@@ -6,21 +6,9 @@ import { HeaderWrapper } from "./HeaderWrapper"
 // import MenuIcon from "../../images/menu.svg"
 // import Close from "../../images/close.svg"
 // import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
+import Typeform from "../Typeform/index"
 
 const Header = () => {
-  const contactForm = typeformEmbed.makePopup(
-    "https://ask767898.typeform.com/to/rRIqbEzo",
-    {
-      mode: "drawer_right",
-      autoClose: 3000,
-      hideHeaders: true,
-      hideFooters: true,
-      onSubmit: function () {
-        console.log("Typeform sucessfully submitted")
-      },
-    }
-  )
-
   return (
     <HeaderWrapper>
       <div className="header">
@@ -70,14 +58,7 @@ const Header = () => {
               <a href="#about">About Us</a>
             </li>
             <li>
-              <a
-                style={{ cursor: "pointer" }}
-                onClick={() => {
-                  contactForm.open()
-                }}
-              >
-                Contact
-              </a>
+              <Typeform />
             </li>
           </ul>
         </div>
