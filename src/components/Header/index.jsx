@@ -1,61 +1,87 @@
-import React, { useState } from "react"
+import React from "react"
 import Logobadico from "../../images/logo.svg"
-import Container from "../Container/index"
-import MenuIcon from "../../images/menu.svg"
-import Close from "../../images/close.svg"
+import * as typeformEmbed from "@typeform/embed"
 import { HeaderWrapper } from "./HeaderWrapper"
-import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
+// import Container from "../Container/index"
+// import MenuIcon from "../../images/menu.svg"
+// import Close from "../../images/close.svg"
+// import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
 
-const Header = () => {''
-  const [isOpen, setIsOpen] = useState(false)
+const Header = () => {
+  const contactForm = typeformEmbed.makePopup(
+    "https://ask767898.typeform.com/to/rRIqbEzo",
+    {
+      mode: "drawer_right",
+      autoClose: 3000,
+      hideHeaders: true,
+      hideFooters: true,
+      onSubmit: function () {
+        console.log("Typeform sucessfully submitted")
+      },
+    }
+  )
 
   return (
-    <HeaderWrapper isOpen={isOpen}>
-      <Container>
-        <div class="menu-drop">
-          <div className="back"></div>
-          <button
-            type="button"
-            className="open"
-            onClick={() => {
-              setIsOpen(true)
-            }}
-          >
-            <MenuRoundedIcon style={{fontSize: '38px'}}/>
-          </button>
-          <nav class="drop-content">
-            <ul>
-              {/*<li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Our Process</a>
-              </li>
-              <li>
-                <a href="#">Meet Our Time</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>*/}
-              <li>
-                <a href="#about">About us</a>
-              </li>
-            </ul>
-          </nav>
-          <button
-            className="close"
-            onClick={() => {
-              setIsOpen(false)
-            }}
-          >
-            <Close />
-          </button>
+    <HeaderWrapper>
+      <div className="header">
+        <div className="menu" />
+        <div className="menuOptions" />
+        <div className="menuOptionsMobile">
+          <a href="#">
+            <p>Home</p>
+          </a>
+          <hr />
+          <a href="#">
+            <p>Our Process</p>
+          </a>
+          <hr />
+          <a href="#">
+            <p>Meet Our Time</p>
+          </a>
+          <hr />
+          <a href="#">
+            <p>Portfolio</p>
+          </a>
+          <hr />
+          <a href="#">
+            <p>Blog</p>
+          </a>
+          <hr />
+          <a href="#">
+            <p>About Us</p>
+          </a>
         </div>
         <Logobadico className="logo" alt="Badico's logo" />
-      </Container>
+        <div className="options">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#capacities">Capacities</a>
+            </li>
+            <li>
+              <a href="#">Our Process</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  contactForm.open()
+                }}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </HeaderWrapper>
   )
 }
