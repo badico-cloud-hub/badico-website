@@ -6,6 +6,7 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2rem 0 0 2.3125rem;
+  background-color: blue;
 
   .bgMobile{
     position: absolute;
