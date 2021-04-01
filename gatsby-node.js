@@ -4,7 +4,11 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
       module: {
         rules: [
           {
-            test: /@typeform/,
+            test: /typeform/,
+            loader: "null-loader",
+          },
+          {
+            test: /material-ui/,
             loader: "null-loader",
           },
         ],
