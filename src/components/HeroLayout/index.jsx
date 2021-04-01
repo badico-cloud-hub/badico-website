@@ -4,6 +4,7 @@ import Bg from "../../images/bgDesktop.svg"
 import { HeroWrapper, Info, Buttons, Button } from "./styled"
 import { useStaticQuery, graphql } from "gatsby"
 import * as typeformEmbed from "@typeform/embed"
+import Typeform from "../Typeform/index"
 
 const HeroLayout = () => {
   const { img } = useStaticQuery(
@@ -19,18 +20,6 @@ const HeroLayout = () => {
       }
     `
   )
-  const contactForm = typeformEmbed.makePopup(
-    "https://ask767898.typeform.com/to/rRIqbEzo",
-    {
-      mode: "drawer_right",
-      autoClose: 3000,
-      hideHeaders: true,
-      hideFooters: true,
-      onSubmit: function () {
-        console.log("Typeform sucessfully submitted")
-      },
-    }
-  )
   return (
     <HeroWrapper>
       <Bg fill="#0e273b" className="bgWave" />
@@ -44,15 +33,12 @@ const HeroLayout = () => {
         </h1>
         <p>We are your IT department</p>
         <Buttons>
-          <Button
-            className="contact"
-            onClick={() => {
-              contactForm.open()
-            }}
-          >
-            Contact us
+          <Button className="contact">
+            <Typeform />
           </Button>
-          <Button className="call"><Calendly/></Button>
+          <Button className="call">
+            <Calendly />
+          </Button>
         </Buttons>
       </Info>
       <img
