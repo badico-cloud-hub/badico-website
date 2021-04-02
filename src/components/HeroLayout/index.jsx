@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Calendly from "../Calendly"
-import Bg from "../../images/bgDesktop.svg"
+import Bg from "../../images/bgDesktopL.svg"
 import { HeroWrapper, Info, Buttons, Button } from "./styled"
 import { useStaticQuery, graphql } from "gatsby"
 import * as typeformEmbed from "@typeform/embed"
