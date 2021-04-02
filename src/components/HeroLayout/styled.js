@@ -75,6 +75,15 @@ export const HeroWrapper = styled.div`
     }
   }
 
+  @media (max-width: 480px) {
+    .heroImg {
+      width: 45%;
+      height: 190px;
+      margin-top: 13%;
+      margin-left: 52%;
+    }
+  }
+
   @media (max-width: 360px) {
     flex-direction: column;
     height: 400px;
@@ -85,9 +94,9 @@ export const HeroWrapper = styled.div`
 
     .heroImg {
       width: 50%;
-      height: 350px;
-      margin-top: 30px;
-      margin-left: 140px;
+      height: 35%;
+      margin-top: 20%;
+      margin-left: 40%;
     }
   }
 
@@ -128,8 +137,12 @@ export const Info = styled.div`
     }
   }
 
+  @media (max-width: 480px) {
+    width: 56%;
+  }
+
   @media (max-width: 360px) {
-    margin-top: 19%;
+    margin-top: 40%;
     margin-right: 9%;
     width: 60%;
 
