@@ -5,7 +5,6 @@ export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 100px;
   position: fixed;
@@ -19,7 +18,7 @@ export const HeaderWrapper = styled.div`
     display: none;
   }
 
-  .menuOptions {
+  /* .menuOptions {
     display: none;
     position: absolute;
     right: -310px;
@@ -30,6 +29,10 @@ export const HeaderWrapper = styled.div`
     background-color: #0e273b;
 
     transition: all 0.4s ease-in-out;
+  } */
+
+  .logo {
+    margin-left: -39%;
   }
 
   .menuOptionsMobile {
@@ -50,12 +53,32 @@ export const HeaderWrapper = styled.div`
     }
   }
 
+  @media (max-width: 1920px) {
+    .logo {
+      margin-left: -37%;
+    }
+  }
+  @media (max-width: 1440px) {
+    .logo {
+      margin-left: -30%;
+    }
+  }
+  @media (max-width: 1220px) {
+    .logo {
+      margin-left: -23%;
+    }
+  }
+
   @media (max-width: 1024px) {
-    .menu:hover + .menuOptions {
+    /* .menu:hover + .menuOptions {
       display: none;
       right: 0;
       background-color: white;
       transition: all 0.4s ease-in-out;
+    } */
+
+    .menu:hover ~ .menuOptionsMobile {
+      top: 0px;
     }
 
     .menu {
@@ -96,14 +119,18 @@ export const HeaderWrapper = styled.div`
 
       background-color: white;
     }
+
+    .logo {
+      margin: 0;
+    }
   }
   @media (max-width: 360px) {
     .menu:hover ~ .menuOptionsMobile {
       top: 0px;
     }
-    .menu:hover + .menuOptions {
+    /* .menu:hover + .menuOptions {
       right: -310px;
-    }
+    } */
 
     .menu {
       display: block;
@@ -144,7 +171,7 @@ export const HeaderWrapper = styled.div`
       background-color: white;
     }
     .logo {
-      margin-left: 30px;
+      margin-left: 20%;
     }
   }
 
@@ -153,24 +180,41 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    width: 80%;
+    width: 100%;
     height: 100px;
+    max-width: 1920px;
 
     @media (max-width: 1024px) {
+      .options {
+        display: none;
+      }
       justify-content: center;
     }
   }
 
   .options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 13%;
     color: #fff;
+
+    @media (max-width: 1220px) {
+      margin-right: 8%;
+    }
 
     ul {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
     }
 
     @media (max-width: 1024px) {
       ul {
         display: none;
+        margin: 0px;
       }
     }
 

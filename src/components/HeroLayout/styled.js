@@ -62,7 +62,7 @@ export const HeroWrapper = styled.div`
 
     .heroImg {
       width: 55%;
-      margin-top: -50px;
+      margin-top: 0px;
       margin-left: 320px;
     }
   }
@@ -76,6 +76,8 @@ export const HeroWrapper = styled.div`
   }
 
   @media (max-width: 480px) {
+    background-color: #0e273b;
+    
     .heroImg {
       width: 45%;
       height: 190px;
@@ -128,7 +130,7 @@ export const Info = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-top: 21%;
+    margin-top: 30%;
     margin-right: 30%;
     width: 40%;
 
@@ -138,7 +140,8 @@ export const Info = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 56%;
+    width: 80%;
+    margin-right: 10%;
   }
 
   @media (max-width: 360px) {

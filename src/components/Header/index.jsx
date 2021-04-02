@@ -74,14 +74,14 @@ const Header = () => {
               <a href="#about">About Us</a>
             </li>
             <li>
-              <p
+              <li
                 style={{ cursor: "pointer" }}
                 onClick={() => {
                   Form.open()
                 }}
               >
                 Contact
-              </p>
+              </li>
             </li>
           </ul>
         </div>
