@@ -15,7 +15,7 @@ export const HeroWrapper = styled.div`
 
   .bgWave {
     position: absolute;
-    top: -300px;
+    margin-top: -65%;
     z-index: -1;
   }
 
@@ -29,14 +29,18 @@ export const HeroWrapper = styled.div`
     margin-top: 30px;
     margin-right: 2%;
   }
+  @media (max-width: 1200px) and (min-width: 1025px) {
+    .bgWave {
+      margin-top: -50%;
+    }
+  }
 
   @media (max-width: 1024px) {
     flex-direction: column;
     height: 560px;
-    background-color: #0e273b;
 
     .bgWave {
-      top: 250px;
+      margin-top: -15%;
     }
 
     .heroImg {
@@ -51,10 +55,9 @@ export const HeroWrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     height: 560px;
-    background-color: #0e273b;
 
     .bgWave {
-      top: 250px;
+      margin-top: -5%;
     }
 
     .heroImg {
@@ -64,20 +67,36 @@ export const HeroWrapper = styled.div`
     }
   }
 
-  @media (max-width: 360px) {
-    flex-direction: column;
-    height: 400px;
+  @media (max-width: 550px) {
     background-color: #0e273b;
 
     .bgWave {
-      top: 330px;
+      margin-top: 40%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heroImg {
+      width: 45%;
+      height: 190px;
+      margin-top: 13%;
+      margin-left: 52%;
+    }
+  }
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    height: 400px;
+
+    .bgWave {
+      margin-top: 55%;
     }
 
     .heroImg {
-      width: 70%;
-      height: 350px;
-      margin-top: 30px;
-      margin-left: 140px;
+      width: 50%;
+      height: 35%;
+      margin-top: 20%;
+      margin-left: 40%;
     }
   }
 
@@ -100,8 +119,8 @@ export const Info = styled.div`
   }
 
   @media (max-width: 1024px) {
-    margin-top: 290px;
-    margin-right: 440px;
+    margin-top: 29%;
+    margin-right: 44%;
     width: 40%;
 
     h1 {
@@ -109,8 +128,8 @@ export const Info = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-top: 210px;
-    margin-right: 300px;
+    margin-top: 21%;
+    margin-right: 30%;
     width: 40%;
 
     h1 {
@@ -118,9 +137,13 @@ export const Info = styled.div`
     }
   }
 
+  @media (max-width: 480px) {
+    width: 56%;
+  }
+
   @media (max-width: 360px) {
-    margin-top: 190px;
-    margin-right: 90px;
+    margin-top: 40%;
+    margin-right: 9%;
     width: 60%;
 
     h1 {
@@ -157,7 +180,7 @@ export const Buttons = styled.div`
       text-decoration: none;
     }
 
-    .iconCalendar{
+    .iconCalendar {
       display: none;
     }
   }

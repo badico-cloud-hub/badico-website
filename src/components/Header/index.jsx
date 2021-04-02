@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Logobadico from "../../images/logo.svg"
 import * as typeformEmbed from "@typeform/embed"
 import { HeaderWrapper } from "./HeaderWrapper"
@@ -9,6 +9,22 @@ import { HeaderWrapper } from "./HeaderWrapper"
 import Typeform from "../Typeform/index"
 
 const Header = () => {
+  const [Form, setForm] = useState(null)
+  useEffect(() => {
+    const contactForm = typeformEmbed.makePopup(
+      "https://ask767898.typeform.com/to/rRIqbEzo",
+      {
+        mode: "drawer_right",
+        autoClose: 3000,
+        hideHeaders: true,
+        hideFooters: true,
+        onSubmit: function () {
+          console.log("Typeform sucessfully submitted")
+        },
+      }
+    )
+    setForm(contactForm)
+  }, [])
   return (
     <HeaderWrapper>
       <div className="header">
@@ -35,7 +51,7 @@ const Header = () => {
             <p>Blog</p>
           </a>
           <hr />
-          <a href="#">
+          <a href="#about">
             <p>About Us</p>
           </a>
         </div>
@@ -58,7 +74,14 @@ const Header = () => {
               <a href="#about">About Us</a>
             </li>
             <li>
-              <Typeform />
+              <p
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  Form.open()
+                }}
+              >
+                Contact
+              </p>
             </li>
           </ul>
         </div>
