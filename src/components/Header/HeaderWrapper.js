@@ -52,7 +52,7 @@ export const HeaderWrapper = styled.div`
 
   @media (max-width: 1024px) {
     .menu:hover + .menuOptions {
-      display: block;
+      display: none;
       right: 0;
       background-color: white;
       transition: all 0.4s ease-in-out;

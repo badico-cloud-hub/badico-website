@@ -51,7 +51,7 @@ const Header = () => {
             <p>Blog</p>
           </a>
           <hr />
-          <a href="#">
+          <a href="#about">
             <p>About Us</p>
           </a>
         </div>
