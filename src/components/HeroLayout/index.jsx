@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import Calendly from "../Calendly"
-import Bg from "../../images/bgDesktopL.svg"
 import { HeroWrapper, Info, Buttons, Button } from "./styled"
 import { useStaticQuery, graphql } from "gatsby"
 import * as typeformEmbed from "@typeform/embed"
@@ -38,7 +37,6 @@ const HeroLayout = () => {
 
   return (
     <HeroWrapper>
-      <Bg fill="#0e273b" className="bgWave" />
       <Info>
         <h1>
           IT department
