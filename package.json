@@ -26,6 +26,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.13",
     "gatsby-transformer-sharp": "^2.5.6",
+    "i18next": "^20.1.0",
     "netlify-cms-app": "^2.12.19",
     "netlify-push-webpack-plugin": "^1.2.0",
     "node": "^12.21.0",
