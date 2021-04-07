@@ -17,16 +17,11 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     {
-      resolve: `gatsby-plugin-intl`,
+      resolve: `gatsby-plugin-i18n`,
       options: {
-        // language JSON resource path
-        path: `${__dirname}/src/intl`,
-        // supported language
-        languages: [`pt`, `en`],
-        // language file path
-        defaultLanguage: `pt`,
-        // option to redirect to `/ko` when connecting `/`
-        redirect: false,
+        langKeyDefault: 'en',
+        langKeyForNull: 'any',
+        useLangKeyLayout: true,
       },
     },
     {
