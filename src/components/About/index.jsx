@@ -9,16 +9,7 @@ const About = () => {
   return (
     <S.AboutUs>
       <Container>
-        <h1
-          onMouseLeave={() => {
-            i18n.changeLanguage("en")
-          }}
-          onMouseEnter={() => {
-            i18n.changeLanguage("pt")
-          }}
-        >
-          {t("AboutUs")}
-        </h1>
+        <h1>About</h1>
         <h2>Who we are</h2>
         <S.Text class="text-about" width="92.5%">
           We specialize in web and mobile development, providing all stages of
