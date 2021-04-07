@@ -48,7 +48,7 @@ const Header = () => {
         <nav class="drop-content">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#">{intl.formatMessage({ id: "home" })}</a>
             </li>
             {/* <li>
               <a href="#">Our Process</a>
@@ -57,13 +57,15 @@ const Header = () => {
               <a href="#">Meet Our Time</a>
             </li> */}
             <li>
-              <a href="#capacities">Capacities</a>
+              <a href="#capacities">
+                {intl.formatMessage({ id: "capacities" })}
+              </a>
             </li>
             {/* <li>
               <a href="#">Blog</a>
             </li> */}
             <li>
-              <a href="#about">About us</a>
+              <a href="#about">{intl.formatMessage({ id: "about" })}</a>
             </li>
             <li>
               <a
@@ -71,8 +73,8 @@ const Header = () => {
                   form.open()
                 }}
               >
-                Contact
-              </a>
+                {intl.formatMessage({ id: "contact" })}
+              </li>
             </li>
           </ul>
         </nav>
