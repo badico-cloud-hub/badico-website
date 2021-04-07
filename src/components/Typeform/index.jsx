@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import * as typeformEmbed from "@typeform/embed"
-import TypeformButton from "./TypeformButton"
-import Email from "../../images/email.svg"
+// import TypeformButton from "./TypeformButton"
+// import Email from "../../images/email.svg"
 
 class Typeform extends Component {
   componentDidMount() {
