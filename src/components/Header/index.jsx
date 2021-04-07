@@ -6,9 +6,12 @@ import { HeaderWrapper } from "./HeaderWrapper"
 // import MenuIcon from "../../images/menu.svg"
 // import Close from "../../images/close.svg"
 // import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
-import Typeform from "../Typeform/index"
+// import Typeform from "../Typeform/index"
+import { useIntl } from "gatsby-plugin-intl"
 
 const Header = () => {
+  const intl = useIntl()
+
   const [Form, setForm] = useState(null)
   useEffect(() => {
     const contactForm = typeformEmbed.makePopup(
@@ -59,10 +62,12 @@ const Header = () => {
         <div className="options">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#">{intl.formatMessage({ id: "home" })}</a>
             </li>
             <li>
-              <a href="#capacities">Capacities</a>
+              <a href="#capacities">
+                {intl.formatMessage({ id: "capacities" })}
+              </a>
             </li>
             {/* <li>
               <a href="#">Our Process</a>
@@ -71,7 +76,7 @@ const Header = () => {
               <a href="#">Our Team</a>
             </li> */}
             <li>
-              <a href="#about">About Us</a>
+              <a href="#about">{intl.formatMessage({ id: "about" })}</a>
             </li>
             <li>
               <li
@@ -80,7 +85,7 @@ const Header = () => {
                   Form.open()
                 }}
               >
-                Contact
+                {intl.formatMessage({ id: "contact" })}
               </li>
             </li>
           </ul>
