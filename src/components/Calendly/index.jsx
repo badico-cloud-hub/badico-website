@@ -10,7 +10,7 @@ class Calendly extends Component {
         <PopupText
         className="popup"
         url="https://calendly.com/badico"
-        text="Schedule a call"/>
+        text={this.props.text}/>
         <div className="iconCalendar">
           <Calendar />
         </div>
