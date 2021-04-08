@@ -3,8 +3,9 @@ import Calendly from "../Calendly"
 import { HeroWrapper, Info, Buttons, Button } from "./styled"
 import { useStaticQuery, graphql } from "gatsby"
 import * as typeformEmbed from "@typeform/embed"
+import lang from "../../intl/langs"
 
-const HeroLayout = () => {
+const HeroLayout = ({ language }) => {
   const { img } = useStaticQuery(
     graphql`
       query {
@@ -38,14 +39,8 @@ const HeroLayout = () => {
   return (
     <HeroWrapper>
       <Info>
-        <h1>
-          IT department
-          <br />
-          Headache-free
-          <br />
-          for startups
-        </h1>
-        <p>We are your IT department</p>
+        <h1>{lang[language]["hero.info.h1"]}</h1>
+        <p>{lang[language]["hero.info.p"]}</p>
         <Buttons>
           <Button
             className="contact"
@@ -53,10 +48,10 @@ const HeroLayout = () => {
               Form.open()
             }}
           >
-            Contact us
+            {lang[language]["hero.buttons.0"]}
           </Button>
           <Button className="call">
-            <Calendly />
+            <Calendly text={lang[language]["hero.buttons.1"]} />
           </Button>
         </Buttons>
       </Info>
