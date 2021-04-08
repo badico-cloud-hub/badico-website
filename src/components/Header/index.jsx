@@ -62,7 +62,8 @@ const Header = ({ language }) => {
             </li>
             {/* <li>
               <a href="#">Blog</a>
-            </li> */}
+            </li>
+             */}
             <li>
               <a href="#about">{lang[language]["menu.div.options.4"]}</a>
             </li>
