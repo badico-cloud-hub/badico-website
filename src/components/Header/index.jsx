@@ -5,9 +5,10 @@ import { HeaderWrapper, Container } from "./style"
 import Typeform from "../Typeform/index"
 import MenuIcon from "../../images/menuwhite.svg"
 import Close from "../../images/close.svg"
+import lang from '../../intl/langs';
 
 
-const Header = () => {
+const Header = ({language}) => {
   const [form, setForm] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -48,7 +49,7 @@ const Header = () => {
         <nav class="drop-content">
           <ul>
             <li>
-              <a href="#">{intl.formatMessage({ id: "home" })}</a>
+              <a href="#">{lang[language].home}</a>
             </li>
             {/* <li>
               <a href="#">Our Process</a>
@@ -58,14 +59,14 @@ const Header = () => {
             </li> */}
             <li>
               <a href="#capacities">
-                {intl.formatMessage({ id: "capacities" })}
+                {lang[language].capacities}
               </a>
             </li>
             {/* <li>
               <a href="#">Blog</a>
             </li> */}
             <li>
-              <a href="#about">{intl.formatMessage({ id: "about" })}</a>
+              {/* <a href="#about">{intl.formatMessage({ id: "about" })}</a> */}
             </li>
             <li>
               <a
@@ -73,7 +74,7 @@ const Header = () => {
                   form.open()
                 }}
               >
-                {intl.formatMessage({ id: "contact" })}
+                {/* {intl.formatMessage({ id: "contact" })} */}
               </li>
             </li>
           </ul>
