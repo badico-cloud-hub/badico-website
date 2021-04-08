@@ -10,6 +10,7 @@ import TechStacks from "../components/TechStacks"
 import Capacities from "../components/Capacities"
 import Cases from "../components/Cases"
 import About from "../components/About"
+
 import { WebsiteProvider } from "../contexts"
 
 const IndexPage = () => {
