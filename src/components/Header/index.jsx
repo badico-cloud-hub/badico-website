@@ -5,6 +5,7 @@ import Typeform from "../Typeform/index"
 import MenuIcon from "../../images/menuwhite.svg"
 import Close from "../../images/close.svg"
 import * as Styled from "./style"
+import lang from '../../intl/langs';
 
 const Header = () => {
   const [form, setForm] = useState(null)
@@ -55,10 +56,12 @@ const Header = () => {
               {/* <li>
               <a href="#">Meet Our Time</a>
             </li> */}
-              <li>
-                <a href="#capacities">Capacities</a>
-              </li>
-              {/* <li>
+            <li>
+              <a href="#capacities">
+                {lang[language].capacities}
+              </a>
+            </li>
+            {/* <li>
               <a href="#">Blog</a>
             </li> */}
               <li>
