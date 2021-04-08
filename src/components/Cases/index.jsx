@@ -1,15 +1,14 @@
 import React from "react"
 import Container from "../Container"
 import Gallery from "../Gallery"
-import { Case, CaseWrapper, View, Title } from "./styled"
+import { Case, CaseWrapper, Title } from "./styled"
 
 const Cases = () => {
   return (
     <Case>
       <Container>
         <CaseWrapper>
-          <Title>Portfolio</Title>
-          <View>View more</View>
+          <Title>Success cases</Title>
         </CaseWrapper>
         <div>
           <Gallery />
