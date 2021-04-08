@@ -2,26 +2,27 @@ import React from "react"
 
 import Card from "../Card/index"
 import Wrapper from "./CardsWrapper"
+import lang from "../../intl/langs"
 
-const Cards = () => {
+const Cards = ({ language }) => {
   return (
     <Wrapper>
       <Card
-        content="Not only working software, but also "
-        bold="well-crafted software"
-      />
-     <Card
-        content="Not only responding to change, but also "
-        bold="steadily adding value;"
+        content={lang[language]["cards.card.0"]}
+        bold={lang[language]["cards.card.0.bold"]}
       />
       <Card
-        content="Not only individuals and interactions, but also "
-        bold="a community of professionals;"
+        content={lang[language]["cards.card.1"]}
+        bold={lang[language]["cards.card.1.bold"]}
       />
       <Card
-        content="Not only customer collaboration, but also "
-        bold="productive partnerships."
-     />
+        content={lang[language]["cards.card.2"]}
+        bold={lang[language]["cards.card.2.bold"]}
+      />
+      <Card
+        content={lang[language]["cards.card.3"]}
+        bold={lang[language]["cards.card.3.bold"]}
+      />
     </Wrapper>
   )
 }
