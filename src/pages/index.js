@@ -1,7 +1,7 @@
 import React from "react"
 import LanguageProvider from "../providers/LanguageProvider"
 import MainPage from '../components/Main'
-import { WebsiteProvider } from '../../contexts'
+import { WebsiteProvider } from '../contexts'
 
 
 const language = "en"
@@ -9,11 +9,11 @@ const language = "en"
 const IndexPage = () => {
   
   return (
-    <WebsiteContext>
+    <WebsiteProvider>
       <LanguageProvider >
         <MainPage language={language}/>
       </LanguageProvider>
-    </WebsiteContext>
+    </WebsiteProvider>
   )}
 
 export default IndexPage
