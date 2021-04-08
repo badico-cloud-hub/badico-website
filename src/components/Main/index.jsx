@@ -10,17 +10,17 @@ import FloatingButton from "../FloatingButton"
 import Companies from "../Companies"
 
 const MainPage = ({ language }) => {
-
   return (
-      <Layout language={language}>
-        <SEO title="Badico Cloud Engineering | We are you IT departament" />
-        <HeroLayout />
-        <FloatingButton />
-        <Companies />
-        <CraftmanshipLayout />
-        <Capacities />
-        <About />
-      </Layout>
-  )}
+    <Layout language={language}>
+      <SEO title="Badico Cloud Engineering | We are you IT departament" />
+      <HeroLayout language={language} />
+      <FloatingButton language={language} />
+      <Companies language={language} />
+      <CraftmanshipLayout language={language} />
+      <Capacities language={language} />
+      <About language={language} />
+    </Layout>
+  )
+}
 
 export default MainPage
