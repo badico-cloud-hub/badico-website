@@ -109,7 +109,7 @@ const FloatWrap = styled.div`
     background: #fff;
     border: none;
     width: 150px;
-    position fixed;
+    position: fixed;
     right: 130px;
     bottom: 70px;
     border-radius: 13px;
