@@ -23,7 +23,7 @@ const FloatingButton = () => {
         </Typeform>
 
         <button className="call">
-          <Calendly>
+          <Calendly text={"Schedule a call"}>
   
           </Calendly>
         </button>
