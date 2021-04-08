@@ -5,12 +5,12 @@ import Cards from "../Cards/index"
 import CraftmanshipLayoutContent from "../CraftmanshipLayoutContent/index"
 import Wrapper from "./CraftWrapper"
 
-const CraftmanshipLayout = () => {
+const CraftmanshipLayout = ({ language }) => {
   return (
     <Wrapper>
       <Container>
-        <CraftmanshipLayoutContent />
-        <Cards />
+        <CraftmanshipLayoutContent language={language} />
+        <Cards language={language}/>
       </Container>
     </Wrapper>
   )
