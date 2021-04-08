@@ -49,7 +49,7 @@ import lang from '../../intl/langs';
         <nav class="drop-content">
           <ul>
             <li>
-              <a href="#">{lang[language].home}</a>
+              <a href="#">{lang[language]["menu.div.options.0"]}</a>
             </li>
             {/* <li>
               <a href="#">Our Process</a>
@@ -58,15 +58,13 @@ import lang from '../../intl/langs';
               <a href="#">Meet Our Time</a>
             </li> */}
             <li>
-              <a href="#capacities">
-                {lang[language].capacities}
-              </a>
+              <a href="#capacities">{lang[language]["menu.div.options.1"]}</a>
             </li>
             {/* <li>
               <a href="#">Blog</a>
             </li> */}
             <li>
-              <a href="#about">About us</a>
+              <a href="#about">{lang[language]["menu.div.options.4"]}</a>
             </li>
             <li>
               <a
@@ -74,7 +72,7 @@ import lang from '../../intl/langs';
                   form.open()
                 }}
               >
-                Contact
+                {lang[language]["menu.div.options.5"]}
               </a>
             </li>
           </ul>
