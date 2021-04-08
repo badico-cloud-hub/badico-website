@@ -7,10 +7,11 @@ import { HeaderWrapper } from "./HeaderWrapper"
 // import Close from "../../images/close.svg"
 // import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
 // import Typeform from "../Typeform/index"
-import { useIntl } from "gatsby-plugin-intl"
+// import { useIntl } from "gatsby-plugin-intl"
+import lang from '../../intl/langs';
 
-const Header = () => {
-  const intl = useIntl()
+const Header = ({ language }) => {
+  // const intl = useIntl()
 
   const [Form, setForm] = useState(null)
   useEffect(() => {
@@ -62,11 +63,11 @@ const Header = () => {
         <div className="options">
           <ul>
             <li>
-              <a href="#">{intl.formatMessage({ id: "home" })}</a>
+              <a href="#">{lang[language].home}</a>
             </li>
             <li>
               <a href="#capacities">
-                {intl.formatMessage({ id: "capacities" })}
+                {lang[language].capacities}
               </a>
             </li>
             {/* <li>
@@ -76,7 +77,7 @@ const Header = () => {
               <a href="#">Our Team</a>
             </li> */}
             <li>
-              <a href="#about">{intl.formatMessage({ id: "about" })}</a>
+              {/* <a href="#about">{intl.formatMessage({ id: "about" })}</a> */}
             </li>
             <li>
               <li
@@ -85,7 +86,7 @@ const Header = () => {
                   Form.open()
                 }}
               >
-                {intl.formatMessage({ id: "contact" })}
+                {/* {intl.formatMessage({ id: "contact" })} */}
               </li>
             </li>
           </ul>
