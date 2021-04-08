@@ -7,18 +7,18 @@ import Bg from "../../images/bgDesktop.svg"
 
 import { LayoutWrapper } from "./style"
 
-import { useIntl, changeLocale } from "gatsby-plugin-intl"
+// import { useIntl, changeLocale } from "gatsby-plugin-intl"
 
-const Layout = ({ children }) => {
-  const locale = useIntl().locale
+const Layout = ({ language, children }) => {
+  // const locale = useIntl().locale
 
-  useEffect(() => {
-    changeLocale(locale)
-  }, [locale])
+  // useEffect(() => {
+  //   changeLocale(locale)
+  // }, [locale])
 
   return (
     <LayoutWrapper>
-      <Header />
+      <Header language={language}/>
       <Bg fill="#0e273b" className="bgWave" />
       <Container>
         <main>{children}</main>
