@@ -30,7 +30,10 @@ const LanguageProvider = ({ children }) => {
     }
   }, [])
 
-  return <WebsiteProvider>{children}</WebsiteProvider>
-}
+  return (
+    <WebsiteProvider>
+      {children}
+    </WebsiteProvider>
+  )}
 
 export default LanguageProvider

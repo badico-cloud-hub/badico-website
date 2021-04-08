@@ -15,7 +15,7 @@ import { WebsiteProvider } from "../contexts"
 
 const IndexPage = () => {
   const language = "en"
-
+  
   return (
     <WebsiteProvider>
       <LanguageProvider>
