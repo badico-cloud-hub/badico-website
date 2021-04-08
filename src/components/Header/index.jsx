@@ -8,7 +8,7 @@ import { HeaderWrapper } from "./HeaderWrapper"
 // import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
 // import Typeform from "../Typeform/index"
 // import { useIntl } from "gatsby-plugin-intl"
-import lang from '../../intl/langs';
+import lang from "../../intl/langs"
 
 const Header = ({ language }) => {
   // const intl = useIntl()
@@ -36,48 +36,46 @@ const Header = ({ language }) => {
         <div className="menuOptions" />
         <div className="menuOptionsMobile">
           <a href="#">
-            <p>Home</p>
+            <p>{lang[language]["menu.div.options.0"]}</p>
           </a>
           <hr />
           <a href="#">
-            <p>Our Process</p>
+            <p>{lang[language]["menu.div.options.1"]}</p>
+          </a>
+          <hr />
+          {/* <a href="#">
+            <p>{lang[language]["menu.div.options.2"]}</p>
           </a>
           <hr />
           <a href="#">
-            <p>Meet Our Time</p>
+            <p>{lang[language]["menu.div.options.3"]}</p>
           </a>
-          <hr />
-          <a href="#">
-            <p>Portfolio</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>Blog</p>
-          </a>
-          <hr />
+          <hr /> */}
           <a href="#about">
-            <p>About Us</p>
+            <p>{lang[language]["menu.div.options.4"]}</p>
+          </a>
+          <hr />
+          <a href="#">
+            <p>{lang[language]["menu.div.options.5"]}</p>
           </a>
         </div>
         <Logobadico className="logo" alt="Badico's logo" />
         <div className="options">
           <ul>
             <li>
-              <a href="#">{lang[language].home}</a>
+              <a href="#">{lang[language]["menu.div.options.0"]}</a>
             </li>
             <li>
-              <a href="#capacities">
-                {lang[language].capacities}
-              </a>
+              <a href="#capacities">{lang[language]["menu.div.options.1"]}</a>
             </li>
             {/* <li>
-              <a href="#">Our Process</a>
+              <a href="#">{lang[language]["menu.div.options.2"]}</a>
             </li>
             <li>
-              <a href="#">Our Team</a>
+              <a href="#">{lang[language]["menu.div.options.3"]}</a>
             </li> */}
             <li>
-              {/* <a href="#about">{intl.formatMessage({ id: "about" })}</a> */}
+              <a href="#about">{lang[language]["menu.div.options.4"]}</a>
             </li>
             <li>
               <li
@@ -86,7 +84,7 @@ const Header = ({ language }) => {
                   Form.open()
                 }}
               >
-                {/* {intl.formatMessage({ id: "contact" })} */}
+                {lang[language]["menu.div.options.5"]}
               </li>
             </li>
           </ul>
