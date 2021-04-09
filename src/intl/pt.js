@@ -9,6 +9,8 @@ export default {
   "hero.info.p": "Nós trazemos a sua tecnologia e aceleramos o seu negócio.",
   "hero.buttons.0": "Fale conosco",
   "hero.buttons.1": "Agende uma reunião",
+  "floatingbutton.div.buttonsFilho.0": "",
+  "floatingbutton.div.buttonsFilho.1": "Schedule a call",
   "companies.text": "Empresas que confiam em nós",
   "craftmanship.text":
     "We deliver value every week to our clients. Value means code in production ready.",
