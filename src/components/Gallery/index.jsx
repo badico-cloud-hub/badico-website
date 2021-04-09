@@ -10,12 +10,15 @@ import SlideHarv from "../../images/cases/harv_case.png"
 import SlidePlando from "../../images/cases/plando_case.png"
 import SlideJump from "../../images/cases/jump_case.png"
 import { Container } from "./styled"
-import {CardsCase, CardCaseJump} from './CardsCase/CardsCase'
+import { CardsCase, CardCaseJump } from "./CardsCase/CardsCase"
 import { useWindowSize } from "../../hooks/useWindowsSize"
-import { TailorText } from './CardsCase/Texts/TextCases'
+import { TailorText } from "./CardsCase/Texts/Tailor/TextCases"
+import { HarvText } from "./CardsCase/Texts/Harv/TextCases"
+import { PlanDoText } from "./CardsCase/Texts/PlanDo/TextCases"
+import { CxJumpText } from "./CardsCase/Texts/CxJump/TextCases"
 
 const Gallery = () => {
-  const size = useWindowSize();
+  const size = useWindowSize()
   return (
     <>
       {size.width < 1024 ? (
@@ -29,8 +32,8 @@ const Gallery = () => {
             <Carousel
               additionalTransfrom={0}
               arrows
-              /*autoPlay
-              autoPlaySpeed={2000}*/
+              // autoPlay
+              // autoPlaySpeed={100}
               centerMode={true}
               removeArrowOnDeviceType={["desktop", "mobile", "tablet"]}
               className=""
@@ -59,6 +62,15 @@ const Gallery = () => {
                   },
                   items: 2,
                 },
+                desktop: {
+                  breakpoint: { max: 3000, min: 1024 },
+                  items: 3,
+                },
+                superLargeDesktop: {
+                  // the naming can be any, depends on you.
+                  breakpoint: { max: 4000, min: 3000 },
+                  items: 5,
+                }
               }}
               showDots
               slidesToSlide={1}
@@ -69,19 +81,21 @@ const Gallery = () => {
                 Image={SlideTailor}
                 top="-18px"
                 height="12px"
-                children={<TailorText/>}
+                children={<TailorText />}
               />
               <CardsCase
                 Logo={Harv}
                 Image={SlideHarv}
                 top="-17px"
                 height="13px"
+                children={<HarvText />}
               />
               <CardsCase
                 Logo={Plando}
                 Image={SlidePlando}
                 top="-17px"
                 height="15px"
+                children={<PlanDoText />}
               />
               <CardCaseJump
                 LogoJump={Jump}
@@ -89,13 +103,12 @@ const Gallery = () => {
                 top="-17px"
                 width="80px"
                 height="15px"
+                children={<CxJumpText />}
               />
             </Carousel>
           </div>
         </Container>
-      ) : (
-        null
-      )}
+      ) : null}
     </>
   )
 }
