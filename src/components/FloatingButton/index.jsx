@@ -5,8 +5,9 @@ import Typeform from "../Typeform/index"
 import Chat from "../../images/chat.svg"
 import Calendar from "../../images/calendar.svg"
 import Email from "../../images/email.svg"
+import lang from "../../intl/langs"
 
-const FloatingButton = () => {
+const FloatingButton = ({ language }) => {
   return (
     <FloatWrap>
       <div className="back cloud"></div>
@@ -18,14 +19,10 @@ const FloatingButton = () => {
         <Chat className="chat" />
       </div>
       <div className="buttonsFilho">
-        <Typeform className="contact">
-          
-        </Typeform>
+        <Typeform className="contact"></Typeform>
 
         <button className="call">
-          <Calendly text={"Schedule a call"}>
-  
-          </Calendly>
+          <Calendly text={lang[language]["floatingbutton.div.buttonsFilho.1"]}></Calendly>
         </button>
       </div>
     </FloatWrap>
