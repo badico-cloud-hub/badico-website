@@ -70,7 +70,7 @@ const Gallery = () => {
                   // the naming can be any, depends on you.
                   breakpoint: { max: 4000, min: 3000 },
                   items: 5,
-                }
+                },
               }}
               showDots
               slidesToSlide={1}
@@ -97,11 +97,12 @@ const Gallery = () => {
                 height="15px"
                 children={<PlanDoText />}
               />
-              <CardCaseJump
-                LogoJump={Jump}
-                Image={SlideJump}
+              <CardsCase
+                // Logo={Jump}
+                Logo={Plando}
+                // Image={SlideJump}
+                Image={SlidePlando}
                 top="-17px"
-                width="80px"
                 height="15px"
                 children={<CxJumpText />}
               />
