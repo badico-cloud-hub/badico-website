@@ -11,10 +11,20 @@ export const Render = styled.div`
   box-shadow: 0 0 5px black;
   align-items: center;
   justify-content: center;
+
+  @media(min-width: 768px){
+    max-width: 281px;
+    min-height: 333px;
+  }
+
+  @media(min-width: 1024px){
+    max-width: 228px;
+    min-height: 274px;
+  }
 `;
 
 export const Content = styled.div`
-  min-width: 125px;
+  min-width: 91%;
   min-height: 148px;
   display: flex;
   max-width: 125px;
@@ -23,6 +33,16 @@ export const Content = styled.div`
   border-radius: 8px;
   flex-direction: column;
 
+  @media(min-width: 768px){
+    min-width: 93%;
+    min-height: 315px;
+  }
+
+  @media(min-width: 1024px){
+    min-width: 91%;
+    min-height: 254px;
+  }
+
   img{
     width: 100%;
     height: 100%;
@@ -30,20 +50,38 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.div`
-  width: ${props => props.width ? props.height : "60px"};
-  height: ${props => props.height ? props.height : "20px"};
+  width: 60px;
+  height: 12px;
   display: flex;
   position: relative;
   margin: 0 auto;
-  top: ${props => props.top ? props.top : "125px"};
+  top: -18px;
   svg{
-      width: ${props => props.width ? props.height : "60px"};
-      height: ${props => props.height ? props.height : "20px"};
+      width: 60px;
+      height: 12px;
   };
+
+  @media(min-width: 768px){
+    width: 80px;
+    height: 22px;
+    top: -28px;
+    svg{
+      width: 80px;
+      height: 22px;
+  };
+  }
 `;
 
 export const DivText = styled.div`
   width: 100%;
   min-height: 148px;
   padding: 5px 10px;
+
+  @media(min-width: 768px){
+    min-height: 307px;
+  }
+
+  @media(min-width: 1024px){
+    min-height: 246px;
+  }
 `;
