@@ -21,95 +21,81 @@ const Gallery = () => {
   const size = useWindowSize()
   return (
     <>
-      {size.width < 1024 ? (
-        <Container>
-          <div
-            style={{
-              paddingBottom: "30px",
-              position: "relative",
+      <Container>
+        <div className="div">
+          <Carousel
+            additionalTransfrom={0}
+            arrows
+            // autoPlay
+            // autoPlaySpeed={100}
+            centerMode={true}
+            removeArrowOnDeviceType={["desktop", "mobile", "tablet"]}
+            className=""
+            containerClass="container"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            //infinite
+            itemClass="item"
+            keyBoardControl
+            minimumTouchDrag={80}
+            renderButtonGroupOutside={false}
+            renderDotsOutside
+            responsive={{
+              mobile: {
+                breakpoint: {
+                  max: 768,
+                  min: 0,
+                },
+                items: 2,
+              },
+              tablet: {
+                breakpoint: {
+                  max: 1024,
+                  min: 768,
+                },
+                items: 2,
+              },
+              desktop: {
+                breakpoint: { max: 3000, min: 1024 },
+                items: 4,
+              },
+              superLargeDesktop: {
+                // the naming can be any, depends on you.
+                breakpoint: { max: 4000, min: 3000 },
+                items: 5,
+              },
             }}
+            showDots
+            slidesToSlide={1}
+            swipeable
           >
-            <Carousel
-              additionalTransfrom={0}
-              arrows
-              // autoPlay
-              // autoPlaySpeed={100}
-              centerMode={true}
-              removeArrowOnDeviceType={["desktop", "mobile", "tablet"]}
-              className=""
-              containerClass="container"
-              dotListClass=""
-              draggable
-              focusOnSelect={false}
-              //infinite
-              itemClass="item"
-              keyBoardControl
-              minimumTouchDrag={80}
-              renderButtonGroupOutside={false}
-              renderDotsOutside
-              responsive={{
-                mobile: {
-                  breakpoint: {
-                    max: 768,
-                    min: 0,
-                  },
-                  items: 1,
-                },
-                tablet: {
-                  breakpoint: {
-                    max: 1024,
-                    min: 768,
-                  },
-                  items: 2,
-                },
-                desktop: {
-                  breakpoint: { max: 3000, min: 1024 },
-                  items: 3,
-                },
-                superLargeDesktop: {
-                  // the naming can be any, depends on you.
-                  breakpoint: { max: 4000, min: 3000 },
-                  items: 5,
-                },
-              }}
-              showDots
-              slidesToSlide={1}
-              swipeable
-            >
-              <CardsCase
-                Logo={Tailor}
-                Image={SlideTailor}
-                top="-18px"
-                height="12px"
-                children={<TailorText />}
-              />
-              <CardsCase
-                Logo={Harv}
-                Image={SlideHarv}
-                top="-17px"
-                height="13px"
-                children={<HarvText />}
-              />
-              <CardsCase
-                Logo={Plando}
-                Image={SlidePlando}
-                top="-17px"
-                height="15px"
-                children={<PlanDoText />}
-              />
-              <CardsCase
-                // Logo={Jump}
-                Logo={Plando}
-                // Image={SlideJump}
-                Image={SlidePlando}
-                top="-17px"
-                height="15px"
-                children={<CxJumpText />}
-              />
-            </Carousel>
-          </div>
-        </Container>
-      ) : null}
+            <CardsCase
+              Logo={Tailor}
+              Image={SlideTailor}
+              children={<TailorText />}
+            />
+            <CardsCase
+              Logo={Harv}
+              Image={SlideHarv}
+              children={<HarvText />}
+            />
+            <CardsCase
+              Logo={Plando}
+              Image={SlidePlando}
+              children={<PlanDoText />}
+            />
+            <CardsCase
+              // Logo={Jump}
+              Logo={Plando}
+              // Image={SlideJump}
+              Image={SlidePlando}
+              children={<CxJumpText />}
+            />
+          </Carousel>
+        </div>
+      </Container>
+      )
     </>
   )
 }
