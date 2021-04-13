@@ -10,10 +10,6 @@ export const CaseWrapper = styled.div`
   font-family: Roboto;
   align-items: center;
   margin-bottom: 1.5rem;
-
-  @media(min-width: 768px){
-    margin-bottom: 3.5rem;
-  }
 `
 
 export const Title = styled.h1`
