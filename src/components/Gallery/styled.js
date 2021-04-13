@@ -3,6 +3,19 @@ import styled from "styled-components"
 export const Container = styled.div`
   .container {
     max-width: 1300px;
+
+    @media(min-width: 768px){
+      min-width: 768px;
+    }
+  }
+
+  .div{
+    padding-bottom: 30px;
+    position: relative;
+
+    @media(min-width: 768px){
+      padding: 0px;
+    }
   }
 
   .react-multi-carousel-dot button {
@@ -13,18 +26,55 @@ export const Container = styled.div`
   .react-multi-carousel-track {
     align-items: center;
     height: 167px;
+
+    @media(min-width: 360px){
+      li:last-child{
+        margin: 0px;
+      }
+    }
+
+    @media(min-width: 768px){
+      height: 333px;
+    }
+
+    @media(min-width: 1024px){
+      li:last-child{
+        margin-left: 17px;
+      }
+      li:first-child{
+        margin-left: 0px;
+      }
+    }
   }
 
   .react-multi-carousel-list{
     height: 200px;
+
+    @media(min-width: 768px){
+      height: 425px;
+    }
   }
 
   .item {
     max-width: 138px;
-    max-height: 163px;
+    min-width: 138px;
+    max-height: 180px;
     margin: 0 17px 0 0;
     transition: all 1s linear;
     perspective: 600px;
+
+    @media(min-width: 768px){
+      max-width: 281px;
+      min-width: 281px;
+      max-height: 333px;
+    }
+
+    @media(min-width: 1024px){
+      max-width: 228px;
+      min-width: 228px;
+      max-height: 274px;
+      margin: 0 0 0 17px;
+    }
   }
 
   .item:hover > .front {
