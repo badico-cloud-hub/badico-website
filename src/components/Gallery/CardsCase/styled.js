@@ -4,61 +4,45 @@ export const Render = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  max-width: 139px;
-  min-height: 163px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 5px black;
   align-items: center;
   justify-content: center;
-
-  @media(min-width: 768px){
-    max-width: 281px;
-    min-height: 333px;
-  }
-
-  @media(min-width: 1024px){
-    max-width: 228px;
-    min-height: 274px;
-  }
 `;
 
 export const Content = styled.div`
-  min-width: 91%;
-  min-height: 148px;
+  width: 92%;
+  height: 191px;
   display: flex;
-  max-width: 125px;
-  max-height: 150px;
   background: #EEF2F5;
   border-radius: 8px;
   flex-direction: column;
 
   @media(min-width: 768px){
-    min-width: 93%;
-    min-height: 315px;
+    height: 295px;
   }
 
-  @media(min-width: 1024px){
-    min-width: 91%;
-    min-height: 254px;
+  @media(min-width: 1366px){
+    height: 295px;
   }
 
-  img{
+  .img{
     width: 100%;
     height: 100%;
   }
 `;
 
 export const Image = styled.div`
-  width: 60px;
-  height: 12px;
+  width: 70px;
+  height: 22px;
   display: flex;
   position: relative;
   margin: 0 auto;
-  top: -18px;
+  top: -30px;
   svg{
-      width: 60px;
-      height: 12px;
+      width: 70px;
+      height: 22px;
   };
 
   @media(min-width: 768px){
@@ -68,20 +52,30 @@ export const Image = styled.div`
     svg{
       width: 80px;
       height: 22px;
-  };
+    };
+  }
+
+  @media(min-width: 1366px){
+    width: 90px;
+    height: 32px;
+    top: -35px;
+    svg{
+      width: 90px;
+      height: 32px;
+    };
   }
 `;
 
 export const DivText = styled.div`
   width: 100%;
-  min-height: 148px;
+  min-height: 191px;
   padding: 5px 10px;
 
   @media(min-width: 768px){
-    min-height: 307px;
+    min-height: 97%;
   }
 
-  @media(min-width: 1024px){
-    min-height: 246px;
+  @media(min-width: 1366px){
+    min-height: 91%;
   }
 `;
