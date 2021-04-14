@@ -9,7 +9,19 @@ export const CaseWrapper = styled.div`
   justify-content: center;
   font-family: Roboto;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  @media(min-width: 768px){
+    margin-bottom: 1rem;
+  }
+
+  @media(min-width: 1024px){
+    margin-bottom: 1.25rem;
+  }
+
+  @media(min-width: 1366px){
+    margin-bottom: 1.5rem;
+  }
 `
 
 export const Title = styled.h1`
