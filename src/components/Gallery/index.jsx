@@ -47,7 +47,7 @@ const Gallery = () => {
                   max: 768,
                   min: 0,
                 },
-                items: 2,
+                items: 1,
               },
               tablet: {
                 breakpoint: {
@@ -57,14 +57,13 @@ const Gallery = () => {
                 items: 2,
               },
               desktop: {
-                breakpoint: { max: 3000, min: 1024 },
-                items: 4,
+                breakpoint: { max: 1366, min: 1024 },
+                items: 3,
               },
-              superLargeDesktop: {
-                // the naming can be any, depends on you.
-                breakpoint: { max: 4000, min: 3000 },
+              fulldesktop: {
+                breakpoint: { max: 3000, min: 1366 },
                 items: 5,
-              },
+              }
             }}
             showDots
             slidesToSlide={1}
@@ -75,16 +74,19 @@ const Gallery = () => {
               Image={SlideTailor}
               children={<TailorText />}
             />
+
             <CardsCase
               Logo={Harv}
               Image={SlideHarv}
               children={<HarvText />}
             />
+
             <CardsCase
               Logo={Plando}
               Image={SlidePlando}
               children={<PlanDoText />}
             />
+            
             <CardsCase
               // Logo={Jump}
               Logo={Plando}
@@ -92,10 +94,10 @@ const Gallery = () => {
               Image={SlidePlando}
               children={<CxJumpText />}
             />
+            
           </Carousel>
         </div>
       </Container>
-      )
     </>
   )
 }
