@@ -6,17 +6,17 @@ export const CardsCase = props => {
     <>
       <Render className="front">
         <Content>
-          <img src={props.Image} />
-          <Image style={{ top: props.top }}>
-            <props.Logo style={{ height: props.height, width: props.width }} />
+          <img className="img" src={props.Image} />
+          <Image>
+            <props.Logo />
           </Image>
         </Content>
       </Render>
       <Render className="back">
         <Content>
           <DivText>{props.children}</DivText>
-          <Image style={{ top: props.top }}>
-            <props.Logo style={{ height: props.height, width: props.width }} />
+          <Image>
+            <props.Logo />
           </Image>
         </Content>
       </Render>
