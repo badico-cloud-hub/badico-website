@@ -96,27 +96,29 @@ export const Container = styled.div`
   }
 
   .item:hover > .front {
-    transition: all 0.4s linear;
+    transition: z-index 1.1s, transform 0.4s linear;
     transform: rotateY(-180deg);
   }
 
   .item:hover > .back {
-    transition: all 0.4s linear;
+    transition: z-index 1.1s, transform 0.4s linear;
+    z-index: 1;
     transform: rotateY(0deg);
   }
 
   .front {
+    transition: z-index 0.5s, transform 0.4s linear;
     transition: all 0.4s linear;
     top: 0;
     z-index: 1;
   }
 
   .back {
-    transition: all 0.4s linear;
+    transition: z-index 0.5s, transform 0.4s linear;
     position: absolute;
     top: 0;
-    z-index: -1;
     transform: rotateY(180deg);
+    z-index: -1;
   }
 
   @media (min-width: 1366px) {
