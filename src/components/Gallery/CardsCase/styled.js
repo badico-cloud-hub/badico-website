@@ -28,7 +28,6 @@ export const Content = styled.div`
   }
 
   .img{
-    width: 100%;
     height: 100%;
   }
 `;
@@ -48,7 +47,7 @@ export const Image = styled.div`
   @media(min-width: 768px){
     width: 80px;
     height: 22px;
-    top: -28px;
+    top: -50px;
     svg{
       width: 80px;
       height: 22px;
@@ -58,7 +57,7 @@ export const Image = styled.div`
   @media(min-width: 1366px){
     width: 90px;
     height: 32px;
-    top: -35px;
+    top: -60px;
     svg{
       width: 90px;
       height: 32px;
@@ -72,10 +71,10 @@ export const DivText = styled.div`
   padding: 5px 10px;
 
   @media(min-width: 768px){
-    min-height: 97%;
+    min-height: 100%;
   }
 
   @media(min-width: 1366px){
-    min-height: 91%;
+    min-height: 100%;
   }
 `;
