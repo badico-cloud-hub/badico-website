@@ -2,8 +2,7 @@ import React from "react"
 
 import LanguageProvider from "../providers/LanguageProvider"
 import { WebsiteProvider } from '../contexts'
-import Header from "../components/Header"
-
+import Layout from '../components/LayoutLandingPage'
 
 
 const language = "pt"
@@ -13,7 +12,8 @@ const IndexPage = () => {
   return (
     <WebsiteProvider>
       <LanguageProvider >
-        <Header language={language}/>
+        <Layout language={language}>
+        </Layout>
       </LanguageProvider>
     </WebsiteProvider>
   )}
