@@ -1,26 +1,40 @@
 import styled, { css } from "styled-components"
 import media from "styled-media-query"
 
+export const Container = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+`
+
 export const HeaderWrapper = styled.div`
-  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #FFFFFF;
   width: 100%;
   height: 72px;
   top: 0;
+  font-family: "Roboto";
   position: sticky;
   z-index: 3;
+  border-radius: 0px 0px 20px 20px;
 
   .ghost {
-    width: 73px;
+    width: 10%;
+    min-width: 72px;
     height: 42px;
-    background: #ffffff;
+    background: #FFFFFF;
   }
 
   .logodiv {
     display: flex;
-    width: 114px;
+    justify-content: center;
+    width: 80%;
+    min-width: 114px;
     height: 40px;
 
     .logo {
@@ -42,9 +56,10 @@ export const HeaderWrapper = styled.div`
     }
   }
 
-  .menu-drop {
-    width: 73px;
-    heighy: 42px;
+  .menudrop {
+    width: 10%;
+    min-width: 72px;
+    height: 42px;
     display: flex;
 
     .drop-content,
@@ -62,10 +77,9 @@ export const HeaderWrapper = styled.div`
     display: flex;
     border: none;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     align-items: center;
-    font-size: 15px;
-    color: #0e273b;
+    padding: 0;
 
     :focus {
       outline: none;
@@ -76,11 +90,10 @@ export const HeaderWrapper = styled.div`
     display: none;
     border: none;
     cursor: pointer;
-    background-color: white;
     font-size: 15px;
     position: relative;
     bottom: 0px;
-    right: 42px;
+    right: 35px;
 
     :focus {
       outline: none;
@@ -101,6 +114,7 @@ export const HeaderWrapper = styled.div`
       text-decoration: none;
       font-weight: 500;
       font-size: 1.1rem;
+      cursor: pointer;
     }
 
     ul {
@@ -122,35 +136,100 @@ export const HeaderWrapper = styled.div`
     }
   }
 
+  ${media.greaterThan("768px")`
+  height: 121px;
+
+  .ghost {
+    min-width: 110px;
+  }
+
+  .menudrop{
+    min-width: 110px;
+  }
+
+  .logodiv {
+    width: 182px;
+    height: 62px;
+
+      .logo {
+        width: 182px;
+        height: 62px;
+      }
+    }
+
+  `}
+
   ${media.greaterThan("1024px")`
+
+  .logodiv {
+    width: 164px;
+    height: 54px;
+    margin-left: 140px;
+
+      .logo {
+        width: 164px;
+        height: 54px;
+      }
+  }
+
+  .ghost {
+    display: none;
+  }
 
   .open, .close {
     display: none;
   }
 
-  .drop-content{
-    display: flex;
-    border: 0;
-    background: #02293f;
-    justify-content: end;
-    position: relative;
+  .menudrop {
+    width: 70%;
 
-    a {
-      color: white;
-    }
+    .drop-content {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      background: #FFFFFF;
+      justify-content: flex-end;
 
-    ul {
-      text-align: right;
-      padding: 0;
-      margin: 1rem 3rem 0 0;
+      a {
+        color: #0E273B;
+        font-size: 16px;
+      }
+
+      ul {
+        text-align: right;
+        padding: 0;
+        margin: 0;
+
+      }
+
+      li {
+        padding: 0 26px 0 0;
+        margin: 0;
+        display: inline;
+        border: 0;
+      }
     }
-    
-    li {
-      padding: 0;
-      padding-left: 2rem;
-      margin: 0;
-      display: inline;
-      border: 0;
+  }
+  `}
+
+  ${media.greaterThan("1366px")`
+
+  .logodiv {
+    width: 200px;
+    height: 64px;
+    margin-left: 140px;
+
+      .logo {
+        width: 200px;
+        height: 64px;
+      }
+  }
+
+  .menudrop {
+    .drop-content {
+      a {
+        font-size: 20px;
+      }
     }
   }
   `}

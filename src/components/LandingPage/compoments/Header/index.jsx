@@ -4,8 +4,9 @@ import * as Styled from "./style"
 import LogoBadico from "../../images/logo.svg"
 import MenuIcon from "../../images/menu.svg"
 import Close from "../../images/close.svg"
+import lang from '../../../../intl/langs'
 
-const Header = () => {
+const Header = ({language}) => {
   const [form, setForm] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -24,15 +25,16 @@ const Header = () => {
     )
     setForm(contactForm)
   }, [])
-
+  console.log(lang)
   return (
     <Styled.HeaderWrapper isOpen={isOpen}>
+      <Styled.Container>
       <div className="ghost" />
       <div className="logodiv">
         <LogoBadico className="logo" alt="Badico's logo" />
       </div>
 
-      <div class="menu-drop">
+      <div class="menudrop">
         <div className="back" />
         <button
           type="button"
@@ -46,22 +48,22 @@ const Header = () => {
         <nav class="drop-content">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/">{lang[language]["menu.div.options.0"]}</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#">Our Process</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#">Meet Our Time</a>
-            </li>
+            </li> */}
             <li>
-              <a href="#">Portfolio</a>
+              <a href="/#capacities">{lang[language]["menu.div.options.1"]}</a>
             </li>
             {/* <li>
               <a href="#">Blog</a>
             </li> */}
             <li>
-              <a href="#about">About us</a>
+              <a href="#about">{lang[language]["menu.div.options.4"]}</a>
             </li>
             <li>
               <a
@@ -69,7 +71,7 @@ const Header = () => {
                   form.open()
                 }}
               >
-                Contact
+                {lang[language]["menu.div.options.5"]}
               </a>
             </li>
           </ul>
@@ -83,6 +85,7 @@ const Header = () => {
           <Close />
         </button>
       </div>
+      </Styled.Container>
     </Styled.HeaderWrapper>
   )
 }
