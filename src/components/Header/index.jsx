@@ -7,9 +7,10 @@ import Close from "../../images/close.svg"
 import * as Styled from "./style"
 import lang from '../../intl/langs';
 
-const Header = () => {
-  const [form, setForm] = useState(null)
-  const [isOpen, setIsOpen] = useState(false)
+  
+const Header = ({ language }) => {
+    const [form, setForm] = useState(null)
+    const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const contactForm = typeformEmbed.makePopup(
