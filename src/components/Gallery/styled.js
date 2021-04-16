@@ -103,7 +103,7 @@ export const Container = styled.div`
 
   .item:hover > .back {
     transition: z-index 1.1s, opacity 1.1s, transform 0.4s linear;
-    -webkit-transition: z-index 1.1s, transform 0.4s linear;
+    -webkit-transition: z-index 1.1s, opacity 1.1s, transform 0.4s linear;
     z-index: 10;
     transform: rotateY(0deg);
     opacity: 1;
