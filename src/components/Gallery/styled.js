@@ -116,7 +116,7 @@ export const Container = styled.div`
   }
 
   .back {
-    transition: z-index 0.5s, opacity 2s, transform 0.4s linear;
+    transition: z-index 0.5s, opacity 1s, transform 0.4s linear;
     position: absolute;
     top: 0;
     transform: rotateY(180deg);
