@@ -96,16 +96,17 @@ export const Container = styled.div`
   }
 
   .item:hover > .front {
-    transition: z-index 1.1s, opacity 2s, transform 0.4s linear;
+    transition: z-index 1s, opacity 2s, transform 0.4s linear;
     -webkit-transition: z-index 1.1s, opacity 2s, transform 0.4s linear;
     transform: rotateY(-180deg);
-    z-index: -11;
   }
 
   .item:hover > .back {
-    transition: z-index 1.1s, transform 0.4s linear;
+    transition: z-index 1.1s, opacity 1.1s, transform 0.4s linear;
     -webkit-transition: z-index 1.1s, transform 0.4s linear;
+    z-index: 10;
     transform: rotateY(0deg);
+    opacity: 1;
   }
 
   .front {
@@ -122,6 +123,7 @@ export const Container = styled.div`
     top: 0;
     transform: rotateY(180deg);
     z-index: -10;
+    opacity: 0;
   }
 
   @media (min-width: 1366px) {
