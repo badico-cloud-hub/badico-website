@@ -72,7 +72,7 @@ export const Container = styled.div`
   }
 
   ul .react-multi-carousel-item--active{
-    opacity: 1;    
+    transform: scale(1);    
   }
 
   .item {
@@ -81,7 +81,7 @@ export const Container = styled.div`
     margin: 0 17px 0 0;
     transition: all 1s linear;
     perspective: 600px;
-    opacity: 0.6;
+    transform: scale(0.9);
 
     @media(min-width: 768px){
       min-width: 261px;
@@ -98,14 +98,12 @@ export const Container = styled.div`
   .item:hover > .front {
     transition: z-index 1.1s, opacity 2s, transform 0.4s linear;
     transform: rotateY(-180deg);
-    opacity: 0;
   }
 
   .item:hover > .back {
     transition: z-index 1.1s, transform 0.4s linear;
     z-index: 1;
     transform: rotateY(0deg);
-    opacity: 1;
   }
 
   .front {
@@ -121,7 +119,6 @@ export const Container = styled.div`
     top: 0;
     transform: rotateY(180deg);
     z-index: -1;
-    opacity: 0;
   }
 
   @media (min-width: 1366px) {
