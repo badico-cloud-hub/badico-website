@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react"
 import Logobadico from "../../images/logo.svg"
 import * as typeformEmbed from "@typeform/embed"
-import { HeaderWrapper } from "./HeaderWrapper"
-// import Container from "../Container/index"
-// import MenuIcon from "../../images/menu.svg"
-// import Close from "../../images/close.svg"
-// import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
+import { HeaderWrapper, Container } from "./style"
 import Typeform from "../Typeform/index"
+import MenuIcon from "../../images/menuwhite.svg"
+import Close from "../../images/close.svg"
+
 
 const Header = () => {
-  const [Form, setForm] = useState(null)
+  const [form, setForm] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
+
   useEffect(() => {
     const contactForm = typeformEmbed.makePopup(
       "https://ask767898.typeform.com/to/rRIqbEzo",
@@ -25,67 +26,66 @@ const Header = () => {
     )
     setForm(contactForm)
   }, [])
+
   return (
-    <HeaderWrapper>
-      <div className="header">
-        <div className="menu" />
-        <div className="menuOptions" />
-        <div className="menuOptionsMobile">
-          <a href="#">
-            <p>Home</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>Our Process</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>Meet Our Time</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>Portfolio</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>Blog</p>
-          </a>
-          <hr />
-          <a href="#about">
-            <p>About Us</p>
-          </a>
-        </div>
+    <HeaderWrapper isOpen={isOpen}>
+      <Container>
+      <div className="ghost" />
+      <div className="logodiv">
         <Logobadico className="logo" alt="Badico's logo" />
-        <div className="options">
+      </div>
+      <div class="menudrop">
+        <div className="back" />
+        <button
+          type="button"
+          className="open"
+          onClick={() => {
+            setIsOpen(true)
+          }}
+        >
+          <MenuIcon />
+        </button>
+        <nav class="drop-content">
           <ul>
             <li>
               <a href="#">Home</a>
             </li>
+            {/* <li>
+              <a href="#">Our Process</a>
+            </li> */}
+            {/* <li>
+              <a href="#">Meet Our Time</a>
+            </li> */}
             <li>
               <a href="#capacities">Capacities</a>
             </li>
             {/* <li>
-              <a href="#">Our Process</a>
-            </li>
-            <li>
-              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
             </li> */}
             <li>
-              <a href="#about">About Us</a>
+              <a href="#about">About us</a>
             </li>
             <li>
-              <li
-                style={{ cursor: "pointer" }}
+              <a
                 onClick={() => {
-                  Form.open()
+                  form.open()
                 }}
               >
                 Contact
-              </li>
+              </a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <button
+          className="close"
+          onClick={() => {
+            setIsOpen(false)
+          }}
+        >
+          <Close />
+        </button>
       </div>
+      </Container>
     </HeaderWrapper>
   )
 }
