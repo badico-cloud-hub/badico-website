@@ -8,7 +8,7 @@ import Close from "../../images/close.svg"
 import lang from '../../intl/langs';
 
   
-  const Header = ({ language }) => {
+const Header = ({ language }) => {
     const [form, setForm] = useState(null)
     const [isOpen, setIsOpen] = useState(false)
 
