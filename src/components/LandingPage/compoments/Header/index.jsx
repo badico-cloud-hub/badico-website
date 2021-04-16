@@ -25,7 +25,7 @@ const Header = ({language}) => {
     )
     setForm(contactForm)
   }, [])
-  
+
   return (
     <Styled.HeaderWrapper isOpen={isOpen}>
       <Styled.Container>
@@ -34,7 +34,7 @@ const Header = ({language}) => {
         <LogoBadico className="logo" alt="Badico's logo" />
       </div>
 
-      <div class="menudrop">
+      <div className="menudrop">
         <div className="back" />
         <button
           type="button"
@@ -45,7 +45,7 @@ const Header = ({language}) => {
         >
           <MenuIcon />
         </button>
-        <nav class="drop-content">
+        <nav className="drop-content">
           <ul>
             <li>
               <a href="/">{lang[language]["menu.div.options.0"]}</a>
