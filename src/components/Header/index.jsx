@@ -72,8 +72,7 @@ const Header = ({ language }) => {
                   form.open()
                 }}
               >
-                {lang[language]["menu.div.options.5"]}
-              </a>
+                {lang[language]["menu.div.options.5"]}</a>
             </li>
           </ul>
         </nav>
