@@ -1,5 +1,5 @@
 export default {
-  "menu.div.options.0": "Home",
+  "menu.div.options.0": "Inicio",
   "menu.div.options.1": "Serviços",
   "menu.div.options.2": "Processo",
   "menu.div.options.3": "Equipe",
