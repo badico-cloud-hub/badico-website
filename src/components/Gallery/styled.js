@@ -104,6 +104,7 @@ export const Container = styled.div`
     transition: z-index 1.1s, transform 0.4s linear;
     z-index: 1;
     transform: rotateY(0deg);
+    opacity: 1;
   }
 
   .front {
@@ -114,11 +115,12 @@ export const Container = styled.div`
   }
 
   .back {
-    transition: z-index 0.5s, transform 0.4s linear;
+    transition: z-index 0.5s, opacity 2s, transform 0.4s linear;
     position: absolute;
     top: 0;
     transform: rotateY(180deg);
     z-index: -1;
+    opacity: 0;
   }
 
   @media (min-width: 1366px) {
