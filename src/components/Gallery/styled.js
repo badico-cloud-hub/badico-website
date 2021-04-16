@@ -104,7 +104,7 @@ export const Container = styled.div`
   .item:hover > .back {
     transition: z-index 1.1s, transform 0.4s linear;
     -webkit-transition: z-index 1.1s, transform 0.4s linear;
-    z-index: 1;
+    z-index: 10;
     transform: rotateY(0deg);
   }
 
@@ -112,7 +112,7 @@ export const Container = styled.div`
     transition: z-index 0.5s, transform 0.4s linear;
     -webkit-transition: z-index 0.5s, transform 0.4s linear;
     top: 0;
-    z-index: 1;
+    z-index: 10;
   }
 
   .back {
@@ -121,7 +121,7 @@ export const Container = styled.div`
     position: absolute;
     top: 0;
     transform: rotateY(180deg);
-    z-index: -1;
+    z-index: -10;
   }
 
   @media (min-width: 1366px) {
