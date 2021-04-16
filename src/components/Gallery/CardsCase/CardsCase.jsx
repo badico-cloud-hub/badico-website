@@ -7,7 +7,7 @@ export const CardsCase = props => {
       <Render className="front">
         <Content>
           <img className="img" src={props.Image} />
-          <Image>
+          <Image height={props.height} width={props.width} top={props.top}>
             <props.Logo />
           </Image>
         </Content>
@@ -15,54 +15,11 @@ export const CardsCase = props => {
       <Render className="back">
         <Content>
           <DivText>{props.children}</DivText>
-          <Image>
+          <Image height={props.height} width={props.width} top={props.top}>
             <props.Logo />
           </Image>
         </Content>
       </Render>
-    </>
-  )
-}
-
-export const CardCaseJump = props => {
-  const [state, setState] = useState(false)
-  console.log(state)
-  return (
-    <>
-      {state === false ? (
-        <Render onClick={() => setState(!state)}>
-          <Content>
-            <img src={props.Image} />
-            <Image
-              style={{
-                top: props.top,
-                height: props.height,
-                width: props.width,
-              }}
-            >
-              <img src={props.LogoJump} />
-            </Image>
-          </Content>
-        </Render>
-      ) : (
-        <Render onClick={() => setState(!state)}>
-          <Content>
-            <DivText>{props.children}</DivText>
-            <Image
-              style={{
-                top: props.top,
-                height: props.height,
-                width: props.width,
-              }}
-            >
-              <img
-                src={props.LogoJump}
-                style={{ height: props.height, width: props.width }}
-              />
-            </Image>
-          </Content>
-        </Render>
-      )}
     </>
   )
 }
