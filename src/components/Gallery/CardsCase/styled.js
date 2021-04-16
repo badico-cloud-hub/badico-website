@@ -33,41 +33,41 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.div`
-  width: 70px;
-  height: 22px;
+  width: ${props => (props.width)};
+  height: ${props => (props.height)};
   display: flex;
   position: relative;
   margin: 0 auto;
-  top: -30px;
+  top: ${props => (props.top)};
   svg{
-      width: 70px;
-      height: 22px;
+      width: ${props => (props.width)};
+      height: ${props => (props.height)};
   };
 
   @media(min-width: 768px){
-    width: 80px;
-    height: 22px;
-    top: -50px;
+    width: ${props => (props.width)};
+    height: ${props => (props.height)};
+    top: ${props => (props.top)};
     svg{
-      width: 80px;
-      height: 22px;
+      width: ${props => (props.width)};
+      height: ${props => (props.height)};
     };
   }
 
   @media(min-width: 1366px){
-    width: 90px;
-    height: 32px;
-    top: -60px;
+    width: ${props => (props.width)};
+    height: ${props => (props.height)};
+    top: ${props => (props.top)};
     svg{
-      width: 90px;
-      height: 32px;
+      width: ${props => (props.width)};
+      height: ${props => (props.height)};
     };
   }
 `;
 
 export const DivText = styled.div`
   width: 100%;
-  min-height: 191px;
+  min-height: 100%;
   padding: 5px 10px;
 
   @media(min-width: 768px){
