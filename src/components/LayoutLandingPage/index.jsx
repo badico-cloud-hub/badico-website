@@ -6,7 +6,7 @@ import { LayoutWrapper } from "./style"
 const Layout = ({ language, children }) => {
   return (
     <LayoutWrapper>
-      <Header />
+      <Header language={language}/>
     </LayoutWrapper>
   )
 }
