@@ -96,7 +96,7 @@ export const Container = styled.div`
   }
 
   .item:hover > .front {
-    transition: z-index 1.1s, opacity 3s, transform 0.4s linear;
+    transition: z-index 1.1s, opacity 2s, transform 0.4s linear;
     transform: rotateY(-180deg);
     opacity: 0;
   }
