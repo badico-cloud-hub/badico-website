@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from "react"
 import Logobadico from "../../images/logo.svg"
 import * as typeformEmbed from "@typeform/embed"
-import { HeaderWrapper } from "./HeaderWrapper"
-// import Container from "../Container/index"
-// import MenuIcon from "../../images/menu.svg"
-// import Close from "../../images/close.svg"
-// import  MenuRoundedIcon  from '@material-ui/icons/MenuRounded';
-// import Typeform from "../Typeform/index"
-// import { useIntl } from "gatsby-plugin-intl"
 import lang from "../../intl/langs"
+import { HeaderWrapper, Container } from "./style"
+import Typeform from "../Typeform/index"
+import MenuIcon from "../../images/menuwhite.svg"
+import Close from "../../images/close.svg"
 
 const Header = ({ language }) => {
-  // const intl = useIntl()
+  
 
   const [Form, setForm] = useState(null)
+
+
+const Header = () => {
+  const [form, setForm] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
+
   useEffect(() => {
     const contactForm = typeformEmbed.makePopup(
       "https://ask767898.typeform.com/to/rRIqbEzo",
@@ -29,42 +32,36 @@ const Header = ({ language }) => {
     )
     setForm(contactForm)
   }, [])
+
   return (
-    <HeaderWrapper>
-      <div className="header">
-        <div className="menu" />
-        <div className="menuOptions" />
-        <div className="menuOptionsMobile">
-          <a href="#">
-            <p>{lang[language]["menu.div.options.0"]}</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>{lang[language]["menu.div.options.1"]}</p>
-          </a>
-          <hr />
-          {/* <a href="#">
-            <p>{lang[language]["menu.div.options.2"]}</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>{lang[language]["menu.div.options.3"]}</p>
-          </a>
-          <hr /> */}
-          <a href="#about">
-            <p>{lang[language]["menu.div.options.4"]}</p>
-          </a>
-          <hr />
-          <a href="#">
-            <p>{lang[language]["menu.div.options.5"]}</p>
-          </a>
-        </div>
+    <HeaderWrapper isOpen={isOpen}>
+      <Container>
+      <div className="ghost" />
+      <div className="logodiv">
         <Logobadico className="logo" alt="Badico's logo" />
-        <div className="options">
+      </div>
+      <div class="menudrop">
+        <div className="back" />
+        <button
+          type="button"
+          className="open"
+          onClick={() => {
+            setIsOpen(true)
+          }}
+        >
+          <MenuIcon />
+        </button>
+        <nav class="drop-content">
           <ul>
             <li>
               <a href="#">{lang[language]["menu.div.options.0"]}</a>
             </li>
+            {/* <li>
+              <a href="#">Our Process</a>
+            </li> */}
+            {/* <li>
+              <a href="#">Meet Our Time</a>
+            </li> */}
             <li>
               <a href="#capacities">{lang[language]["menu.div.options.1"]}</a>
             </li>
@@ -78,18 +75,26 @@ const Header = ({ language }) => {
               <a href="#about">{lang[language]["menu.div.options.4"]}</a>
             </li>
             <li>
-              <li
-                style={{ cursor: "pointer" }}
+              <a
                 onClick={() => {
-                  Form.open()
+                  form.open()
                 }}
               >
                 {lang[language]["menu.div.options.5"]}
               </li>
             </li>
           </ul>
-        </div>
+        </nav>
+        <button
+          className="close"
+          onClick={() => {
+            setIsOpen(false)
+          }}
+        >
+          <Close />
+        </button>
       </div>
+      </Container>
     </HeaderWrapper>
   )
 }
