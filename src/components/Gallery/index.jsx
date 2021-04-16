@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css"
 import Tailor from "../../images/cases/tailor_logo.svg"
 import Harv from "../../images/cases/harv_logo.svg"
 import Plando from "../../images/cases/plando_logo.svg"
-import Jump from "../../images/cases/jump_logo.png"
+import Jump from "../../images/cases/jump_logo.svg"
 import SlideTailor from "../../images/cases/tailor_case.png"
 import SlideHarv from "../../images/cases/harv_case.png"
 import SlidePlando from "../../images/cases/plando_case.png"
@@ -71,27 +71,37 @@ const Gallery = () => {
           >
             <CardsCase
               Logo={Tailor}
+              width={size.width < 768 ? "67px" : size.width >= 1366 ? "105px" : "96px"}
+              height={size.width < 768 ? "31px" : size.width >= 1366 ? "40px" : "31px"}
+              top={size.width < 768 ? "-37px" : size.width >= 1366 ? "-50px" : "-50px"}
               Image={SlideTailor}
               children={<TailorText />}
             />
 
             <CardsCase
               Logo={Harv}
+              width={size.width < 768 ? "55px" : size.width >= 1366 ? "84px" : "80px"}
+              height={size.width < 768 ? "31px" : size.width >= 1366 ? "40px" : "30px"}
+              top={size.width < 768 ? "-37px" : size.width >= 1366 ? "-50px" : "-50px"}
               Image={SlideHarv}
               children={<HarvText />}
             />
 
             <CardsCase
               Logo={Plando}
+              width={size.width < 768 ? "85px" : size.width >= 1366 ? "117px" : "134px"}
+              height={size.width < 768 ? "37px" : size.width >= 1366 ? "45px" : "35px"}
+              top={size.width < 768 ? "-38px" : size.width >= 1366 ? "-50px" : "-50px"}
               Image={SlidePlando}
               children={<PlanDoText />}
             />
             
             <CardsCase
-              // Logo={Jump}
-              Logo={Plando}
-              // Image={SlideJump}
-              Image={SlidePlando}
+              Logo={Jump}
+              Image={SlideJump}
+              width={size.width < 768 ? "105px" : size.width >= 1366 ? "147px" : "175px"}
+              height={size.width < 768 ? "35px" : size.width >= 1366 ? "88px" : "31px"}
+              top={size.width < 768 ? "-38px" : size.width >= 1366 ? "-73px" : "-50px"}
               children={<CxJumpText />}
             />
             
