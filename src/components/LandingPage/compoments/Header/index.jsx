@@ -25,7 +25,7 @@ const Header = ({language}) => {
     )
     setForm(contactForm)
   }, [])
-  console.log(lang)
+  
   return (
     <Styled.HeaderWrapper isOpen={isOpen}>
       <Styled.Container>
