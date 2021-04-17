@@ -8,6 +8,7 @@ import About from "../components/About"
 import Capacities from "../components/Capacities"
 import FloatingButton from "../components/FloatingButton/index"
 import Companies from '../components/Companies'
+import Cases from "../components/Cases"
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Companies/>
     <CraftmanshipLayout />
     <Capacities />
+    <Cases />
     <About />
   </Layout>
 )

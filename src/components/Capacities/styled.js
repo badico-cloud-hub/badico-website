@@ -5,7 +5,7 @@ export const CapacitiesWrapper = styled.div`
   margin: 4rem 2rem;
 
   ${media.greaterThan("760px")`
-  margin: 5rem 3rem 4rem 3rem;
+  margin: 5rem 2rem 4rem 2rem;
   `}
 `
 
