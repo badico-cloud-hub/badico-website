@@ -4,11 +4,11 @@ import { Title } from './styled.js'
 export const CxJumpText = () => {
   return(
     <>
-      <Title><strong>Languages:</strong> javascrip, golang, python</Title>
-      <Title><strong>Services amount:</strong> 3</Title>
-      <Title><strong>Professinals:</strong> 2</Title>
-      <Title><strong>Development time:</strong> 8 meses</Title>
-      <Title><strong>Tools:</strong> AWS Lambda, express, ...</Title>
-    </>    
+      <Title><strong>Javascript</strong> </Title>
+      <Title><strong>Services count:</strong> 2</Title>
+      <Title><strong>Team Size:</strong> 2</Title>
+      <Title><strong>Time to market:</strong> 6 months</Title>
+      <Title><strong>Tools:</strong> AWS Lambda, ExpressJs, ReactJs, Digital Ocean Droplets, CI/CD, Serverless</Title>
+    </>
   )
 }
