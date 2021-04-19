@@ -9,6 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   h1 {
+    color: #0E273B;
     margin: 20px;
   }
 
