@@ -31,6 +31,15 @@ export const Container = styled.div`
     margin: 0px;
   }
 
+  .large-svg {
+    width: 90px;
+    height: 90px;
+  }
+  .medium-svg {
+    width: 70px;
+    height: 70px;
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -38,7 +47,7 @@ export const Container = styled.div`
 
     margin: 5px;
 
-    width: 150px;
+    width: 130px;
     height: 100px;
     background-color: #f8f8fb;
   }
@@ -49,19 +58,19 @@ export const Container = styled.div`
 
     margin: 5px;
 
-    width: 150px;
+    width: 130px;
     height: 100px;
     background-color: #f8f8fb;
   }
 
   .logo-f svg {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
   }
 
   .img-logo {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 
   .react-tabs__tab-list {
@@ -138,6 +147,16 @@ export const Container = styled.div`
     .react-tabs {
       width: 700px;
     }
+
+    .large-svg {
+      width: 90px;
+      height: 90px;
+    }
+    .medium-svg {
+      width: 70px;
+      height: 70px;
+    }
+
     hr {
       position: absolute;
       width: ${props => {
@@ -209,7 +228,7 @@ export const Container = styled.div`
       background-color: #f8f8fb;
     }
 
-    .logo svg {
+    .img-logo {
       width: 40px;
     }
 
@@ -227,6 +246,15 @@ export const Container = styled.div`
 
     .logo-f svg {
       width: 40px;
+    }
+
+    .large-svg {
+      width: 60px;
+      height: 90px;
+    }
+    .medium-svg {
+      width: 60px;
+      height: 70px;
     }
   }
   @media (max-width: 380px) {

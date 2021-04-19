@@ -63,10 +63,10 @@ function TechStacks() {
         <TabPanel> 
           {/* Backend */}
           <div className="logo">
-            <DockerLogo className="img-logo" />
+            <DockerLogo className="img-logo"/>
           </div>
           <div className="logo">
-            <GoIcon className="img-logo" />
+            <GoIcon className="medium-svg" />
           </div>
           <div className="logo">
             <NodeIcon className="img-logo" />
@@ -114,10 +114,10 @@ function TechStacks() {
             <FireBaseIcon className="img-logo" />
           </div>
           <div className="logo">
-            <ReThinkLogo className="img-logo" />
+            <ReThinkLogo className="large-svg" />
           </div>
           <div className="logo">
-            <MongoDbIcon className="img-logo" />
+            <MongoDbIcon className="large-svg" />
           </div>
           <div className="logo">
             <RedisLogo className="img-logo" />
@@ -129,7 +129,7 @@ function TechStacks() {
         <TabPanel>
           {/* Cloud Providers */}
           <div className="logo">
-            <VercelLogo className="img-logo" />
+            <VercelLogo className="medium-svg" />
           </div>
           <div className="logo">
             <NetlifyLogo className="img-logo" />
@@ -144,7 +144,7 @@ function TechStacks() {
             <DigitalLogo className="img-logo" />
           </div>
           <div className="logo">
-            <LinodeLogo className="img-logo" />
+            <LinodeLogo className="medium-svg" />
           </div>
         </TabPanel>
       </Tabs>
