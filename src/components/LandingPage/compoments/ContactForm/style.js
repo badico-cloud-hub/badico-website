@@ -41,8 +41,15 @@ export const Box = styled.div`
 export const DivCoder = styled.div`
   display: flex;
   position: absolute;
+  width: 110px;
+  height: 110px;
   top: -62px;
   right: 12px;
+
+  @media (min-width: 1366px) {
+    width: 144px;
+    height: 142px;
+  }
 `
 
 export const Title = styled.h1`
