@@ -96,7 +96,7 @@ function TechStacks() {
             <JavascriptLogo className="img-logo-f" />
           </div>
           <div className="logo-f">
-            <DartLogo className="img-logo-f" />
+            <DartLogo className="medium-svg" />
           </div>
           <div className="logo-f">
             <UnityLogo className="img-logo-f" />
@@ -111,7 +111,7 @@ function TechStacks() {
         <TabPanel>
           {/* DataBases */}
           <div className="logo">
-            <FireBaseIcon className="img-logo" />
+            <FireBaseIcon className="small-svg" />
           </div>
           <div className="logo">
             <ReThinkLogo className="large-svg" />
@@ -120,10 +120,10 @@ function TechStacks() {
             <MongoDbIcon className="large-svg" />
           </div>
           <div className="logo">
-            <RedisLogo className="img-logo" />
+            <RedisLogo className="small-svg" />
           </div>
           <div className="logo">
-            <Dynamo className="img-logo" />
+            <Dynamo className="small-svg" />
           </div>
         </TabPanel>
         <TabPanel>
@@ -132,13 +132,13 @@ function TechStacks() {
             <VercelLogo className="medium-svg" />
           </div>
           <div className="logo">
-            <NetlifyLogo className="img-logo" />
+            <NetlifyLogo className="small-svg" />
           </div>
           <div className="logo">
             <AwsLogo className="img-logo" />
           </div>
           <div className="logo">
-            <AzureLogo className="img-logo" />
+            <AzureLogo className="small-svg" />
           </div>
           <div className="logo">
             <DigitalLogo className="img-logo" />

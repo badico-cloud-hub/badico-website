@@ -39,6 +39,10 @@ export const Container = styled.div`
     width: 70px;
     height: 70px;
   }
+  .small-svg {
+    width: 35px;
+    height: 35px;
+  }
 
   .logo {
     display: flex;
@@ -63,7 +67,7 @@ export const Container = styled.div`
     background-color: #f8f8fb;
   }
 
-  .logo-f svg {
+  .img-logo-f {
     width: 40px;
     height: 40px;
   }
@@ -157,6 +161,11 @@ export const Container = styled.div`
       height: 70px;
     }
 
+    .small-svg {
+      width: 30px;
+      height: 30px;
+    }
+
     hr {
       position: absolute;
       width: ${props => {
@@ -244,7 +253,7 @@ export const Container = styled.div`
       background-color: #f8f8fb;
     }
 
-    .logo-f svg {
+    .img-logo-f {
       width: 40px;
     }
 
@@ -256,6 +265,10 @@ export const Container = styled.div`
       width: 60px;
       height: 70px;
     }
+    .small-svg {
+    width: 30px;
+    height: 30px;
+  }
   }
   @media (max-width: 380px) {
     .react-tabs {
