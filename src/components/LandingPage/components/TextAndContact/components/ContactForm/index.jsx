@@ -7,7 +7,7 @@ const ContactForm = () => {
     <Styled.Container>
       <Styled.Box>
         <Styled.DivCoder>
-          <Coder />
+          <Coder className="coder"/>
         </Styled.DivCoder>
         <Styled.Title>
           Lorem ipsum nisi facilisis torquent suspendisse non
