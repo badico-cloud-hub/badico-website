@@ -1,5 +1,5 @@
 import React from "react"
-import Coder from "../../images/coder.svg"
+import Coder from "../../../../images/coder.svg"
 import * as Styled from "./style"
 
 const ContactForm = () => {
