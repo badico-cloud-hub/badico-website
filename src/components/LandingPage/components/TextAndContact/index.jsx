@@ -8,8 +8,8 @@ import Waveright from "../../images/ondaright.svg"
 const TextAndContact = () => {
   return (
     <Styled.Container>
-      <Waveleft className="waveleft" />
-      <Waveright className="waveright" />
+      {/* <Waveleft className="waveleft" /> */}
+      {/* <Waveright className="waveright" /> */}
       <Text />
       <ContactForm />
     </Styled.Container>
