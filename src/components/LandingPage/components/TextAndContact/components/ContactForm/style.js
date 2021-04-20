@@ -5,14 +5,14 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 674px;
-  margin: 100px auto 0;
+  margin: 100px auto 16px;
 
   @media (min-width: 1366px) {
-    margin: 120px 0 0 30px;
+    margin: 120px 0 16px 30px;
   }
 
   @media (min-width: 1920px) {
-    margin: 198px 30px 0 82px;
+    margin: 198px 30px 16px 82px;
   }
 `
 
@@ -47,7 +47,7 @@ export const Box = styled.div`
   @media (min-width: 1440px) {
     width: 100%;
     max-width: 674px;
-    max-height: 532px;
+    height: 532px;
   }
 `
 
@@ -106,7 +106,6 @@ export const Input = styled.input`
   ::placeholder {
     color: #cacccf;
     font-size: 16px;
-
   }
 
   :focus {
