@@ -59,9 +59,18 @@ export const DivCoder = styled.div`
   top: -62px;
   right: 12px;
 
+  .coder {
+    width: 110px;
+    height: 110px;
+  }
   @media (min-width: 1440px) {
     width: 144px;
     height: 142px;
+
+    .coder {
+      width: 144px;
+      height: 142px;
+    }
   }
 `
 
