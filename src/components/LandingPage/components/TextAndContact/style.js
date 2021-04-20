@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
   justify-content: center;
   position: relative;
   overflow-x: hidden;
@@ -80,7 +79,7 @@ export const Container = styled.div`
     flex-direction: row;
 
     .waveleft {
-      top: -600px;
+      top: -330px;
       right: 0px;
       left: -850px;
     }
