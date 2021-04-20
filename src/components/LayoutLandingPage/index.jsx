@@ -3,6 +3,7 @@ import Container from "../Container"
 import Header from "../LandingPage/components/Header"
 import TextAndContact from "../LandingPage/components/TextAndContact"
 import TeamComplete from '../LandingPage/components/TeamComplete'
+import Beneficies from '../LandingPage/components/Beneficies'
 import { LayoutWrapper } from "./style"
 
 const Layout = ({ language, children }) => {
@@ -12,6 +13,7 @@ const Layout = ({ language, children }) => {
       <Container>
         <TextAndContact />
         <TeamComplete />
+        <Beneficies />
       </Container>
     </LayoutWrapper>
   )
