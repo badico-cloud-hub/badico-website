@@ -3,7 +3,17 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  width: 100%;
+  max-width: 674px;
+  margin: 100px auto 0;
+
+  @media (min-width: 1366px) {
+    margin: 120px 0 0 30px;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 198px 30px 0 82px;
+  }
 `
 
 export const Box = styled.div`
@@ -23,16 +33,19 @@ export const Box = styled.div`
   }
 
   @media (min-width: 768px) {
+    width: 100%;
     max-width: 607px;
     height: 498px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
+    width: 100%;
     max-width: 580px;
-    max-height: 477px;
+    max-height: 532px;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1440px) {
+    width: 100%;
     max-width: 674px;
     max-height: 532px;
   }
@@ -46,7 +59,7 @@ export const DivCoder = styled.div`
   top: -62px;
   right: 12px;
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1440px) {
     width: 144px;
     height: 142px;
   }
@@ -64,6 +77,10 @@ export const Title = styled.h1`
   }
 
   @media (min-width: 1366px) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: 1440px) {
     max-width: 374px;
     font-size: 24px;
     line-height: 29px;
@@ -88,6 +105,8 @@ export const Input = styled.input`
 
   ::placeholder {
     color: #cacccf;
+    font-size: 16px;
+
   }
 
   :focus {
@@ -105,13 +124,13 @@ export const Input = styled.input`
     min-width: 566px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     min-width: 532px;
     max-width: 532px;
     font-size: 20px;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1440px) {
     min-width: 626px;
     max-width: 626px;
     height: 60px;
@@ -141,9 +160,9 @@ export const Button = styled.button`
     margin-top: 8px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1366px) {
     min-width: 510px;
     max-width: 510px;
-    height: 60px;
+    height: 59px;
   }
 `
