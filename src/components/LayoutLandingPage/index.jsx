@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
-import Header from "../LandingPage/compoments/Header"
-import ContactForm from '../LandingPage/compoments/ContactForm'
+import Header from "../LandingPage/components/Header"
+import ContactForm from '../LandingPage/components/ContactForm'
 import { LayoutWrapper } from "./style"
 
 const Layout = ({ language, children }) => {
