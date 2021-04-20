@@ -230,6 +230,10 @@ export const HeaderWrapper = styled.div`
       a {
         font-size: 20px;
       }
+
+      ul {
+        margin-right: 140px;
+      }
     }
   }
   `}
