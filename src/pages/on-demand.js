@@ -1,15 +1,22 @@
 import React from "react"
 import LanguageProvider from "../providers/LanguageProvider"
-import { WebsiteProvider } from "../contexts"
 import Layout from "../components/LayoutLandingPage"
-
-const language = "en"
+import TextAndContact from "../components/LandingPage/components/TextAndContact"
+import TeamComplete from "../components/LandingPage/components/TeamComplete"
+import Beneficies from "../components/LandingPage/components/Beneficies"
+import { WebsiteProvider } from "../contexts"
 
 const IndexPage = () => {
+  const language = "en"
+
   return (
     <WebsiteProvider>
       <LanguageProvider>
-        <Layout language={language} />
+        <Layout language={language}>
+          <TextAndContact language={language} />
+          <TeamComplete language={language} />
+          <Beneficies language={language} />
+        </Layout>
       </LanguageProvider>
     </WebsiteProvider>
   )
