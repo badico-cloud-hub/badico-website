@@ -9,8 +9,8 @@ import lang from '../../intl/langs';
 
   
 const Header = ({ language }) => {
-    const [form, setForm] = useState(null)
-    const [isOpen, setIsOpen] = useState(false)
+  const [form, setForm] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const contactForm = typeformEmbed.makePopup(
@@ -62,7 +62,8 @@ const Header = ({ language }) => {
             </li>
             {/* <li>
               <a href="#">Blog</a>
-            </li> */}
+            </li>
+             */}
             <li>
               <a href="#about">{lang[language]["menu.div.options.4"]}</a>
             </li>
