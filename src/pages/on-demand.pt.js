@@ -4,6 +4,8 @@ import Layout from "../components/LayoutLandingPage"
 import TextAndContact from "../components/LandingPage/components/TextAndContact"
 import TeamComplete from "../components/LandingPage/components/TeamComplete"
 import Beneficies from "../components/LandingPage/components/Beneficies"
+import Cases from "../components/LandingPage/components/Cases"
+
 import { WebsiteProvider } from "../contexts"
 
 const IndexPage = () => {
@@ -16,6 +18,7 @@ const IndexPage = () => {
           <TextAndContact language={language} />
           <TeamComplete language={language} />
           <Beneficies language={language} />
+          <Cases language={language} />
         </Layout>
       </LanguageProvider>
     </WebsiteProvider>
