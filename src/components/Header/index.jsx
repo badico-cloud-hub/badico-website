@@ -6,12 +6,6 @@ import { HeaderWrapper, Container } from "./style"
 import Typeform from "../Typeform/index"
 import MenuIcon from "../../images/menuwhite.svg"
 import Close from "../../images/close.svg"
-import lang from '../../intl/langs';
-
-const Header = ({ language }) => {
-  
-
-  const [Form, setForm] = useState(null)
 
 
 const Header = ({language}) => {
