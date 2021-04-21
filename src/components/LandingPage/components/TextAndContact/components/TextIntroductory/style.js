@@ -1,93 +1,110 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  padding: 74px 25px 0px;
   position: relative;
-
-  h1 {
-    width: 95%;
-    min-width: 286px;
-    margin-bottom: 30px;
-    color: #1d4c68;
-    font-size: 24px;
-  }
-
-  p {
-    min-width: 286px;
-    font-size: 16px;
-    color: #52575c;
-  }
-
-  @media (min-width: 428px) {
-    h1 {
-    min-width: 353px;
-    margin-bottom: 16px;
-    font-size: 34px;
-    }
-
-    p {
-      min-width: 353px;
-      font-size: 20px;
-      font-weight: 500;
-    }
-  }
-
-  @media (min-width: 768px) {
-    padding: 118px 0px 0px 80px;
-
-    h1 {
-      width: 94%;
-      margin-bottom: 30px;
-      font-size: 34px;
-    }
-
-    p {
-      width: 75%;
-      font-size: 24px;
-    }
-  }
-  @media (min-width: 1024px) {
-    padding: 74px 90px 0px;
-
-    h1 {
-      width: 80%;
-      margin-bottom: 30px;
-      font-size: 34px;
-    }
-
-    p {
-      width: 75%;
-      font-size: 24px;
-    }
-
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 74px;
+  font-family: "Roboto";
 
   @media (min-width: 1366px) {
-    width: 478px;
-    padding: 210px 0px 0px;
-
-    h1 {
-      width: 100%;
-      margin-bottom: 30px;
-      font-size: 34px;
-    }
-
-    p {
-      width: 85%;
-    }
+    max-width: 500px;
+    margin-left: 140px;
+    align-items: initial;
   }
-  
-  @media (min-width: 1920px) {
-    width: 860px;
-    padding: 270px 0px 0px;
 
-    h1 {
-      width: 100%;
-      font-size: 60px;
-      margin-bottom: 32px;
-    }
+  @media (min-width: 1920px) {
+    max-width: 860px;
 
     p {
       width: 532px;
     }
+  }
+`
+
+export const Wrapper = styled.div`
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: 428px) {
+    min-width: 353px;
+    max-width: 550px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 607px;
+  }
+
+  @media (min-width: 1366px) {
+    max-width: 478px;
+    margin: 0;
+  }
+`
+
+export const Title = styled.h1`
+  min-width: 286px;
+  margin-bottom: 24px;
+  color: #1d4c68;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  letter-spacing: 0.1;
+
+  @media (min-width: 428px) {
+    min-width: 353px;
+    margin-bottom: 16px;
+    line-height: 41px;
+    font-size: 34px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: 1366px) {
+    width: 478px;
+    text-align: left;
+  }
+
+  @media (min-width: 1920px) {
+    width: 860px;
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+`
+
+export const Text = styled.p`
+  min-width: 286px;
+  font-size: 16px;
+  color: #52575c;
+  line-height: 24px;
+
+  @media (min-width: 428px) {
+    min-width: 353px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: 1366px) {
+    width: 478px;
+    text-align: left;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0;
+    font-weight: 500;
+    line-height: 29px;
+  }
 `
