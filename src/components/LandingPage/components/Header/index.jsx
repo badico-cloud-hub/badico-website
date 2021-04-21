@@ -29,10 +29,10 @@ const Header = ({language}) => {
   return (
     <Styled.HeaderWrapper isOpen={isOpen}>
       <Styled.Container>
-      <div className="ghost" />
-      <div className="logodiv">
-        <LogoBadico className="logo" alt="Badico's logo" />
-      </div>
+      <Styled.Ghost />
+        <Styled.BoxLogo>
+          <LogoBadico className="logo" alt="Badico's logo" />
+        </Styled.BoxLogo>
 
       <div className="menudrop">
         <div className="back" />
