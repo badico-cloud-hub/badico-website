@@ -6,6 +6,7 @@ import TeamComplete from "../components/LandingPage/components/TeamComplete"
 import Beneficies from "../components/LandingPage/components/Beneficies"
 import Cases from "../components/LandingPage/components/Cases"
 import TeamAdvantages from '../components/LandingPage/components/TeamAdvantages'
+import Footer from "../components/LandingPage/components/Footer"
 
 import { WebsiteProvider } from "../contexts"
 
@@ -21,6 +22,7 @@ const IndexPage = () => {
           <Beneficies language={language} />
           <Cases language={language} />
           <TeamAdvantages language={language} />
+          <Footer/>
         </Layout>
       </LanguageProvider>
     </WebsiteProvider>
