@@ -147,7 +147,7 @@ export const HeaderWrapper = styled.div`
 
         ul {
           padding: 0;
-          margin: 0 104px 0 0;
+          margin: 0 106px 0 0;
         }
 
         li {
