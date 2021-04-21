@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components"
-import media from "styled-media-query"
 
 export const Container = styled.div`
   display: flex;
@@ -22,26 +21,6 @@ export const HeaderWrapper = styled.div`
   z-index: 3;
   border-radius: 0px 0px 20px 20px;
 
-  .ghost {
-    width: 10%;
-    min-width: 72px;
-    height: 42px;
-    background: #0e273b;
-  }
-
-  .logodiv {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    min-width: 114px;
-    height: 40px;
-
-    .logo {
-      width: 114px;
-      height: 40px;
-    }
-  }
-
   .back {
     display: none;
     position: absolute;
@@ -50,6 +29,7 @@ export const HeaderWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.3);
+
     :hover {
       display: none;
     }
@@ -134,101 +114,125 @@ export const HeaderWrapper = styled.div`
     }
   }
 
-  ${media.greaterThan("768px")`
-  height: 121px;
+  @media (min-width: 768px) {
+    height: 121px;
 
-  .ghost {
-    min-width: 110px;
+    .menudrop {
+      min-width: 110px;
+    }
   }
 
-  .menudrop{
-    min-width: 110px;
+  @media (min-width: 1366px) {
+    .open,
+    .close {
+      display: none;
+    }
+
+    .menudrop {
+      width: 70%;
+
+      .drop-content {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: #0e273b;
+        justify-content: flex-end;
+
+        a {
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        ul {
+          padding: 0;
+          margin: 0 93px 0 0;
+        }
+
+        li {
+          padding: 0;
+          margin: 0 26px 0 0;
+          display: inline;
+          border: 0;
+        }
+      }
+    }
   }
 
-  .logodiv {
+  @media (min-width: 1920px) {
+    .menudrop {
+      .drop-content {
+        a {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        ul {
+          margin: 0 92px 0 0;
+        }
+
+        li {
+          margin: 0 48px 0 0;
+        }
+      }
+    }
+  }
+`
+export const BoxLogo = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  min-width: 114px;
+  height: 40px;
+
+  .logo {
+    width: 114px;
+    height: 40px;
+  }
+
+  @media (min-width: 768px) {
     width: 182px;
     height: 62px;
 
-      .logo {
-        width: 182px;
-        height: 62px;
-      }
+    .logo {
+      width: 182px;
+      height: 62px;
     }
+  }
 
-  `}
-
-  ${media.greaterThan("1024px")`
-
-  .logodiv {
+  @media (min-width: 1366px) {
     width: 164px;
     height: 54px;
     margin-left: 140px;
 
-      .logo {
-        width: 164px;
-        height: 54px;
-      }
-  }
-
-  .ghost {
-    display: none;
-  }
-
-  .open, .close {
-    display: none;
-  }
-
-  .menudrop {
-    width: 70%;
-
-    .drop-content {
-      display: flex;
-      position: static;
-      flex-direction: row;
-      background: #0E273B;
-      justify-content: flex-end;
-
-      a {
-        color: #FFFFFF;
-        font-size: 16px;
-      }
-
-      ul {
-        text-align: right;
-        padding: 0;
-        margin: 0;
-
-      }
-
-      li {
-        padding: 0 26px 0 0;
-        margin: 0;
-        display: inline;
-        border: 0;
-      }
+    .logo {
+      width: 164px;
+      height: 54px;
     }
   }
-  `}
 
-  ${media.greaterThan("1366px")`
-
-  .logodiv {
+  @media (min-width: 1920px) {
     width: 200px;
     height: 64px;
     margin-left: 140px;
 
-      .logo {
-        width: 200px;
-        height: 64px;
-      }
-  }
-
-  .menudrop {
-    .drop-content {
-      a {
-        font-size: 20px;
-      }
+    .logo {
+      width: 200px;
+      height: 64px;
     }
   }
-  `}
+`
+export const Ghost = styled.div`
+  width: 10%;
+  min-width: 72px;
+  height: 42px;
+  background: #0e273b;
+
+  @media (min-width: 768px) {
+    min-width: 110px;
+  }
+
+  @media (min-width: 1366px) {
+    display: none;
+  }
 `
