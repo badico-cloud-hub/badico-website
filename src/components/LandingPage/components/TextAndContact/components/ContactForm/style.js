@@ -8,11 +8,11 @@ export const Container = styled.div`
   margin: 100px auto 16px;
 
   @media (min-width: 1366px) {
-    margin: 120px 0 16px 30px;
+    margin: 120px 100px 16px 0;
   }
 
   @media (min-width: 1920px) {
-    margin: 198px 30px 16px 82px;
+    margin: 198px 165px 16px 82px;
   }
 `
 
@@ -41,13 +41,13 @@ export const Box = styled.div`
   @media (min-width: 1366px) {
     width: 100%;
     max-width: 580px;
-    max-height: 532px;
+    height: 475px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1920px) {
     width: 100%;
     max-width: 674px;
-    height: 532px;
+    height: 552px;
   }
 `
 
@@ -63,9 +63,27 @@ export const DivCoder = styled.div`
     width: 110px;
     height: 110px;
   }
-  @media (min-width: 1440px) {
+
+  @media (min-width: 428px) {
+    top: -70px;
+    right: 20px;
+  }
+
+  @media (min-width: 768px) {
+    top: -44px;
+    right: 30px;
+  }
+
+  @media (min-width: 1366px) {
+    top: -65px;
+    right: 40px;
+  }
+
+  @media (min-width: 1920px) {
     width: 144px;
     height: 142px;
+    top: -100px;
+    right: 15px;
 
     .coder {
       width: 144px;
@@ -80,19 +98,22 @@ export const Title = styled.h1`
   width: 234px;
   line-height: 24px;
   text-align: center;
+  font-weight: 600;
 
   @media (min-width: 768px) {
     width: 314px;
+    margin: 70px auto 40px;
   }
 
   @media (min-width: 1366px) {
     margin-bottom: 36px;
   }
 
-  @media (min-width: 1440px) {
-    max-width: 374px;
+  @media (min-width: 1920px) {
+    width: 375px;
     font-size: 24px;
-    line-height: 29px;
+    font-weight: 500;
+    margin: 55px auto 30px;
   }
 `
 
@@ -138,10 +159,15 @@ export const Input = styled.input`
     font-size: 20px;
   }
 
-  @media (min-width: 1440px) {
-    min-width: 626px;
+  @media (min-width: 1920px) {
+    width: 626px;
     max-width: 626px;
+    font-size: 20px;
     height: 60px;
+
+    ::placeholder {
+      font-size: 20px;
+    }
   }
 `
 
@@ -154,6 +180,8 @@ export const Button = styled.button`
   border: none;
   color: #ffffff;
   margin: 16px auto 0;
+  font-size: 16px;
+  line-height: 24px;
 
   :focus {
     outline: #1d4c68;
@@ -161,6 +189,8 @@ export const Button = styled.button`
 
   @media (min-width: 428px) {
     min-width: 327px;
+    font-size: 20px;
+    font-weight: 500;
   }
 
   @media (min-width: 768px) {
@@ -172,5 +202,9 @@ export const Button = styled.button`
     min-width: 510px;
     max-width: 510px;
     height: 59px;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 32px auto 0;
   }
 `
