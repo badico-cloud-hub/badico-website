@@ -232,7 +232,7 @@ export const HeaderWrapper = styled.div`
       }
 
       ul {
-        margin-right: 140px;
+        margin-right: 100px;
       }
     }
   }
