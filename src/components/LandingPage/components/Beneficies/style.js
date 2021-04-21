@@ -184,6 +184,7 @@ export const Text = styled.p`
   @media (min-width: 428px) {
     width: 262px;
     font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: 1366px) {
