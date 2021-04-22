@@ -77,7 +77,7 @@ export const ChangeLanguageDesktop = styled.div`
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #a0a4a8;
+  border: 2px solid #a0a4a8;
   border-radius: 40px;
   padding: 10px;
   margin-left: 10px;
@@ -142,6 +142,7 @@ export const MenuOptions = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-self: flex-start;
   }
 
   li {
@@ -164,6 +165,7 @@ export const MenuOptions = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
 
     a {
       color: #52575c;
@@ -189,12 +191,18 @@ export const MenuOptions = styled.div`
   }
 
   @media (min-width: 1366px) {
+    margin-bottom: 10px;
+
     ul {
       width: 620px;
     }
 
     a {
       font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
     }
   }
 `
@@ -219,7 +227,7 @@ export const ChangeLanguage = styled.div`
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #a0a4a8;
+  border: 2px solid #a0a4a8;
   border-radius: 40px;
   padding: 10px;
 
