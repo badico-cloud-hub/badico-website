@@ -89,10 +89,10 @@ export const HeaderWrapper = styled.div`
     width: 100%;
 
     a {
-      color: black;
+      color: #0E273B;
       text-decoration: none;
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 16px;
       cursor: pointer;
     }
 
@@ -102,11 +102,9 @@ export const HeaderWrapper = styled.div`
     }
 
     li {
-      margin: 0 3rem;
-      padding: 5px 5px 0.6rem 5px;
+      margin: 0 58px 0  38px;
+      padding: 16px 5px;
       border-bottom: 1px solid #00000029;
-      margin-bottom: 0.5rem;
-      margin-right: 4rem;
     }
 
     li:last-child {
