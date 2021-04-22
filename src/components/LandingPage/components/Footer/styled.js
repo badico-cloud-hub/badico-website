@@ -16,12 +16,16 @@ export const Container = styled.div`
     .copy {
       display: none;
     }
-    padding: 0px 60px;
+    padding: 10px 60px;
   }
 
   hr {
     margin-top: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 1366px) {
+    padding: 10px 110px;
   }
 `
 
@@ -133,7 +137,7 @@ export const MenuOptions = styled.div`
   }
 
   ul {
-    width: 270px;
+    width: 230px;
 
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +171,7 @@ export const MenuOptions = styled.div`
     }
 
     ul {
-      width: 280px;
+      width: 270px;
     }
 
     p {
@@ -186,15 +190,11 @@ export const MenuOptions = styled.div`
 
   @media (min-width: 1366px) {
     ul {
-      width: 800px;
+      width: 620px;
     }
 
     a {
       font-size: 20px;
-    }
-
-    li:nth-of-type(4) {
-      margin-left: 15px;
     }
   }
 `
