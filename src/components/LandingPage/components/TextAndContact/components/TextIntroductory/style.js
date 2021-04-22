@@ -64,7 +64,6 @@ export const Title = styled.h1`
 
   @media (min-width: 768px) {
     margin-bottom: 24px;
-    text-align: center;
   }
 
   @media (min-width: 1366px) {
@@ -94,7 +93,6 @@ export const Text = styled.p`
 
   @media (min-width: 768px) {
     font-size: 24px;
-    text-align: center;
   }
 
   @media (min-width: 1366px) {
