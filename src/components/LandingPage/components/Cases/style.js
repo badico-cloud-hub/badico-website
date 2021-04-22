@@ -63,6 +63,9 @@ export const Text = styled.p`
     line-height: 29px;
     margin-bottom: 8px;
   }
+  @media (min-width: 1920px) {
+    width: 73%;
+  }
 `
 
 export const Button = styled.button`
