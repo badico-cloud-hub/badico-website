@@ -140,18 +140,18 @@ export const HeaderWrapper = styled.div`
 
         a {
           color: #ffffff;
-          font-size: 16px;
+          font-size: 20px;
           font-weight: 400;
         }
 
         ul {
           padding: 0;
-          margin: 0 93px 0 0;
+          margin: 0 106px 0 0;
         }
 
         li {
           padding: 0;
-          margin: 0 26px 0 0;
+          margin: 0 32px 0 0;
           display: inline;
           border: 0;
         }
