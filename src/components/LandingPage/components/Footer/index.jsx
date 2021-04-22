@@ -18,9 +18,32 @@ import InstaIcon from "../../images/instagram.svg"
 import GitIcon from "../../images/github.svg"
 import YoutubeIcon from "../../images/youtube.svg"
 
+import { useStaticQuery, graphql } from "gatsby"
+
 import lang from "../../../../intl/langs"
 
 const Footer = ({ language }) => {
+  const {
+    site: {
+      siteMetadata: {
+        socialMedia: { github, linkedin, instagram },
+        copyright,
+      },
+    },
+  } = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          socialMedia {
+            github
+            linkedin
+            instagram
+          }
+          copyright
+        }
+      }
+    }
+  `)
   return (
     <Container>
       <LineUp>
@@ -33,12 +56,28 @@ const Footer = ({ language }) => {
             <ArrowUp />
           </ChangeLanguageDesktop>
           <SocialIconsDesktop>
-            <div className="icons">
-              <FaceIcon className="icon" />
-              <InstaIcon className="icon" />
-              <GitIcon className="icon" />
-              <YoutubeIcon className="icon" />
-            </div>
+            <ul className="icons">
+              <li>
+                <a href="">
+                  <FaceIcon className="icon" />
+                </a>
+              </li>
+              <li>
+                <a href={instagram}>
+                  <InstaIcon className="icon" />
+                </a>
+              </li>
+              <li>
+                <a href={github}>
+                  <GitIcon className="icon" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <YoutubeIcon className="icon" />
+                </a>
+              </li>
+            </ul>
           </SocialIconsDesktop>
         </SocialMenuDesktop>
       </LineUp>
@@ -65,7 +104,7 @@ const Footer = ({ language }) => {
             <a href="#about">{lang[language]["menu.div.options.5"]}</a>
           </li>
         </ul>
-        <p>© 2021 Badico cloud. All rights reserved.</p>
+        <p>{copyright}</p>
       </MenuOptions>
       <SocialMenuMobile>
         <ChangeLanguage>
@@ -74,15 +113,31 @@ const Footer = ({ language }) => {
         </ChangeLanguage>
         <SocialIcons>
           <p>Social Share</p>
-          <div className="icons">
-            <FaceIcon className="icon" />
-            <InstaIcon className="icon" />
-            <GitIcon className="icon" />
-            <YoutubeIcon className="icon" />
-          </div>
+          <ul className="icons">
+            <li>
+              <a href="">
+                <FaceIcon className="icon" />
+              </a>
+            </li>
+            <li>
+              <a href={instagram}>
+                <InstaIcon className="icon" />
+              </a>
+            </li>
+            <li>
+              <a href={github}>
+                <GitIcon className="icon" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <YoutubeIcon className="icon" />
+              </a>
+            </li>
+          </ul>
         </SocialIcons>
       </SocialMenuMobile>
-      <p class="copy">© 2021 Badico cloud. All rights reserved.</p>
+      <p class="copy">{copyright}</p>
     </Container>
   )
 }

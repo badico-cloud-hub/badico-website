@@ -31,24 +31,25 @@ export const LineUp = styled.div`
 
   .logoBadico {
     svg {
-      width: 130px;
+      width: 148px;
     }
   }
 
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-
-    .logoBadico {
-      svg {
-        width: 180px;
-      }
-    }
   }
   @media (min-width: 1366px) {
     .logoBadico {
       svg {
-        width: 220px;
+        width: 162px;
+      }
+    }
+  }
+  @media (min-width: 1920px) {
+    .logoBadico {
+      svg {
+        width: 200px;
       }
     }
   }
@@ -97,16 +98,25 @@ export const SocialIconsDesktop = styled.div`
     margin-top: 10px;
   }
 
+  ul {
+    margin-bottom: 0px;
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
     margin: 0px 10px 0px;
   }
 
-  .icon:nth-of-type(4) {
-    width: 40px;
-    height: 40px;
+  ul li:nth-of-type(4) .icon {
+    width: 34px;
+    height: 24px;
   }
 `
 
@@ -234,15 +244,24 @@ export const SocialIcons = styled.div`
     text-align: center;
   }
 
+  ul {
+    margin-bottom: 0px;
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
     margin: 0px 15px 0px;
   }
 
-  .icon:nth-of-type(4) {
-    width: 40px;
-    height: 40px;
+  ul li:nth-of-type(4) .icon {
+    width: 34px;
+    height: 24px;
   }
 `
