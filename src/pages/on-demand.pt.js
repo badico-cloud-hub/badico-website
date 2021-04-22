@@ -5,7 +5,7 @@ import TextAndContact from "../components/LandingPage/components/TextAndContact"
 import TeamComplete from "../components/LandingPage/components/TeamComplete"
 import Beneficies from "../components/LandingPage/components/Beneficies"
 import Cases from "../components/LandingPage/components/Cases"
-import TeamAdvantages from '../components/LandingPage/components/TeamAdvantages'
+import TeamAdvantages from "../components/LandingPage/components/TeamAdvantages"
 import Footer from "../components/LandingPage/components/Footer"
 
 import { WebsiteProvider } from "../contexts"
@@ -22,7 +22,7 @@ const IndexPage = () => {
           <Beneficies language={language} />
           <Cases language={language} />
           <TeamAdvantages language={language} />
-          <Footer/>
+          <Footer language={language} />
         </Layout>
       </LanguageProvider>
     </WebsiteProvider>
