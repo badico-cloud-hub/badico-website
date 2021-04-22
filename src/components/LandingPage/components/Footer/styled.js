@@ -104,7 +104,7 @@ export const MenuOptions = styled.div`
   }
 
   ul {
-    width: 300px;
+    width: 270px;
 
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +138,7 @@ export const MenuOptions = styled.div`
     }
 
     ul{
-      width: 340px;
+      width: 280px;
     }
 
     p {

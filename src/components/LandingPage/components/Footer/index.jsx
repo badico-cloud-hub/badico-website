@@ -19,9 +19,8 @@ import GitIcon from "../../images/github.svg"
 import YoutubeIcon from "../../images/youtube.svg"
 
 import lang from "../../../../intl/langs"
-const language = "pt"
 
-const Footer = () => {
+const Footer = ({ language }) => {
   return (
     <Container>
       <LineUp>
@@ -50,30 +49,20 @@ const Footer = () => {
             <a href="#">{lang[language]["menu.div.options.0"]}</a>
           </li>
           <li>
-            <a href="#">Our Process</a>
+            <a href="#">{lang[language]["menu.div.options.1"]}</a>
           </li>
           <li>
-            <a href="#">Meet Our Time</a>
+            <a href="#">{lang[language]["menu.div.options.2"]}</a>
           </li>
           <li>
-            <a href="#capacities">{lang[language]["menu.div.options.1"]}</a>
+            <a href="#capacities">{lang[language]["menu.div.options.3"]}</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#">{lang[language]["menu.div.options.4"]}</a>
           </li>
 
           <li>
-            <a href="#about">{lang[language]["menu.div.options.4"]}</a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onClick={() => {
-                // form.open()
-              }}
-            >
-              {lang[language]["menu.div.options.5"]}
-            </a>
+            <a href="#about">{lang[language]["menu.div.options.5"]}</a>
           </li>
         </ul>
         <p>© 2021 Badico cloud. All rights reserved.</p>
