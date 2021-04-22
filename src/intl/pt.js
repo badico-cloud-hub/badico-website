@@ -40,4 +40,16 @@ export default {
   "about.text.1": `If your company doesn't just want to develop an application, but build
   a product that proudly generates knowledge and impact, we can and want
   to help you.`,
+  "advantages.title":
+    "Temos um time completo que pode atender as suas necessidades",
+  "advantages.text":
+    "Desenvolvedores, designers, gerenciadores de projetos, agilistas e especialistas de produto. Você que está todo dia na luta por novos clientes, dando 200% de si para fidelizar os atuais e quer levar o seu negócio para o próximo patamar, se permita, por um minuto, imaginar o impacto que um time, com todos esses profissionais, pode causar no seu projeto.",
+  "advantage.text.0":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "advantage.text.1":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "advantage.text.2":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "advantage.text.3":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
 }
