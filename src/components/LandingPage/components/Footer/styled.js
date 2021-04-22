@@ -167,7 +167,7 @@ export const MenuOptions = styled.div`
     flex-direction: initial;
 
     ul {
-      width: 66%;
+      width: 100%;
 
       display: flex;
       justify-content: center;
@@ -195,10 +195,10 @@ export const MenuOptions = styled.div`
     }
 
     ul {
-      width: 290px;
+      width: 70%;
 
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       align-items: center;
 
       flex-wrap: wrap;
@@ -218,7 +218,7 @@ export const MenuOptions = styled.div`
     }
 
     li:nth-of-type(4){
-      padding: 0px;
+      padding: 0px 10px;
     }
   }
   @media (min-width: 1024px) {
