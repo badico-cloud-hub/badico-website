@@ -24,7 +24,7 @@ const Footer = ({ language }) => {
   return (
     <Container>
       <LineUp>
-        <div>
+        <div className="logoBadico">
           <Logobadico />
         </div>
         <SocialMenuDesktop>

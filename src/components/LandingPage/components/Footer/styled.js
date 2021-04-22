@@ -29,9 +29,28 @@ export const LineUp = styled.div`
   width: 100%;
   padding: 10px 0px;
 
+  .logoBadico {
+    svg {
+      width: 130px;
+    }
+  }
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+
+    .logoBadico {
+      svg {
+        width: 180px;
+      }
+    }
+  }
+  @media (min-width: 1366px) {
+    .logoBadico {
+      svg {
+        width: 220px;
+      }
+    }
   }
 `
 
@@ -137,7 +156,7 @@ export const MenuOptions = styled.div`
       font-size: 18px;
     }
 
-    ul{
+    ul {
       width: 280px;
     }
 
@@ -150,7 +169,7 @@ export const MenuOptions = styled.div`
       margin-bottom: 40px;
     }
 
-    li{
+    li {
       margin-left: 0;
     }
   }
@@ -160,7 +179,7 @@ export const MenuOptions = styled.div`
       width: 800px;
     }
 
-    a{
+    a {
       font-size: 20px;
     }
 
