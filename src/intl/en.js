@@ -40,4 +40,15 @@ export default {
   "about.text.1": `If your company doesn't just want to develop an application, but build
   a product that proudly generates knowledge and impact, we can and want
   to help you.`,
+  "advantages.title": "We have a complete team that can meet your needs",
+  "advantages.text":
+    "Developers, designers, project managers, agilists and product specialists. You who are every day in the fight for new customers, giving 200% of themselves to retain the current ones and want to take your business to the next level, allow yourself, for one minute, imagine the impact that a team, with all these professionals, can have on your project.",
+  "advantage.text.0":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "advantage.text.1":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "advantage.text.2":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "advantage.text.3":
+    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
 }
