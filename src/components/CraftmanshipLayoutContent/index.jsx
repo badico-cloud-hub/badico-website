@@ -1,14 +1,12 @@
 import React from "react"
 
 import { ContentWrapper, Content } from "./content"
+import lang from "../../intl/langs"
 
-const CraftmanshipLayoutContent = () => {
+const CraftmanshipLayoutContent = ({ language }) => {
   return (
     <ContentWrapper>
-      <Content>
-        We deliver value every week to our clients. Value means code in
-        production ready.
-      </Content>
+      <Content>{lang[language]["craftmanship.text"]}</Content>
     </ContentWrapper>
   )
 }

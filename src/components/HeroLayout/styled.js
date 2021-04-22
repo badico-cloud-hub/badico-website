@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import media from "styled-media-query"
+// import media from "styled-media-query"
 
 export const HeroWrapper = styled.div`
   display: flex;
@@ -77,7 +77,7 @@ export const HeroWrapper = styled.div`
 
   @media (max-width: 480px) {
     background-color: #0e273b;
-    
+
     .heroImg {
       width: 45%;
       height: 190px;
@@ -117,6 +117,7 @@ export const Info = styled.div`
   margin-right: 14%;
 
   h1 {
+    width: 75%;
     font-size: 50px;
   }
 
