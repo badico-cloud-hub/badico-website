@@ -19,7 +19,7 @@ const Companies = ({ language }) => {
       <TextCompanies>{lang[language]["companies.text"]}</TextCompanies>
       <DivImages>
         <PrimaryDiv>
-          <img src={Jump} className="logoJump" />
+          <img alt="logoJump" src={Jump} className="logoJump" />
           <ZemoPay className="logoZemo" />
           <Tailor className="logoTailor" />
         </PrimaryDiv>
