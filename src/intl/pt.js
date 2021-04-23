@@ -14,14 +14,20 @@ export default {
   "companies.text": "Empresas que confiam em nós",
   "craftmanship.text":
     "Nosso objetivo é alavancar as suas capacidades tecnologicas te auxialiando no desenvolvimento dos seus produtos e serviços, com a construção e gestão da sua equipe dos sonhos.",
-  "cards.card.0": "Construimos software planejando ao seu lado, produzindo com eficiencia, seguranca, sem desperdicios.  Sendo agil ao responder a imediatamente necessidades do seu mercado. ",
+  "cards.card.0":
+    "Construimos software planejando ao seu lado, produzindo com eficiencia, seguranca, sem desperdicios.  Sendo agil ao responder a imediatamente necessidades do seu mercado. ",
   "cards.card.0.bold": "Levando o produto rapidamente para o consumidor final.",
-  "cards.card.1": "Sua empresa depende varios sofwares como contabilidade, relacionamento com cliente, etc. Hoje essenciais, mas se voce sincroniza manualmente os dados entre eles podemos ",
-  "cards.card.1.bold": "automatizar esses e outros processos para otimizar o tempo da sua equipe",
-  "cards.card.2": "Facilitamos e te auxiliamos a desbravar essa realidade onde a tecnologia consome todas as industrias. Isso tudo de maneira pratica, fazendo junto com voce. Deixando seus custos fixos em quase 0.",
+  "cards.card.1":
+    "Sua empresa depende varios sofwares como contabilidade, relacionamento com cliente, etc. Hoje essenciais, mas se voce sincroniza manualmente os dados entre eles podemos ",
+  "cards.card.1.bold":
+    "automatizar esses e outros processos para otimizar o tempo da sua equipe",
+  "cards.card.2":
+    "Facilitamos e te auxiliamos a desbravar essa realidade onde a tecnologia consome todas as industrias. Isso tudo de maneira pratica, fazendo junto com voce. Deixando seus custos fixos em quase 0.",
   "cards.card.2.bold": " Aumentando sua eficiencia, performance e rendimento.",
-  "cards.card.3": "Quanto voce acha que vale tudo isso? Concordamos que tem muito valor, a Badico Cloud te disponibilza tudo isso sem investimento prévio, pagando o que usar,",
-  "cards.card.3.bold": " com o custo abaixo de um desenvolvedor senior no regime CLT.",
+  "cards.card.3":
+    "Quanto voce acha que vale tudo isso? Concordamos que tem muito valor, a Badico Cloud te disponibilza tudo isso sem investimento prévio, pagando o que usar,",
+  "cards.card.3.bold":
+    " com o custo abaixo de um desenvolvedor senior no regime CLT.",
   "capacities.title": "Serviços",
   "capacities.cards.0": "Desenvolvimento de aplicaçōes mobile",
   "capacities.cards.1": "WebApps com Reactjs e Vuejs",
@@ -38,16 +44,32 @@ export default {
   "about.text.1": `Disponibilizamos todas as etapas do desenvolvimento, desde a estratégia, design, arquitetura, testes,  até o produto chegar nas mãos do usuário. Trabalhamos sempre em parceria com nossos clientes para evoluir continuamente sua capacidade tecnológica a fim de trazer os melhores resultados com o menor tempo.
   Essa é a Badico!
   `,
-  "advantages.title":
-    "Temos um time completo que pode atender as suas necessidades",
-  "advantages.text":
-    "Desenvolvedores, designers, gerenciadores de projetos, agilistas e especialistas de produto. Você que está todo dia na luta por novos clientes, dando 200% de si para fidelizar os atuais e quer levar o seu negócio para o próximo patamar, se permita, por um minuto, imaginar o impacto que um time, com todos esses profissionais, pode causar no seu projeto.",
-  "advantage.text.0":
-    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
-  "advantage.text.1":
-    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
-  "advantage.text.2":
-    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
-  "advantage.text.3":
-    "Lorem ipsum posuere nisl cubilia purus iaculis orci bibendum, eros class dictum est ut fames risus volutpat luctus, etiam sociosqu erat praesent",
+  "hero.title": "Esta dificil encontrar desenvolvedores para sua empresa?",
+  "hero.subtitle":
+    "Features atrasadas, bugs por todo produto, clientes insatisfeitos.",
+  "form.header": "A Badico tem a solucao",
+  "form.button": "Quero montar meu time",
+  "section.0.title": "Foque no seu negocio, nós focamos nos desenvolvedores",
+  "section.0.text":
+    "Enquanto esta perdendo tempo a procura de um desenvolvedor, nao esta solucionando o problema do seu cliente. A Badico Cloud esta pronta para eliminar bugs, dar suporte ao seu cliente, e projetar as novas features.",
+  "iconbox.0.title": "Diminuir Custos",
+  "iconbox.0.text":
+    "Pelo custo de um desenvolvedor, te entregamos um time especializado e sobdemanda.",
+  "iconbox.1.title": "Aumentar Renda",
+  "iconbox.1.text":
+    "Desde o primeiro dia esse time esta capacitado a entregar features em producao.",
+  "iconbox.2.title": "Diminuir Riscos",
+  "iconbox.2.text":
+    "A saida de um profissional no seu projeto, nunca mais representara um problema",
+  "succescase.title": "Resultados a um clique de distancia.",
+  "succescase.text":
+    "Por que crer em palavras no curriculo, quando se pode ver os resultados de um time experiente.",
+  "sectionFinal.title":
+    "Temos o time completo para atender todas as suas necessidades",
+  "sectionFinal.subtitle":
+    "Desenvolvedores, designers, gerenciadores de projetos, agilistas e especialistas de produto.",
+  "sectionFinal.items.0": "Entregas semanais de features em produção",
+  "sectionFinal.items.1": "Monte seu time conforme a sua necessidade",
+  "sectionFinal.items.2":
+    "Tenha controle dos seus gastos com budget de horas pre aprovadas",
 }
