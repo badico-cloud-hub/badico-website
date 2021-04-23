@@ -193,7 +193,7 @@ export const Text = styled.p`
   margin: 0;
 
   @media (min-width: 428px) {
-    width: 262px;
+    width: 300px;
     font-size: 16px;
     line-height: 24px;
   }
