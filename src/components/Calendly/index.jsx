@@ -1,6 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
 import { openPopupWidget } from "react-calendly"
-import Calendar from "../../images/calendar.svg"
+// import Calendar from "../../images/calendar.svg"
 import * as Styled from "./style"
 
 const Calendly = ({ children }) => {
