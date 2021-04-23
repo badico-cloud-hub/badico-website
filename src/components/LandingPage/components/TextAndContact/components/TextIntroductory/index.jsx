@@ -1,12 +1,13 @@
 import React from "react"
 import * as Styled from "./style"
+import lang from "../../../../../../intl/langs"
 
-const TextIntroductory = () => {
+const TextIntroductory = ({ language }) => {
   return (
     <Styled.Container>
       <Styled.Wrapper>
-      <Styled.Title>Esta difícil para encontrar um desenvolvedor para sua empresa?</Styled.Title>
-      <Styled.Text>Com a gente você pode ter muito mais do que apenas um desenvolvedor</Styled.Text>
+        <Styled.Title>{lang[language]["hero.title"]}</Styled.Title>
+        <Styled.Text>{lang[language]["hero.subtitle"]}</Styled.Text>
       </Styled.Wrapper>
     </Styled.Container>
   )
