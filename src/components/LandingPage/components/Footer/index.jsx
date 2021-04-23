@@ -26,7 +26,7 @@ const Footer = ({ language }) => {
   const {
     site: {
       siteMetadata: {
-        socialMedia: { github, linkedin, instagram },
+        socialMedia: { github, instagram },
         copyright,
       },
     },
@@ -58,7 +58,7 @@ const Footer = ({ language }) => {
           <SocialIconsDesktop>
             <ul className="icons">
               <li>
-                <a href="">
+                <a href={"https://badico.cloud/"}>
                   <FaceIcon className="icon" />
                 </a>
               </li>
@@ -73,7 +73,7 @@ const Footer = ({ language }) => {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href={"https://badico.cloud/"}>
                   <YoutubeIcon className="icon" />
                 </a>
               </li>
@@ -85,19 +85,27 @@ const Footer = ({ language }) => {
       <MenuOptions>
         <ul>
           <li>
-            <a href="#">{lang[language]["menu.div.options.0"]}</a>
+            <a href={"https://badico.cloud/"}>
+              {lang[language]["menu.div.options.0"]}
+            </a>
           </li>
           <li>
-            <a href="#">{lang[language]["menu.div.options.1"]}</a>
+            <a href={"https://badico.cloud/"}>
+              {lang[language]["menu.div.options.1"]}
+            </a>
           </li>
           <li>
-            <a href="#">{lang[language]["menu.div.options.2"]}</a>
+            <a href={"https://badico.cloud/"}>
+              {lang[language]["menu.div.options.2"]}
+            </a>
           </li>
           <li>
             <a href="#capacities">{lang[language]["menu.div.options.3"]}</a>
           </li>
           <li>
-            <a href="#">{lang[language]["menu.div.options.4"]}</a>
+            <a href={"https://badico.cloud/"}>
+              {lang[language]["menu.div.options.4"]}
+            </a>
           </li>
 
           <li>
@@ -115,7 +123,7 @@ const Footer = ({ language }) => {
           <p>Social Share</p>
           <ul className="icons">
             <li>
-              <a href="">
+              <a href={"https://badico.cloud/"}>
                 <FaceIcon className="icon" />
               </a>
             </li>
@@ -130,7 +138,7 @@ const Footer = ({ language }) => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href={"https://badico.cloud/"}>
                 <YoutubeIcon className="icon" />
               </a>
             </li>
