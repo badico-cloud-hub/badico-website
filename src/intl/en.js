@@ -46,23 +46,32 @@ export default {
   "about.text.1": `If your company doesn't just want to develop an application, but build
   a product that proudly generates knowledge and impact, we can and want
   to help you.`,
-  "hero.title": "",
-  "hero.subtitle": "",
-  "form.header": "",
-  "form.button": "",
-  "section.0.title": "",
-  "section.0.text": "",
-  "iconbox.0.title": "",
-  "iconbox.0.text": "",
-  "iconbox.1.title": "",
-  "iconbox.1.text": "",
-  "iconbox.2.title": "",
-  "iconbox.2.text": "",
-  "succescase.title": "",
-  "succescase.text": "",
-  "sectionFinal.title": "",
-  "sectionFinal.subtitle": "",
-  "sectionFinal.items.0": "",
-  "sectionFinal.items.1": "",
-  "sectionFinal.items.2": "",
+  "hero.title": "Esta dificil encontrar desenvolvedores para sua empresa?",
+  "hero.subtitle":
+    "Features atrasadas, bugs por todo produto, clientes insatisfeitos.",
+  "form.header": "A Badico tem a solucao",
+  "form.button": "Quero montar meu time",
+  "section.0.title": "Foque no seu negocio, nós focamos nos desenvolvedores",
+  "section.0.text":
+    "Enquanto esta perdendo tempo a procura de um desenvolvedor, nao esta solucionando o problema do seu cliente. A Badico Cloud esta pronta para eliminar bugs, dar suporte ao seu cliente, e projetar as novas features.",
+  "iconbox.0.title": "Diminuir Custos",
+  "iconbox.0.text":
+    "Pelo custo de um desenvolvedor, te entregamos um time especializado e sobdemanda.",
+  "iconbox.1.title": "Aumentar Renda",
+  "iconbox.1.text":
+    "Desde o primeiro dia esse time esta capacitado a entregar features em producao.",
+  "iconbox.2.title": "Diminuir Riscos",
+  "iconbox.2.text":
+    "A saida de um profissional no seu projeto, nunca mais representara um problema",
+  "succescase.title": "Resultados a um clique de distancia.",
+  "succescase.text":
+    "Por que crer em palavras no curriculo, quando se pode ver os resultados de um time experiente.",
+  "sectionFinal.title":
+    "Temos o time completo para atender todas as suas necessidades",
+  "sectionFinal.subtitle":
+    "Desenvolvedores, designers, gerenciadores de projetos, agilistas e especialistas de produto.",
+  "sectionFinal.items.0": "Entregas semanais de features em produção",
+  "sectionFinal.items.1": "Monte seu time conforme a sua necessidade",
+  "sectionFinal.items.2":
+    "Tenha controle dos seus gastos com budget de horas pre aprovadas",
 }
