@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import Typeform from "../Typeform/index"
+// import Typeform from "../Typeform/index"
 
 const FloatWrap = styled.div`
   display: flex;
