@@ -42,7 +42,9 @@ const HeroLayout = ({ language }) => {
               {lang[language]["hero.buttons.0"]}
               <span /> <span /> <span /> <span />
             </Styled.ButtonContact>
-            <Calendly />
+            <Calendly >
+              {lang[language]["hero.buttons.1"]}
+            </Calendly>
           </Styled.Buttons>
         </Styled.Info>
         <Styled.BoxImage>
