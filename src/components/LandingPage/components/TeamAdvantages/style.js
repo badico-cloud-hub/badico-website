@@ -169,6 +169,9 @@ export const Advantage = styled.div`
     font-size: 14px;
     width: 95%;
     margin: 0px 0px 0px 5px;
+
+    display: flex;
+    align-items: center;
   }
   @media (min-width: 768px) {
     p {
