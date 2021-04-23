@@ -25,7 +25,7 @@ import AppleLogo from "../../images/techIcons/apple.svg"
 import FireBaseIcon from "../../images/techIcons/firebase.svg"
 import ReThinkLogo from "../../images/techIcons/rethinkdb.svg"
 import MongoDbIcon from "../../images/techIcons/mongodb.svg"
-import SqlIcon from "../../images/techIcons/mysql.svg"
+// import SqlIcon from "../../images/techIcons/mysql.svg"
 import RedisLogo from "../../images/techIcons/redis.svg"
 import Dynamo from "../../images/techIcons/dynamodb.svg"
 // Cloud Providers //
