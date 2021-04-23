@@ -1,22 +1,20 @@
 import React, { Component } from "react"
-import { PopupText } from "react-calendly"
+import { openPopupWidget } from "react-calendly"
 import Calendar from "../../images/calendar.svg"
+import * as Styled from "./style"
+import lang from "../../intl/langs"
 
-class Calendly extends Component {
-  
-  render() {
-    return (
-      <div>
-        <PopupText
-        className="popup"
-        url="https://calendly.com/badico"
-        text={this.props.text}/>
-        <div className="iconCalendar">
-          <Calendar />
-        </div>
-      </div>
-    )
-  }
+const Calendly = ({ url, language }) => {
+  const onClick = () => openPopupWidget({ url: "https://calendly.com/badico" })
+
+  return (
+    <>
+      <Styled.Button onClick={onClick}>
+        {lang[language]["hero.buttons.1"]}
+        <span /> <span /> <span /> <span />
+      </Styled.Button>
+    </>
+  )
 }
 
 export default Calendly
