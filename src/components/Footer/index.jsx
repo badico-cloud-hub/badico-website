@@ -82,13 +82,13 @@ const Footer = () => {
           <S.Nav>
             <ul>
               <li>
-                <a href="">Privacy Policy </a>
+                <a href={"https://badico.cloud/"}>Privacy Policy </a>
               </li>
               <li>
-                <a href="">Customer Support</a>
+                <a href={"https://badico.cloud/"}>Customer Support</a>
               </li>
               <li>
-                <a href="">Careers</a>
+                <a href={"https://badico.cloud/"}>Careers</a>
               </li>
             </ul>
           </S.Nav>
