@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Container from "../Container"
 import Header from "../LandingPage/components/Header"
 import { LayoutWrapper } from "./style"
