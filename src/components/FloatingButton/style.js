@@ -19,7 +19,8 @@ export const FloatingButton = styled.div`
   font-family: "Roboto";
 
   .back {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     width: 100vw;
     height: 150vh;
     background: rgba(0, 0, 0, 0.3);
@@ -31,7 +32,9 @@ export const FloatingButton = styled.div`
 
   :hover {
     .back {
-      display: block;
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
     }
   }
 
@@ -72,7 +75,7 @@ export const ContactUs = styled.div`
     .cloud4 {
       visibility: visible;
       opacity: 1;
-      transition: visibility 0s,opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
+      transition: visibility 0s, opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
     }
 
     .contact,
@@ -81,7 +84,7 @@ export const ContactUs = styled.div`
     .calendar {
       visibility: visible;
       opacity: 1;
-      transition: visibility 0s,opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
+      transition: visibility 0s, opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
     }
   }
 
