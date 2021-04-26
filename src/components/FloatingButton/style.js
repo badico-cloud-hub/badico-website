@@ -1,6 +1,4 @@
 import styled, { css } from "styled-components"
-import media from "styled-media-query"
-import Typeform from "../Typeform/index"
 
 export const Container = styled.div`
   display: flex;
@@ -97,8 +95,8 @@ export const ContactUs = styled.div`
     @media (min-width: 768px) {
       width: 90px;
       height: 90px;
-      right: -87px;
-      bottom: -7px;
+      right: -93px;
+      bottom: -29px;
     }
   }
 
@@ -133,7 +131,8 @@ export const ContactUs = styled.div`
     z-index: -1;
 
     @media (min-width: 768px) {
-      right: 0px;
+      right: 24px;
+      bottom: -60px;
     }
   }
 
