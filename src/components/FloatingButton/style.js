@@ -26,7 +26,7 @@ export const FloatingButton = styled.div`
     position: absolute;
     bottom: -120px;
     right: 0;
-    z-index: -1;
+    z-index: -100;
   }
 
   :hover {
@@ -70,19 +70,25 @@ export const ContactUs = styled.div`
     .cloud2,
     .cloud3,
     .cloud4 {
-      display: block;
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s,opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
     }
 
     .contact,
     .email,
     .calendarbutton,
     .calendar {
-      display: flex;
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s,opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
     }
   }
 
   .cloud {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     background: #ffffff;
     width: 70px;
     height: 70px;
@@ -90,7 +96,7 @@ export const ContactUs = styled.div`
     border-radius: 50%;
     right: -60px;
     bottom: 10px;
-    z-index: -1;
+    z-index: -100;
 
     @media (min-width: 768px) {
       width: 90px;
@@ -101,7 +107,10 @@ export const ContactUs = styled.div`
   }
 
   .cloud2 {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
     background: #ffffff;
     width: 90px;
     height: 90px;
@@ -109,7 +118,7 @@ export const ContactUs = styled.div`
     border-radius: 50%;
     right: -19px;
     bottom: -19px;
-    z-index: -1;
+    z-index: -100;
 
     @media (min-width: 768px) {
       width: 100px;
@@ -120,7 +129,9 @@ export const ContactUs = styled.div`
   }
 
   .cloud3 {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     background: #ffffff;
     width: 70px;
     height: 70px;
@@ -128,7 +139,7 @@ export const ContactUs = styled.div`
     border-radius: 50%;
     right: 10px;
     bottom: -68px;
-    z-index: -1;
+    z-index: -100;
 
     @media (min-width: 768px) {
       right: 24px;
@@ -137,15 +148,17 @@ export const ContactUs = styled.div`
   }
 
   .cloud4 {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     background: #ffffff;
     width: 70px;
     height: 70px;
     position: absolute;
     border-radius: 50%;
     right: -55px;
-    bottom: -44px;
-    z-index: -1;
+    bottom: -35px;
+    z-index: -100;
 
     @media (min-width: 768px) {
       bottom: -32px;
@@ -158,7 +171,9 @@ export const ContactUs = styled.div`
   }
 
   .contact {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     position: absolute;
     top: -116px;
     right: 18px;
@@ -185,7 +200,9 @@ export const ContactUs = styled.div`
   }
 
   .email {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     position: absolute;
     width: 48px;
     height: 48px;
@@ -204,9 +221,11 @@ export const ContactUs = styled.div`
   }
 
   .calendarbutton {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     position: absolute;
-    top: -46px;
+    top: -45px;
     right: 110px;
     border-radius: 15px;
     width: 150px;
@@ -232,7 +251,9 @@ export const ContactUs = styled.div`
   }
 
   .calendar {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     position: absolute;
     top: -54px;
     right: 78px;
