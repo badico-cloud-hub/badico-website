@@ -32,7 +32,7 @@ export const HeroWrapper = styled.div`
 
   @media (min-width: 1024px) {
     .wave {
-      bottom: -100px;
+      bottom: -80px;
     }
   }
 
