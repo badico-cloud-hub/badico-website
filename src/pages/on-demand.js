@@ -22,7 +22,6 @@ const IndexPage = () => {
           <Beneficies language={language} />
           <Cases language={language} />
           <TeamAdvantages language={language} />
-          <Footer language={language} />
         </Layout>
       </LanguageProvider>
     </WebsiteProvider>

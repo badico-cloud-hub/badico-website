@@ -8,6 +8,16 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
 `
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+`
+
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -37,6 +47,7 @@ export const Box = styled.div`
 
   @media (min-width: 1920px) {
     max-width: 1425px;
+    width: 1425px;
     height: 592px;
     margin-bottom: 145px;
   }

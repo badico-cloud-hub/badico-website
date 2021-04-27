@@ -26,7 +26,7 @@ const Footer = ({ language }) => {
   const {
     site: {
       siteMetadata: {
-        socialMedia: { github, linkedin, instagram },
+        socialMedia: { facebook, github, linkedin, instagram },
         copyright,
       },
     },
@@ -35,6 +35,7 @@ const Footer = ({ language }) => {
       site {
         siteMetadata {
           socialMedia {
+            facebook
             github
             linkedin
             instagram
@@ -58,17 +59,17 @@ const Footer = ({ language }) => {
           <SocialIconsDesktop>
             <ul className="icons">
               <li>
-                <a href="">
+                <a href={facebook} target="_blank" target="_blank">
                   <FaceIcon className="icon" />
                 </a>
               </li>
               <li>
-                <a href={instagram}>
+                <a href={instagram} target="_blank">
                   <InstaIcon className="icon" />
                 </a>
               </li>
               <li>
-                <a href={github}>
+                <a href={github} target="_blank">
                   <GitIcon className="icon" />
                 </a>
               </li>
@@ -115,22 +116,22 @@ const Footer = ({ language }) => {
           <p>Social Share</p>
           <ul className="icons">
             <li>
-              <a href="">
+              <a href={facebook} target="_blank">
                 <FaceIcon className="icon" />
               </a>
             </li>
             <li>
-              <a href={instagram}>
+              <a href={instagram} target="_blank">
                 <InstaIcon className="icon" />
               </a>
             </li>
             <li>
-              <a href={github}>
+              <a href={github} target="_blank">
                 <GitIcon className="icon" />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank">
                 <YoutubeIcon className="icon" />
               </a>
             </li>
