@@ -1,11 +1,5 @@
 import React from "react"
-import {
-  Container,
-  TextCompanies,
-  DivImages,
-  PrimaryDiv,
-  SecondDiv,
-} from "./styled"
+import * as Styled from "./style"
 import Jump from "../../images/jump.png"
 import ZemoPay from "../../images/zemo.svg"
 import Tailor from "../../images/tailor.svg"
@@ -15,20 +9,22 @@ import lang from "../../intl/langs"
 
 const Companies = ({ language }) => {
   return (
-    <Container>
-      <TextCompanies>{lang[language]["companies.text"]}</TextCompanies>
-      <DivImages>
-        <PrimaryDiv>
+    <Styled.Container>
+      <Styled.Wrapper>
+      <Styled.TextCompanies>{lang[language]["companies.text"]}</Styled.TextCompanies>
+      <Styled.DivImages>
+        <Styled.PrimaryDiv>
           <img src={Jump} className="logoJump" />
           <ZemoPay className="logoZemo" />
           <Tailor className="logoTailor" />
-        </PrimaryDiv>
-        <SecondDiv>
+        </Styled.PrimaryDiv>
+        <Styled.SecondDiv>
           <Harv className="logoHarv" />
           <Bizaline className="logoBizaline" />
-        </SecondDiv>
-      </DivImages>
-    </Container>
+        </Styled.SecondDiv>
+      </Styled.DivImages>
+      </Styled.Wrapper>
+    </Styled.Container>
   )
 }
 
