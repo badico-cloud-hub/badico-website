@@ -229,7 +229,7 @@ export const ContactUs = styled.div`
     display: flex;
     position: absolute;
     top: -45px;
-    right: 110px;
+    right: 108px;
     border-radius: 15px;
     width: 150px;
     border: none;
