@@ -7,38 +7,40 @@ import lang from "../../../../intl/langs"
 
 const TeamAdvantages = ({ language }) => {
   return (
-    <Container>
-      <div className="desktopIcon">
-        <DesktopComputerIcon className="desktopComputer" />
-      </div>
-      <TextContent>
-        <Title>{lang[language]["sectionFinal.title"]} </Title>
-        <Text>{lang[language]["sectionFinal.subtitle"]}</Text>
-        <Advantages>
-          <div className="computerIcon">
-            <ComputerIcon className="icon" />
-          </div>
-          <TextAdvantages>
-            <Advantage>
-              <CheckedIcon className="checkedIcon" />
-              <p>{lang[language]["sectionFinal.items.0"]}</p>
-            </Advantage>
-            <Advantage>
-              <CheckedIcon className="checkedIcon" />
-              <p>{lang[language]["sectionFinal.items.1"]}</p>
-            </Advantage>
-            <Advantage>
-              <CheckedIcon className="checkedIcon" />
-              <p>{lang[language]["sectionFinal.items.2"]}</p>
-            </Advantage>
-            {/* <Advantage>
-              <CheckedIcon className="checkedIcon" />
-              <p>{lang[language]["advantage.text.3"]}</p>
-            </Advantage> */}
-          </TextAdvantages>
-        </Advantages>
-      </TextContent>
-    </Container>
+    <Styled.Container>
+      <Styled.Wrapper>
+        <div className="desktopIcon">
+          <DesktopComputerIcon className="desktopComputer" />
+        </div>
+        <Styled.TextContent>
+          <Styled.Title>{lang[language]["sectionFinal.title"]} </Styled.Title>
+          <Styled.Text>{lang[language]["sectionFinal.subtitle"]}</Styled.Text>
+          <Styled.Advantages>
+            <div className="computerIcon">
+              <ComputerIcon className="icon" />
+            </div>
+            <Styled.TextAdvantages>
+              <Styled.Advantage>
+                <CheckedIcon className="checkedIcon" />
+                <p>{lang[language]["sectionFinal.items.0"]}</p>
+              </Styled.Advantage>
+              <Styled.Advantage>
+                <CheckedIcon className="checkedIcon" />
+                <p>{lang[language]["sectionFinal.items.1"]}</p>
+              </Styled.Advantage>
+              <Styled.Advantage>
+                <CheckedIcon className="checkedIcon" />
+                <p>{lang[language]["sectionFinal.items.2"]}</p>
+              </Styled.Advantage>
+              {/* <Styled.Advantage>
+                <CheckedIcon className="checkedIcon" />
+                <p>{lang[language]["sectionFinal.items.2"]}</p>
+              </Styled.Advantage> */}
+            </Styled.TextAdvantages>
+          </Styled.Advantages>
+        </Styled.TextContent>
+      </Styled.Wrapper>
+    </Styled.Container>
   )
 }
 
