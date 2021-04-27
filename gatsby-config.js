@@ -6,7 +6,7 @@ module.exports = {
     copyright: `© 2020 Badico Cloud. All rights reserved.`,
     socialMedia: {
       github: "https://github.com/badico-cloud-hub",
-      facebook: "https://www.facebook.com/",
+      facebook: "https://www.facebook.com/Badico-Cloud-104486551746426",
       twitter: "https://twitter.com/",
       youtube: "https://www.youtube.com/",
       linkedin: "https://www.linkedin.com/company/badico/",
