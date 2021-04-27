@@ -2,14 +2,18 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 60px 0px;
   background-color: #fdeadf;
-
+`
+export const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
   .desktopComputer {
     display: none;
   }
@@ -27,6 +31,7 @@ export const Container = styled.div`
     }
   }
 `
+
 export const TextContent = styled.div`
   width: 100%;
 
