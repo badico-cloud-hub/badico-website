@@ -46,32 +46,31 @@ export default {
   "about.text.1": `If your company doesn't just want to develop an application, but build
   a product that proudly generates knowledge and impact, we can and want
   to help you.`,
-  "hero.title": "Esta dificil encontrar desenvolvedores para sua empresa?",
+  "hero.title": "Is it hard to find developers for your enterprise?",
   "hero.subtitle":
-    "Features atrasadas, bugs por todo produto, clientes insatisfeitos.",
-  "form.header": "A Badico tem a solucao",
-  "form.button": "Quero montar meu time",
-  "section.0.title": "Foque no seu negocio, nós focamos nos desenvolvedores",
+    "Late features, bugs all over the product, unsatisfied clients.",
+  "form.header": "Badico has the solution",
+  "form.button": "I want to build my team",
+  "section.0.title": "Focus on your business. We focus on your developers",
   "section.0.text":
-    "Enquanto esta perdendo tempo a procura de um desenvolvedor, nao esta solucionando o problema do seu cliente. A Badico Cloud esta pronta para eliminar bugs, dar suporte ao seu cliente, e projetar as novas features.",
-  "iconbox.0.title": "Diminuir Custos",
+    "While you are losing time searching for a developer, you are not solving your client's problem. Badico Cloud is ready to eliminate bugs, give support to your client and, project new features.",
+  "iconbox.0.title": "Decrease costs",
   "iconbox.0.text":
-    "Pelo custo de um desenvolvedor, te entregamos um time especializado e sobdemanda.",
-  "iconbox.1.title": "Aumentar Renda",
+    "By a developer cost, we deliver you a specialized and on-demand team.",
+  "iconbox.1.title": "Increase income",
   "iconbox.1.text":
-    "Desde o primeiro dia esse time esta capacitado a entregar features em producao.",
-  "iconbox.2.title": "Diminuir Riscos",
+    "Since the first day, this team is capable to deliver features under production.",
+  "iconbox.2.title": "Decrease risks",
   "iconbox.2.text":
-    "A saida de um profissional no seu projeto, nunca mais representara um problema",
-  "succescase.title": "Resultados a um clique de distancia.",
+    "The exit of a professional from your project will never represent a problem anymore",
+  "succescase.title": "Results a click away.",
   "succescase.text":
-    "Por que crer em palavras no curriculo, quando se pode ver os resultados de um time experiente.",
-  "sectionFinal.title":
-    "Temos o time completo para atender todas as suas necessidades",
+    "Why believe in words in the resume when you can see the results of an experient team?",
+  "sectionFinal.title": "We have a complete team to attend to all your needs",
   "sectionFinal.subtitle":
-    "Desenvolvedores, designers, gerenciadores de projetos, agilistas e especialistas de produto.",
-  "sectionFinal.items.0": "Entregas semanais de features em produção",
-  "sectionFinal.items.1": "Monte seu time conforme a sua necessidade",
+    "Developers, designers, project managers, agile coaches, and product specialists.",
+  "sectionFinal.items.0": "Weekly deliveries of features on production.",
+  "sectionFinal.items.1": "Build your team according to your needs",
   "sectionFinal.items.2":
-    "Tenha controle dos seus gastos com budget de horas pre aprovadas",
+    "Have control of your costs with a time budget approved",
 }
