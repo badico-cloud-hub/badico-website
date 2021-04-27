@@ -1,5 +1,5 @@
 import React from "react"
-import * as Styled from "./styled"
+import * as Styled from "./style"
 import Jump from "../../images/jump.png"
 import ZemoPay from "../../images/zemo.svg"
 import Tailor from "../../images/tailor.svg"
