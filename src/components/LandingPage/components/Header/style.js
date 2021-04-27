@@ -83,6 +83,7 @@ export const HeaderWrapper = styled.div`
     right: 0;
     top: 0;
     border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 3px 6px #00000029;
     width: 100%;
 
     a {
@@ -151,11 +152,13 @@ export const HeaderWrapper = styled.div`
       width: 70%;
 
       .drop-content {
+        width: 100%;
         display: flex;
         position: static;
         flex-direction: row;
         background: #ffffff;
         justify-content: flex-end;
+        box-shadow: none;
 
         a {
           color: #0e273b;
