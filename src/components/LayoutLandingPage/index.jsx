@@ -7,9 +7,7 @@ const Layout = ({ language, children }) => {
   return (
     <LayoutWrapper>
       <Header language={language} />
-      <Container>
-        <main>{children}</main>
-      </Container>
+      <main>{children}</main>
     </LayoutWrapper>
   )
 }
