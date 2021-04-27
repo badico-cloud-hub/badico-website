@@ -30,9 +30,6 @@ export const HeaderWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.3);
-    :hover {
-      display: none;
-    }
   }
 
   .menudrop {
@@ -83,13 +80,14 @@ export const HeaderWrapper = styled.div`
     display: none;
     background-color: #ffffff;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 3px 6px #00000029;
     width: 100%;
 
     a {
-      color: #0E273B;
+      color: #0e273b;
       text-decoration: none;
       font-weight: 500;
       font-size: 16px;
@@ -102,7 +100,7 @@ export const HeaderWrapper = styled.div`
     }
 
     li {
-      margin: 0 58px 0  38px;
+      margin: 0 58px 0 38px;
       padding: 16px 5px;
       border-bottom: 1px solid #00000029;
     }
@@ -118,6 +116,29 @@ export const HeaderWrapper = styled.div`
 
     .menudrop {
       min-width: 110px;
+
+      .drop-content {
+        width: 589px;
+
+        a {
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+        li {
+          padding: 32px 6px;
+          border-bottom: 1px solid #00000029;
+        }
+
+        li:last-child {
+          border: none;
+          margin-bottom: 0;
+        }
+
+        ul {
+          margin-top: 24px;
+        }
+      }
     }
   }
 
@@ -131,11 +152,13 @@ export const HeaderWrapper = styled.div`
       width: 70%;
 
       .drop-content {
+        width: 100%;
         display: flex;
         position: static;
         flex-direction: row;
         background: #ffffff;
         justify-content: flex-end;
+        box-shadow: none;
 
         a {
           color: #0e273b;
@@ -161,7 +184,6 @@ export const HeaderWrapper = styled.div`
   @media (min-width: 1920px) {
     .menudrop {
       .drop-content {
-        
         ul {
           margin-right: 92px;
         }
@@ -216,7 +238,7 @@ export const Ghost = styled.div`
   width: 10%;
   min-width: 72px;
   height: 42px;
-  background: #FFFFFF;
+  background: #ffffff;
   @media (min-width: 768px) {
     min-width: 110px;
   }
