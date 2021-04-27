@@ -91,6 +91,7 @@ export const HeaderWrapper = styled.div`
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
+      cursor: pointer;
     }
 
     ul {
