@@ -16,40 +16,24 @@ const Beneficies = ({ language }) => {
             <Styled.AlignOpportunities>
               <Styled.MiniBox>
                 <Decrease className="decrease" />
-                <Styled.Title>Diminuir custo</Styled.Title>
-                <Styled.Text>
-                  Lorem ipsum nisi facilisis torquent suspendisse non, quis
-                  lobortis interdum ante conubia.
-                </Styled.Text>
+                <Styled.Title>{lang[language]["iconbox.0.title"]}</Styled.Title>
+                <Styled.Text>{lang[language]["iconbox.0.text"]}</Styled.Text>
               </Styled.MiniBox>
               <Styled.MiniBox>
                 <Increase className="increase" />
-                <Styled.Title>Aumentar renda</Styled.Title>
-                <Styled.Text>
-                  Lorem ipsum nisi facilisis torquent suspendisse non, quis
-                  lobortis interdum ante conubia.
-                </Styled.Text>
+                <Styled.Title>{lang[language]["iconbox.1.title"]}</Styled.Title>
+                <Styled.Text>{lang[language]["iconbox.1.text"]}</Styled.Text>
               </Styled.MiniBox>
             </Styled.AlignOpportunities>
             <Styled.MiniBox>
-              <Decrease className="decrease" />
-              <Styled.Title>{lang[language]["iconbox.0.title"]}</Styled.Title>
-              <Styled.Text>{lang[language]["iconbox.0.text"]}</Styled.Text>
+              <Diversification className="diversification" />
+              <Styled.Title>{lang[language]["iconbox.2.title"]}</Styled.Title>
+              <Styled.Text>{lang[language]["iconbox.2.text"]}</Styled.Text>
             </Styled.MiniBox>
-            <Styled.MiniBox>
-              <Increase className="increase" />
-              <Styled.Title>{lang[language]["iconbox.1.title"]}</Styled.Title>
-              <Styled.Text>{lang[language]["iconbox.1.text"]}</Styled.Text>
-            </Styled.MiniBox>
-          </Styled.AlignOpportunities>
-          <Styled.MiniBox>
-            <Diversification className="diversification" />
-            <Styled.Title>{lang[language]["iconbox.2.title"]}</Styled.Title>
-            <Styled.Text>{lang[language]["iconbox.2.text"]}</Styled.Text>
-          </Styled.MiniBox>
-        </Styled.Opportunities>
-        <Styled.Button>{lang[language]["form.button"]}</Styled.Button>
-      </Styled.Box>
+          </Styled.Opportunities>
+          <Styled.Button>{lang[language]["form.button"]}</Styled.Button>
+        </Styled.Box>
+      </Styled.Wrapper>
       <Styled.Background />
     </Styled.Container>
   )
