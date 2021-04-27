@@ -2,9 +2,10 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   width: 100%;
-
+  max-width: 1920px;
   padding: 0px 35px;
-
+  margin: 0 auto;
+  
   .copy {
     font-size: 15px;
     color: #52575c;
@@ -213,11 +214,11 @@ export const MenuOptions = styled.div`
       margin-bottom: 40px;
     }
 
-    li:first-child{
+    li:first-child {
       padding: 0px;
     }
 
-    li:nth-of-type(4){
+    li:nth-of-type(4) {
       padding: 0px 10px;
     }
   }
