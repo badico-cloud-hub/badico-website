@@ -151,11 +151,13 @@ export const HeaderWrapper = styled.div`
       width: 70%;
 
       .drop-content {
+        width: 100%;
         display: flex;
         position: static;
         flex-direction: row;
         background: #0e273b;
         justify-content: flex-end;
+        box-shadow: none;
 
         a {
           color: #ffffff;
