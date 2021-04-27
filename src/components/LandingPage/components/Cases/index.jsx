@@ -1,20 +1,15 @@
 import React from "react"
 import * as Styled from "./style"
-import Gallery from '../../../Gallery'
+import Gallery from "../../../Gallery"
+import lang from "../../../../intl/langs"
 
-const Cases = () => {
+const Cases = ({ language }) => {
   return (
     <Styled.Container>
-      <Styled.Title>Success cases</Styled.Title>
-      <Styled.Text>
-        Lorem ipsum scelerisque vel ac convallis nisl vestibulum facilisis elit,
-        aptent varius vestibulum primis taciti vehicula tristique donec eu
-        litora, congue laoreet pretium interdum id condimentum pulvinar
-        venenatis. sit dui lobortis rhoncus varius convallis elementum convallis
-        aliquam mi diam, curae ullamcorper imperdiet ac etiam nostra donec
-      </Styled.Text>
-    <Gallery />
-    <Styled.Button>Quero ter um time incrível</Styled.Button>
+      <Styled.Title>{lang[language]["succescase.title"]}</Styled.Title>
+      <Styled.Text>{lang[language]["succescase.text"]}</Styled.Text>
+      <Gallery />
+      <Styled.Button>{lang[language]["form.button"]}</Styled.Button>
     </Styled.Container>
   )
 }

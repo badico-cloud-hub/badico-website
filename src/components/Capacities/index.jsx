@@ -39,7 +39,7 @@ const Capacities = ({ language }) => {
           </Images>
           <Images pMarginTop="18px" width="92%">
             <Infra className="img" />
-            <p>{lang[language]["capacities.cards.5"]}e</p>
+            <p>{lang[language]["capacities.cards.5"]}</p>
           </Images>
           <Images pMarginTop="10px" width="92%">
             <Continuos className="img" />

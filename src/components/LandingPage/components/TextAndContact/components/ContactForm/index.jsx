@@ -1,23 +1,22 @@
 import React from "react"
 import Coder from "../../../../images/coder.svg"
 import * as Styled from "./style"
+import lang from "../../../../../../intl/langs"
 
-const ContactForm = () => {
+const ContactForm = ({ language }) => {
   return (
     <Styled.Container>
       <Styled.Box>
         <Styled.DivCoder>
-          <Coder className="coder"/>
+          <Coder className="coder" />
         </Styled.DivCoder>
-        <Styled.Title>
-          Lorem ipsum nisi facilisis torquent suspendisse non
-        </Styled.Title>
+        <Styled.Title>{lang[language]["form.header"]}</Styled.Title>
         <Styled.Form method="post">
           <Styled.Input placeholder="Seu nome" />
           <Styled.Input placeholder="Seu e-mail" />
           <Styled.Input placeholder="Lorem ipsum" />
           <Styled.Button type="submit">
-            Quero ter um time incrível
+            {lang[language]["form.button"]}
           </Styled.Button>
         </Styled.Form>
       </Styled.Box>
