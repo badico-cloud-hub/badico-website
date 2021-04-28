@@ -1,5 +1,4 @@
-import React, { useEffect } from "react"
-import Container from "../Container"
+import React from "react"
 import Header from "../LandingPage/components/Header"
 import Footer from "../LandingPage/components/Footer"
 
