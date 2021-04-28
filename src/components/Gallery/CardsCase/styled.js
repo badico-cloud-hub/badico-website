@@ -6,7 +6,7 @@ export const Render = styled.div`
   height: 100%;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0px 2px 10px #00000052;
   align-items: center;
   justify-content: center;
 `;
