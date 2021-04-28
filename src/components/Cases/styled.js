@@ -25,11 +25,20 @@ export const CaseWrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0E273B; 
+  font-weight: 600;
   margin: 0;
 
   @media(min-width: 768px){
-    font-size: 1.5rem;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+  }
+
+  @media(min-width: 1920px){
+    font-size: 34px;
+    line-height: 41px;
   }
 `
