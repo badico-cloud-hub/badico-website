@@ -39,16 +39,17 @@ export const TextCompanies = styled.h4`
   font-size: 16px;
   line-height: 24px;
   color: #0E273B;
+  font-weight: 600;
   margin: 0;
 
   @media (min-width: 428px) {
     font-size: 20px;
-    font-weight: 600;
   }
 
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
+    font-weight: 500;
   }
 
   @media (min-width: 1920px) {
