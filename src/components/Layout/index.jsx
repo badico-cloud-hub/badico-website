@@ -1,8 +1,7 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header"
 import Footer from "../Footer"
-import Container from "../Container"
 
 import { LayoutWrapper } from "./style"
 
