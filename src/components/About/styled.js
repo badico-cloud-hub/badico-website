@@ -45,6 +45,7 @@ export const Title = styled.h1`
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 56px;
+    font-weight: 500;
   }
 
   @media (min-width: 1366px) {
@@ -114,6 +115,7 @@ export const SubTitle = styled.h2`
   @media (min-width: 1920px) {
     font-size: 24px;
     line-height: 29px;
+    font-weight: 500;
   }
 `
 
