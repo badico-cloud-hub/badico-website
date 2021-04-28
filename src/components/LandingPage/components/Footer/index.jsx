@@ -1,5 +1,5 @@
-import React from "react"
-
+import React, { useState, useEffect } from "react"
+import * as typeformEmbed from "@typeform/embed"
 import {
   Container,
   LineUp,
@@ -16,17 +16,35 @@ import ArrowUp from "../../images/seta-para-cima.svg"
 import FaceIcon from "../../images/facebook.svg"
 import InstaIcon from "../../images/instagram.svg"
 import GitIcon from "../../images/github.svg"
-import YoutubeIcon from "../../images/youtube.svg"
+// import YoutubeIcon from "../../images/youtube.svg"
 
 import { useStaticQuery, graphql } from "gatsby"
 
 import lang from "../../../../intl/langs"
 
 const Footer = ({ language }) => {
+  const [form, setForm] = useState(null)
+
+  useEffect(() => {
+    const contactForm = typeformEmbed.makePopup(
+      "https://ask767898.typeform.com/to/rRIqbEzo",
+      {
+        mode: "drawer_right",
+        autoClose: 3000,
+        hideHeaders: true,
+        hideFooters: true,
+        onSubmit: function () {
+          console.log("Typeform sucessfully submitted")
+        },
+      }
+    )
+    setForm(contactForm)
+  }, [])
+
   const {
     site: {
       siteMetadata: {
-        socialMedia: { facebook, github, linkedin, instagram },
+        socialMedia: { facebook, github, instagram },
         copyright,
       },
     },
@@ -37,7 +55,6 @@ const Footer = ({ language }) => {
           socialMedia {
             facebook
             github
-            linkedin
             instagram
           }
           copyright
@@ -59,25 +76,25 @@ const Footer = ({ language }) => {
           <SocialIconsDesktop>
             <ul className="icons">
               <li>
-                <a href={facebook} target="_blank" target="_blank">
+                <a href={facebook} target="_blank" rel="noreferrer">
                   <FaceIcon className="icon" />
                 </a>
               </li>
               <li>
-                <a href={instagram} target="_blank">
+                <a href={instagram} target="_blank" rel="noreferrer">
                   <InstaIcon className="icon" />
                 </a>
               </li>
               <li>
-                <a href={github} target="_blank">
+                <a href={github} target="_blank" rel="noreferrer">
                   <GitIcon className="icon" />
                 </a>
               </li>
-              <li>
-                <a href="">
+              {/* <li>
+                <a href="" target="_blank" rel="noreferrer">
                   <YoutubeIcon className="icon" />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </SocialIconsDesktop>
         </SocialMenuDesktop>
@@ -86,23 +103,28 @@ const Footer = ({ language }) => {
       <MenuOptions>
         <ul>
           <li>
-            <a href="#">{lang[language]["menu.div.options.0"]}</a>
+            <a href="/">{lang[language]["menu.div.options.0"]}</a>
           </li>
           <li>
-            <a href="#">{lang[language]["menu.div.options.1"]}</a>
+            <a href="/#capacities">{lang[language]["menu.div.options.1"]}</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#">{lang[language]["menu.div.options.2"]}</a>
+          </li> */}
+          {/* <li>
+            <a href="">{lang[language]["menu.div.options.3"]}</a>
+          </li> */}
+          <li>
+            <a href="/#about">{lang[language]["menu.div.options.4"]}</a>
           </li>
           <li>
-            <a href="#capacities">{lang[language]["menu.div.options.3"]}</a>
-          </li>
-          <li>
-            <a href="#">{lang[language]["menu.div.options.4"]}</a>
-          </li>
-
-          <li>
-            <a href="#about">{lang[language]["menu.div.options.5"]}</a>
+            <a
+              onClick={() => {
+                form.open()
+              }}
+            >
+              {lang[language]["menu.div.options.5"]}
+            </a>
           </li>
         </ul>
         <p>{copyright}</p>
@@ -116,24 +138,24 @@ const Footer = ({ language }) => {
           <p>Social Share</p>
           <ul className="icons">
             <li>
-              <a href={facebook} target="_blank">
+              <a href={facebook} target="_blank" rel="noreferrer">
                 <FaceIcon className="icon" />
               </a>
             </li>
             <li>
-              <a href={instagram} target="_blank">
+              <a href={instagram} target="_blank" rel="noreferrer">
                 <InstaIcon className="icon" />
               </a>
             </li>
             <li>
-              <a href={github} target="_blank">
+              <a href={github} target="_blank" rel="noreferrer">
                 <GitIcon className="icon" />
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
+              {/* <a href="" target="_blank" rel="noreferrer">
                 <YoutubeIcon className="icon" />
-              </a>
+              </a> */}
             </li>
           </ul>
         </SocialIcons>
