@@ -5,15 +5,15 @@ export default {
   "menu.div.options.3": "Team",
   "menu.div.options.4": "About",
   "menu.div.options.5": "Contact",
-  "hero.info.h1": "Tech is the fuel of innovation.",
-  "hero.info.p": "We fuel your tech and accelerate your business.",
+  "hero.info.h1": "Tech is the fuel of innovation",
+  "hero.info.p": "We fuel your tech and accelerate your business",
   "hero.buttons.0": "Contact us",
   "hero.buttons.1": "Schedule a call",
   "floatingbutton.div.buttonsFilho.0": "",
   "floatingbutton.div.buttonsFilho.1": "Schedule a call",
   "companies.text": "Companies that trust us",
   "craftmanship.text":
-    "We are on a mission to help successful companies extend their tech capabilities. We help companies become innovation leaders by delivering on-demand software development teams and services to build impeccable digital products.",
+    "We are on a mission to help successful companies extend their tech capabilities. We help companies become innovation leaders by delivering on-demand software development teams and services to build impeccable digital products",
   "cards.card.0":
     "We build software from ground up, being cost efficient and agile. ",
   "cards.card.0.bold": "Being quick to answer market demands.",

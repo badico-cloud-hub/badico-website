@@ -5,22 +5,22 @@ export default {
   "menu.div.options.3": "Equipe",
   "menu.div.options.4": "Sobre",
   "menu.div.options.5": "Contato",
-  "hero.info.h1": "Tecnologia traz a inovação.",
-  "hero.info.p": "Nós trazemos a sua tecnologia e aceleramos o seu negócio.",
+  "hero.info.h1": "Tecnologia traz a inovação",
+  "hero.info.p": "Nós trazemos a sua tecnologia e aceleramos o seu negócio",
   "hero.buttons.0": "Fale conosco",
   "hero.buttons.1": "Agende uma reunião",
   "floatingbutton.div.buttonsFilho.0": "Fale conosco",
   "floatingbutton.div.buttonsFilho.1": "Agende uma reunião",
   "companies.text": "Empresas que confiam em nós",
   "craftmanship.text":
-    "Nosso objetivo é alavancar as suas capacidades tecnológicas te auxiliando no desenvolvimento dos seus produtos e serviços, com a construção e gestão da sua equipe dos sonhos.",
+    "Nosso objetivo é alavancar as suas capacidades tecnológicas te auxiliando no desenvolvimento dos seus produtos e serviços, com a construção e gestão da sua equipe dos sonhos",
   "cards.card.0":
     "Construímos software planejando ao seu lado, produzindo com eficiência, segurança, sem desperdícios.  Sendo ágil ao responder imediatamente às necessidades do seu mercado. ",
   "cards.card.0.bold": "Levando o produto rapidamente para o consumidor final.",
   "cards.card.1":
     "Sua empresa depende de vários sofwares para contabilidade, relacionamento com cliente, etc. Hoje são essenciais, mas se você sincroniza manualmente os dados entre eles podemos ",
   "cards.card.1.bold":
-    "automatizar esses e outros processos para otimizar o tempo da sua equipe",
+    "automatizar esses e outros processos para otimizar o tempo da sua equipe.",
   "cards.card.2":
     "Facilitamos e te auxiliamos a desbravar essa realidade onde a tecnologia consome todas as indústrias. Isso tudo de maneira prática, fazendo junto com você. Deixando seus custos fixos em quase 0.",
   "cards.card.2.bold": " Aumentando sua eficiência, performance e rendimento.",
