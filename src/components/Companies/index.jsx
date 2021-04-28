@@ -14,7 +14,7 @@ const Companies = ({ language }) => {
       <Styled.TextCompanies>{lang[language]["companies.text"]}</Styled.TextCompanies>
       <Styled.DivImages>
         <Styled.PrimaryDiv>
-          <img src={Jump} className="logoJump" />
+          <img src={Jump} className="logoJump" alt="Logo JumpCX" />
           <ZemoPay className="logoZemo" />
           <Tailor className="logoTailor" />
         </Styled.PrimaryDiv>

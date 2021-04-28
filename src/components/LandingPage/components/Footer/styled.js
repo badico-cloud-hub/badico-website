@@ -136,11 +136,12 @@ export const MenuOptions = styled.div`
     color: #52575c;
     font-size: 14px;
     text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   ul {
     width: 230px;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

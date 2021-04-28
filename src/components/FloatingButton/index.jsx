@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import Calendly from "../Calendly"
 import Chat from "../../images/chat.svg"
 import Calendar from "../../images/calendar.svg"
 import Email from "../../images/email.svg"
@@ -10,7 +9,6 @@ import lang from "../../intl/langs"
 
 const FloatingButton = ({ language }) => {
   const [form, setForm] = useState(null)
-  const [isOpen, setIsOpen] = useState(false)
 
   const openPopup = () =>
     openPopupWidget({ url: "https://calendly.com/badico" })
