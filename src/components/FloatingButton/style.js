@@ -28,6 +28,10 @@ export const FloatingButton = styled.div`
     bottom: -120px;
     right: 0;
     z-index: -100;
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   :hover {
@@ -53,7 +57,12 @@ export const FloatingButton = styled.div`
   }
 
   @media (min-width: 1366px) {
-    display: none;
+    width: 122px;
+    bottom: 16px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 138px;
   }
 `
 
@@ -81,7 +90,8 @@ export const ContactUs = styled.div`
     .contact,
     .email,
     .calendarbutton,
-    .calendar {
+    .calendar,
+    .buttons {
       visibility: visible;
       opacity: 1;
       transition: visibility 0s, opacity 0.3s cubic-bezier(1, -0.01, 0.38, 0.26);
@@ -107,6 +117,10 @@ export const ContactUs = styled.div`
       right: -93px;
       bottom: -29px;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   .cloud2 {
@@ -129,6 +143,10 @@ export const ContactUs = styled.div`
       right: -24px;
       bottom: -24px;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   .cloud3 {
@@ -148,6 +166,10 @@ export const ContactUs = styled.div`
       right: 24px;
       bottom: -60px;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   .cloud4 {
@@ -166,11 +188,29 @@ export const ContactUs = styled.div`
     @media (min-width: 768px) {
       bottom: -32px;
     }
+
+    @media (min-width: 1366px) {
+      display: none;
+    }
   }
 
   .buttons {
     display: flex;
     position: relative;
+
+    @media (min-width: 1366px) {
+      visibility: hidden;
+      position: absolute;
+      right: 10px;
+      opacity: 0;
+      height: 56px;
+      background: #27debf;
+      border-radius: 28px;
+      align-items: center;
+      width: 477px;
+      z-index: -1;
+      box-shadow: 0px 3px 6px #00000029;
+    }
   }
 
   .contact {
@@ -200,6 +240,29 @@ export const ContactUs = styled.div`
       padding: 0 24px 0 24px;
       line-height: 18px;
     }
+
+    @media (min-width: 1366px) {
+      position: static;
+      width: 215px;
+      height: 56px;
+      border-radius: 28px 0 0 28px;
+      justify-content: center;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      background: #27DEBF;
+      padding: 0;
+
+      :after {
+        content: "";
+        width: 1px;
+        height: 30px;
+        position: absolute;
+        left: 216px;
+        background: #FFFFFF;
+        opacity: 0.52;
+      }
+    }
   }
 
   .email {
@@ -220,6 +283,10 @@ export const ContactUs = styled.div`
     .emailsvg {
       width: 24px;
       height: 17px;
+    }
+
+    @media (min-width: 1366px) {
+      display: none;
     }
   }
 
@@ -251,6 +318,20 @@ export const ContactUs = styled.div`
       right: 106px;
       padding: 0 24px 0 24px;
     }
+
+    @media (min-width: 1366px) {
+      position: static;
+      width: 223px;
+      height: 56px;
+      border-radius: 0;
+      background: #27DEBF;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: none;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 0;
+    }
   }
 
   .calendar {
@@ -271,6 +352,10 @@ export const ContactUs = styled.div`
     .calendarsvg {
       width: 24px;
       height: 22px;
+    }
+
+    @media (min-width: 1366px) {
+      display: none;
     }
   }
 `
