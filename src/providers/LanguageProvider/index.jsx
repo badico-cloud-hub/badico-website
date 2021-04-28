@@ -28,8 +28,8 @@ const LanguageProvider = ({ children }) => {
         window.location.href = homeUrl + window.location.pathname
       }
     }
+    // eslint-disable-next-line
   }, [])
-
   return (
     <WebsiteProvider>
       {children}
