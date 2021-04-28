@@ -1,5 +1,4 @@
 import React from "react"
-import Container from "../Container/index"
 import * as Styled from "./styled"
 import lang from "../../intl/langs"
 
