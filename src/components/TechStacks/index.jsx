@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-import { Container } from "./styled.js"
+import { Container, Title } from "./styled.js"
 
 import "react-tabs/style/react-tabs.css"
 
@@ -43,7 +43,7 @@ function TechStacks() {
 
   return (
     <Container positionbar={positionBar}>
-      <h1>Tech Stacks</h1>
+      <Title>Tech Stacks</Title>
       <Tabs>
         <TabList>
           {tabs.map((tab, i) => {

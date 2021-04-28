@@ -8,11 +8,6 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  h1 {
-    color: #0E273B;
-    margin: 20px;
-  }
-
   .react-tabs {
     display: flex;
     justify-content: center;
@@ -267,13 +262,32 @@ export const Container = styled.div`
       height: 70px;
     }
     .small-svg {
-    width: 30px;
-    height: 30px;
-  }
+      width: 30px;
+      height: 30px;
+    }
   }
   @media (max-width: 380px) {
     .react-tabs {
       width: 330px;
     }
+  }
+`
+export const Title = styled.h1`
+  font-size: 20px;
+  line-height: 24px;
+  color: #0e273b;
+  font-weight: 600;
+  margin: 96px 0 64px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    margin: 144px 0 56px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 34px;
+    line-height: 41px;
   }
 `
