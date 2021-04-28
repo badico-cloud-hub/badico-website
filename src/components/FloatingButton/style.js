@@ -247,6 +247,7 @@ export const ContactUs = styled.div`
       height: 56px;
       border-radius: 28px 0 0 28px;
       justify-content: center;
+      box-shadow: none;
       font-size: 20px;
       line-height: 24px;
       color: #FFFFFF;
