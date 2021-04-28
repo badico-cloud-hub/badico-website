@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import { Render, Content, Image, DivText, Title, Text } from "./styled"
+import React from "react"
+import { Render, Content, Image, DivText } from "./styled"
 
 export const CardsCase = props => {
   return (
     <>
       <Render className="front">
         <Content>
-          <img className="img" src={props.Image} />
+          <img className="img" src={props.Image} alt="case"/>
           <Image height={props.height} width={props.width} top={props.top}>
             <props.Logo />
           </Image>
