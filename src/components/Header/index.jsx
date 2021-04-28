@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Logobadico from "../../images/logo.svg"
 import * as typeformEmbed from "@typeform/embed"
-import Typeform from "../Typeform/index"
 import MenuIcon from "../../images/menuwhite.svg"
 import Close from "../../images/close.svg"
 import * as Styled from "./style"
@@ -53,7 +52,7 @@ const Header = ({ language }) => {
           <nav class="drop-content">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               {/* <li>
               <a href="#">Our Process</a>
