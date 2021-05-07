@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  overflow-x: auto;
+  overflow-x: hidden;
   height: 248px;
+  display: flex;
 
   ::-webkit-scrollbar {
     padding-left: 50px;
@@ -37,7 +38,11 @@ export const Container = styled.div`
 
 export const Items = styled.div`
   display: flex;
+  position: relative;
   height: 208px;
+  right: ${props => (props.right)};
+  transition: right 0.4s linear;
+  
 
   div:nth-child(odd) {
     align-self: flex-start;
