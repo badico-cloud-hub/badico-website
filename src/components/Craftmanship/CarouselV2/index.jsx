@@ -137,9 +137,23 @@ const Carousel = () => {
   }
   
   useEffect(() => {
-    if(right >= 3880){
-      clearInterval(refInterval.right)
-      clearInterval(refIntervalScroll.right)
+    if(size.width == 360){
+      if(right >= 2650){
+        clearInterval(refInterval.right)
+        clearInterval(refIntervalScroll.right)
+      }
+    }
+    if(size.width == 768){
+      if(right >= 4410){
+        clearInterval(refInterval.right)
+        clearInterval(refIntervalScroll.right)
+      }
+    }
+    if(size.width == 1366){
+      if(right >= 3880){
+        clearInterval(refInterval.right)
+        clearInterval(refIntervalScroll.right)
+      }
     }
     if(right <= 0){
       clearInterval(refInterval.left)
@@ -152,53 +166,102 @@ const Carousel = () => {
   }, [mouseX])
   
   return (
-    <Styled.Container onMouseMove={(event) => setMouseX(event.clientX)} onMouseLeave={onMouseLeaveFunction}>
-      <Styled.Items className="items" right={right+"px"}>
-        <Card
-          className="teste"
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
+    <>
+      {size.width == 360 ? (
+        <Styled.Container onMouseMove={(event) => setMouseX(event.clientX)} onMouseLeave={onMouseLeaveFunction}>
+          <Styled.Items className="items" right={right+"px"}>
+            <Card
+              className="teste"
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+    
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+    
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+    
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+          </Styled.Items>
+        </Styled.Container>
+      ) : (
+        <Styled.Container onMouseMove={(event) => setMouseX(event.clientX)} onMouseLeave={onMouseLeaveFunction}>
+          <Styled.Items className="items" right={right+"px"}>
+            <Card
+              className="teste"
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
 
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
 
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
 
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
-        <Card
-          Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
-          Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
-        />
-      </Styled.Items>
-      <Styled.ContainerScroll>
-        <Styled.DivScroll right={rightScroll+"px"}/>
-      </Styled.ContainerScroll >
-    </Styled.Container>
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+            <Card
+              Title="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula"
+              Text="Lorem ipsum nisi bibendum platea donec, orci volutpat mi vehicula curabitur, odio vehicula platea condimentum. eleifend nunc blandit purus aenean "
+            />
+          </Styled.Items>
+          <Styled.ContainerScroll>
+            <Styled.DivScroll right={rightScroll+"px"}/>
+          </Styled.ContainerScroll >
+        </Styled.Container>
+      )}
+    </>
   )
 }
 export default Carousel
