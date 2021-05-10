@@ -2,8 +2,10 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   overflow-x: hidden;
+  width: 100%;
   height: 248px;
   display: flex;
+  flex-direction: column;
 
   ::-webkit-scrollbar {
     padding-left: 50px;
@@ -28,7 +30,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: 768px) {
-    height: 290px;
+    height: 360px;
   }
 
   @media (min-width: 1920px) {
@@ -74,4 +76,20 @@ export const Items = styled.div`
   @media (min-width: 1920px) {
     height: 260px;
   }
+`
+export const ContainerScroll = styled.div`
+  width: 105px;
+  height: 8px;
+  background: #E8E8E8;
+  border-radius: 15px;
+  margin: 50px auto 0 auto;
+`
+
+export const DivScroll = styled.div`
+  width: 52px;
+  height: 100%;
+  position: relative;
+  background: #A0A4A8;
+  border-radius: 15px;
+  right: ${props => (props.right)};
 `
