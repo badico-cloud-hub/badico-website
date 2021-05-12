@@ -18,8 +18,25 @@ export const Card = styled.div`
 
   @media (min-width: 768px) {
     width: 530px;
-    height: 216px;
+    height: 205px;
     margin-left: 40px;
+  }
+
+  @media(min-width: 1366px){
+    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+    :hover{
+      box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
+      transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+      transform: translateY(-5px);
+      div:not(.svg){
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translateY(-10px);
+      }
+      p{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translateY(-10px);
+      }
+    }
   }
 
   @media (min-width: 1920px) {
@@ -38,6 +55,10 @@ export const TitleImg = styled.div`
 
   @media (min-width: 768px) {
     height: 88px;
+  }
+
+  @media(min-width: 1366px){
+    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
   }
 `
 
@@ -111,6 +132,10 @@ export const Text = styled.p`
     font-size: 16px;
     line-height: 24px;
     margin: 0 16px 27px 120px;
+  }
+
+  @media(min-width: 1366px){
+    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
   }
 
   @media (min-width: 1920px) {
