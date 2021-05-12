@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  overflow-x: hidden;
+  overflow-x: auto;
   width: 100%;
   height: 248px;
   display: flex;
@@ -31,6 +31,10 @@ export const Container = styled.div`
 
   @media (min-width: 768px) {
     height: 360px;
+  }
+
+  @media(min-width: 1366px){
+    overflow-x: hidden;
   }
 
   @media (min-width: 1920px) {
