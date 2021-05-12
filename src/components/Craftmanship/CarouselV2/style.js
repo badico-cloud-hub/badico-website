@@ -44,14 +44,19 @@ export const Items = styled.div`
   height: 208px;
   right: ${props => (props.right)};
   transition: right 0.4s linear;
-  
 
   div:nth-child(odd) {
-    align-self: flex-start;
+    
   }
 
   div:nth-child(even) {
-    align-self: flex-end;
+    display: flex;
+    position: relative;
+    top: 21px;
+
+    @media(min-width: 768px){
+      top: 46px;
+    }
   }
 
 
@@ -70,8 +75,13 @@ export const Items = styled.div`
   }
 
   @media (min-width: 768px) {
-    height: 250px;
+    height: 251px;
   }
+
+  @media (min-width: 1366px) {
+    align-items: center;
+  }
+
 
   @media (min-width: 1920px) {
     height: 260px;
