@@ -9,7 +9,7 @@ const Cards = ({ language, ...props }) => {
         <Styled.DivSvg className="svg">
           <CheckedIcon className="icon"/>
         </Styled.DivSvg>
-        <Styled.Title>{props.Title}</Styled.Title>
+        <Styled.Title className="title">{props.Title}</Styled.Title>
       </Styled.TitleImg>
       <Styled.Text>{props.Text}</Styled.Text>
     </Styled.Card>
