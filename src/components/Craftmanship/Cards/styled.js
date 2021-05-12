@@ -11,6 +11,38 @@ export const Card = styled.div`
   background: #ffffff;
   box-shadow: 0px 6px 8px #00000029;
   margin-left: 16px;
+  div .svg{
+    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+    border-radius: 50%;
+  }
+  div .title {
+    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  }
+  p{
+    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  }
+  transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+
+  :hover{
+      box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
+      transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+      transform: translate(2px, -5px);
+      transform: scaleX(0.98101265822);
+      background-color: #27DEBF0D;
+      div .svg{
+        transform: translate(3px, -4px);
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
+      }
+      div .title{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(-3px, -7px);
+      }
+      p{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(3px, -3px);
+      }
+    }
 
   @media (min-width: 428px) {
     width: 388px;
@@ -20,21 +52,44 @@ export const Card = styled.div`
     width: 530px;
     height: 205px;
     margin-left: 40px;
-  }
 
-  @media(min-width: 1366px){
-    transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
     :hover{
-      box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
-      transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-      transform: translateY(-5px);
-      div:not(.svg){
+      transform: translate(3px, -4px);
+      transform: scaleX(0.98867924528);
+      background-color: #27DEBF0D;
+      div .svg{
+        transform: translate(4px, -8px);
         transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-        transform: translateY(-10px);
+        box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
+      }
+      div .title{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(2px, -10px);
       }
       p{
         transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-        transform: translateY(-10px);
+        transform: translate(2px, -20px);
+      }
+    }
+  }
+
+  @media(min-width: 1366px){
+    :hover{
+      transform: translate(3px, -4px);
+      transform: scaleX(0.98867924528);
+      background-color: #27DEBF0D;
+      div .svg{
+        transform: translate(4px, -8px);
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
+      }
+      div .title{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(2px, -10px);
+      }
+      p{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(2px, -20px);
       }
     }
   }
