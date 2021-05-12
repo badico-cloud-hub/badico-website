@@ -6,7 +6,7 @@ const Cards = ({ language, ...props }) => {
   return (
     <Styled.Card>
       <Styled.TitleImg>
-        <Styled.DivSvg>
+        <Styled.DivSvg className="svg">
           <CheckedIcon className="icon"/>
         </Styled.DivSvg>
         <Styled.Title>{props.Title}</Styled.Title>
