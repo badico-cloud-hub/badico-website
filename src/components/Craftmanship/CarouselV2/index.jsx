@@ -173,7 +173,7 @@ const Carousel = () => {
   
   return (
     <>
-      {size.width == 360 ? (
+      {size.width < 1366 ? (
         <Styled.Container onMouseMove={(event) => setMouseX(event.clientX)} onMouseLeave={onMouseLeaveFunction}>
           <Styled.Items className="items" right={right+"px"}>
             <Card
