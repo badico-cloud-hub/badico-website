@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 70px;
+}
+
+.titleContact{
+    font: normal normal medium 20px/24px Roboto;
+    color: #0E273B;
+    width: 86px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.textContact{
+    font: normal normal normal 16px/24px Roboto;
+    color: #0E273B;
+    width: 286px;
+    height: 45px;
+    margin-bottom: 10px;
+
+}
+
+.nameInput, .emailInput{ 
+    width: 286px;
+    height: 33px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #E8E8E8;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    opacity: 1;
+}
+
+.messageInput{
+    width: 286px;
+    height: 69px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #E8E8E8;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.emailContactButton{
+    width: 136px;
+    height: 35px;
+    border: 1px solid #172B4D;
+    border-radius: 38px;
+    color: #0E273B;
+    font: normal normal normal 14px/17px Roboto;
+    margin-right: 150px;
+}
+
+.whatsappContactButton{
+    width: 136px;
+    height: 35px;
+    border: 1px solid #172B4D;
+    border-radius: 38px;
+    color: #0E273B;
+    margin-left: 150px;
+    font: normal normal normal 14px/17px Roboto;
+    margin-top: -34.5px;
+}
