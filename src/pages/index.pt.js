@@ -13,6 +13,7 @@ import Cases from "../components/Cases"
 import Team from "../components/Team/index"
 import About from "../components/About"
 import { WebsiteProvider } from "../contexts"
+import Process from "../components/ProcessLayout"
 
 const IndexPage = () => {
   const language = "pt"
@@ -28,6 +29,7 @@ const IndexPage = () => {
           <Craftmanship language={language} />
           <CraftmanshipLayout language={language} />
           <TechStacks language={language} />
+          <Process language={language}/>
           <Capacities language={language} />
           <Cases language={language} />
           <Team language={language} />

@@ -13,6 +13,8 @@ import TechStacks from "../components/TechStacks"
 import Capacities from "../components/Capacities"
 import Cases from "../components/Cases"
 import About from "../components/About"
+import Process from "../components/ProcessLayout"
+
 
 import { WebsiteProvider } from "../contexts"
 
@@ -30,6 +32,7 @@ const IndexPage = () => {
           <Craftmanship language={language} />
           <CraftmanshipLayout language={language} />
           <TechStacks language={language} />
+          <Process language={language} />
           <Capacities language={language} />
           <Cases language={language} />
           <Team language={language}/>
