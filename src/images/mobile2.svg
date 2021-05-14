@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="127.47" height="83.98" viewBox="0 0 127.47 83.98">
-  <g id="Grupo_1343" data-name="Grupo 1343" transform="translate(1.5)">
-    <path id="Caminho_1364" data-name="Caminho 1364" d="M1156.823,130.642a38.177,38.177,0,0,1-76.353.241v-.241h38.177V92.469A38.217,38.217,0,0,1,1156.823,130.642Z" transform="translate(-1034.657 -88.652)" fill="none"/>
-    <g id="Grupo_1317" data-name="Grupo 1317" transform="translate(54.284 12.292)">
-      <ellipse id="Elipse_441-2" data-name="Elipse 441-2" cx="29.704" cy="29.7" rx="29.704" ry="29.7" fill="#fff"/>
-    </g>
-    <g id="Grupo_1341" data-name="Grupo 1341" transform="translate(0 37.381)">
-      <line id="Linha_67" data-name="Linha 67" x1="33.275" transform="translate(9.219 4.353)" fill="none" stroke="#02293f" stroke-miterlimit="10" stroke-width="3"/>
-      <ellipse id="Elipse_442" data-name="Elipse 442" cx="4.609" cy="4.609" rx="4.609" ry="4.609" fill="none" stroke="#02293f" stroke-miterlimit="10" stroke-width="3"/>
-    </g>
-    <text id="_02" data-name="02" transform="translate(69.496 49.95)" fill="#404040" font-size="24" font-family="GalanoGrotesque" font-weight="500" style="isolation: isolate"><tspan x="0" y="0">02</tspan></text>
-    <g id="Grupo_1342" data-name="Grupo 1342" transform="translate(41.996 0)">
-      <path id="Caminho_1365" data-name="Caminho 1365" d="M1118.646,130.642a38.218,38.218,0,0,1-38.177,38.173V92.469A38.218,38.218,0,0,1,1118.646,130.642Z" transform="translate(-1038.475 -88.652)" fill="none"/>
-      <path id="Caminho_1366" data-name="Caminho 1366" d="M1108.422,124.2a38.218,38.218,0,0,0-38.177-38.173V82.206a41.989,41.989,0,0,1,0,83.978v-3.816A38.218,38.218,0,0,0,1108.422,124.2Z" transform="translate(-1028.25 -82.206)" fill="#b3b3b3"/>
-      <path id="Caminho_1367" data-name="Caminho 1367" d="M1225.1,82.206v3.817a38.173,38.173,0,1,0,0,76.346v3.817a41.989,41.989,0,1,1,0-83.978Z" transform="translate(-1183.106 -82.206)" fill="#02293f"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="127.47" height="83.98" viewBox="0 0 127.47 83.98"><defs><style>.a1,.c1{fill:none;}.b1{fill:#fff;}.c1{stroke:#02293f;stroke-miterlimit:10;stroke-width:3px;}.d1{fill:#0e273b;font-size:20px;font-family:Roboto-Medium, Roboto;font-weight:500;letter-spacing:0em;isolation:isolate;}.e1{fill:#b3b3b3;}.f1{fill:#02293f;}</style></defs><g transform="translate(1.5)"><path class="a1" d="M1156.823,130.642a38.177,38.177,0,0,1-76.353.241v-.241h38.177V92.469A38.217,38.217,0,0,1,1156.823,130.642Z" transform="translate(-1034.657 -88.652)"/><g transform="translate(54.284 12.292)"><ellipse class="b1" cx="29.704" cy="29.7" rx="29.704" ry="29.7"/></g><g transform="translate(0 37.381)"><line class="c1" x1="33.275" transform="translate(9.219 4.353)"/><ellipse class="c1" cx="4.609" cy="4.609" rx="4.609" ry="4.609"/></g><text class="d1" transform="translate(72.496 48.95)"><tspan x="0" y="0">02</tspan></text><g transform="translate(41.996 0)"><path class="a1" d="M1118.646,130.642a38.218,38.218,0,0,1-38.177,38.173V92.469A38.218,38.218,0,0,1,1118.646,130.642Z" transform="translate(-1038.475 -88.652)"/><path class="e1" d="M1108.422,124.2a38.218,38.218,0,0,0-38.177-38.173V82.206a41.989,41.989,0,0,1,0,83.978v-3.816A38.218,38.218,0,0,0,1108.422,124.2Z" transform="translate(-1028.25 -82.206)"/><path class="f1" d="M1225.1,82.206v3.817a38.173,38.173,0,1,0,0,76.346v3.817a41.989,41.989,0,1,1,0-83.978Z" transform="translate(-1183.106 -82.206)"/></g></g></svg>
