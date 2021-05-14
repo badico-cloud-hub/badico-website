@@ -4,10 +4,6 @@ import media from "styled-media-query"
 export const ProcessWrapper = styled.div`
   font-family: Roboto;
 
-  .prodImg {
-    display: none;
-  }
-
   ${media.greaterThan("768px")`
     width: 592px;
     height: 972px;
@@ -15,25 +11,61 @@ export const ProcessWrapper = styled.div`
   `}
 
   ${media.greaterThan("1366px")`
-  .prodImg{
-    display: inline-block;
-    width: 555px;
-    float: right;
-    position: relative;
-    left: 300px;
-    bottom: 300px;
-  }
+    margin-top: 300px;
+  
+  `}
+
+  ${media.greaterThan("1920px")`
+    height: 1200px;
+
   `}
 `
 
 export const Title = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 6rem auto 3.5rem auto;
   display: flex;
   justify-content: center;
 
   ${media.greaterThan("768px")`
   margin-bottom: 6rem;
+  font-size: 1.5rem;
+  `}
+
+  ${media.greaterThan("1920px")`
+  font-size: 2.125rem;
+  `}
+`
+
+export const BoxImage = styled.div`
+  display: none;
+
+  .prodImg {
+    display: none;
+  }
+
+  ${media.greaterThan("1366px")`
+  display: inline-block;
+  position: relative;
+  left: 390px;
+  bottom: 350px;
+  float: right; 
+
+  .prodImg{
+    display: inline-block;
+    width: 555px;
+    height: 403px;
+  }
+  `}
+
+  ${media.greaterThan("1920px")`
+  left: 550px;
+  bottom: 320px;
+    
+  .prodImg{
+    width: 648px;
+    height: 573px;
+  }
   `}
 `
 
@@ -56,9 +88,17 @@ export const Steps = styled.div`
     display: block;
     width: 660px;
     height: 886px;
-    left: -15px;
     position: absolute;
     left: -280px;
+  }
+  `}
+
+  ${media.greaterThan("1920px")`
+  .stepsDesktop{
+    width: 795px;
+    height: 1068px;
+    position: absolute;
+    left: -400px;
   }
   `}
 `
@@ -176,6 +216,31 @@ ${media.greaterThan("1366px")`
     bottom: 100px;
   }
 `}
+
+${media.greaterThan("1920px")`
+  height: 201px;
+  width: 454px;
+
+  .content1{
+    left: -30px;
+    top: 30px;
+  }
+
+  .content2{
+    left: 150px;
+    bottom: 0px;
+  }
+
+  .content3{
+    left: 260px;
+    bottom: 40px;
+  }
+
+  .content4{
+    left: 460px;
+    bottom: 70px;
+  }
+`}
 `
 
 export const Content = styled.div`
@@ -225,8 +290,16 @@ export const Content = styled.div`
   }
 `}
 
-${media.greaterThan("1366px")`
-  height: 167px;
+  ${media.greaterThan("1366px")`
+  height: 201px;
   width: 100%;
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
 `}
 `
