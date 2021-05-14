@@ -143,6 +143,12 @@ const Carousel = () => {
         clearInterval(refIntervalScroll.right)
       }
     }
+    if(size.width == 428){
+      if(right >= 3250){
+        clearInterval(refInterval.right)
+        clearInterval(refIntervalScroll.right)
+      }
+    }
     if(size.width == 768){
       if(right >= 4410){
         clearInterval(refInterval.right)
