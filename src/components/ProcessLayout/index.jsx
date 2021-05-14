@@ -2,6 +2,7 @@ import React from "react"
 import {
   ProcessWrapper,
   Title,
+  BoxImage,
   Steps,
   Content,
   Cards,
@@ -23,9 +24,11 @@ const ProcessLayout = () => {
   return (
     <ProcessWrapper>
       <Container>
-        <Title>Our process</Title>
+        <Title>Our Process</Title>
         {/* <Producao className="prodImg"/> */}
-        <Producao className="prodImg" />
+        <BoxImage>
+          <Producao className="prodImg" />
+        </BoxImage>
         <Steps>
           <StepsDesktop className="stepsDesktop" />
           <Cards>
@@ -36,7 +39,9 @@ const ProcessLayout = () => {
               <Content className="content1">
                 <PizzaIcon className="icon" />
                 <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer
+                </p>
               </Content>
             </Card>
             <Card className="reverse card2">
@@ -46,7 +51,9 @@ const ProcessLayout = () => {
               <Content className="content2">
                 <SetIcon className="icon" />
                 <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer
+                </p>
               </Content>
             </Card>
             <Card className="no-reverse card3">
@@ -56,7 +63,9 @@ const ProcessLayout = () => {
               <Content className="content3">
                 <ToolIcon className="icon" />
                 <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer
+                </p>
               </Content>
             </Card>
             <Card className="reverse card4">
@@ -66,7 +75,9 @@ const ProcessLayout = () => {
               <Content className="content4">
                 <AvatarIcon className="icon" />
                 <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer
+                </p>
               </Content>
             </Card>
           </Cards>
