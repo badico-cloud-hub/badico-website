@@ -46,6 +46,25 @@ export const Card = styled.div`
 
   @media (min-width: 428px) {
     width: 388px;
+
+    :hover{
+      transform: translate(3px, -4px);
+      transform: scaleX(0.98867924528);
+      background-color: #27DEBF0D;
+      div .svg{
+        transform: translate(4px, -8px);
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        box-shadow: rgb(0 0 0 / 10%) 0px 11px 15px -3px, rgb(0 0 0 / 4%) 0px 9px 30px 3px, rgb(0 0 0 / 4%) 0px 20px 30px 3px;
+      }
+      div .title{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(2px, -10px);
+      }
+      p{
+        transition: transform 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        transform: translate(3px, -10px);
+      }
+    }
   }
 
   @media (min-width: 768px) {
