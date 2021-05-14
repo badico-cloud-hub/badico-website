@@ -245,7 +245,7 @@ ${media.greaterThan("1920px")`
 
 export const Content = styled.div`
   background: #fff;
-  padding: 0.5rem;
+  padding: 0.5625rem;
   width: 146px;
   height: 89px;
   box-shadow: 4px 7px 6px #0000003d;
@@ -275,6 +275,7 @@ export const Content = styled.div`
   ${media.greaterThan("768px")`
   width: 278px;
   height: 170px;
+  padding: 1.5625rem 1.0625rem;
 
   .icon {
     width: 56px;
