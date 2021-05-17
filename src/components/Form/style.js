@@ -4,13 +4,21 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 70px;
+    margin-bottom: 92px;
+
+    @media(min-width: 768px){
+        margin-bottom: 144px;
+    }
 
     @media(min-width: 1366px){
         flex-direction: row;
         height: 642px;
     }
 
+    @media(min-width: 1920px){
+        flex-direction: row;
+        height: 577px;
+    }
 `
 
 export const DivTelemarketing = styled.div`
@@ -28,40 +36,71 @@ export const DivTelemarketing = styled.div`
             height: 394px;
         }
     }
+
+    @media(min-width: 1920px){
+        svg{
+            width: 459px;
+            height: 469px;
+        }
+    }
 `
 export const DivContact = styled.div`
+    width: 286px;
+    height: 297px;
+
+    @media(min-width: 768px){
+        width: 598px;
+        height: 599px;
+    }
     @media(min-width: 1366px){
         align-items: center;
         width: 50%;
+        height: 100%;
     }
 `
 
 export const TitleContact = styled.div`
-    font: normal normal medium 20px/24px Roboto;
     background: white;
+    display: flex;
     color: #0E273B;
     width: 86px;
     height: 24px;
-    margin-bottom: 10px;
+    margin: 0 auto 8px auto;
     font-weight: bold;
+    justify-content: center;
+    p{
+        margin: 0;
+        font-size: 20px;
+    }
 
     @media (min-width: 768px){
         width: 103px;
         height: 29px;
-        font: normal normal normal 24px/29px Roboto;
+        margin: 0 auto 22px auto;
+        p{
+            font-size: 24px;
+        }
     }
 
     @media (min-width: 1366px){
         width: 197px;
         height: 33px;
-        font: normal normal normal 24px/29px Roboto;
         font-weight: bold;
+        margin: 0 0 16px 0;
+        justify-content: flex-start;
+        p{
+            font-size: 24px;
+        }
     }
 
     @media (min-width: 1920px){
         width: 197px;
         height: 36px;
-        font: normal normal normal 34px/41px Roboto;
+        margin: 0 0 31px 0;
+        align-items: center;
+        p{
+            font-size: 34px;
+        }
     }
     
 `
@@ -70,37 +109,64 @@ export const TextContact = styled.div`
     color: #0E273B;
     width: 286px;
     height: 45px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    p{
+        margin: 0;
+        font-size: 16px;
+    }
 
     @media (min-width: 768px){
         width: 598px;
         height: 79px;
+        margin-bottom: 49px;
     }
 
     @media (min-width: 1366px){
         width: 588px;
         height: 51px;
-        font: normal normal normal 20px/24px Roboto;
+        margin-bottom: 32px;
+        p{
+            margin: 0;
+            font-size: 20px;
+        }
     }
 
     @media (min-width: 1920px){
         width: 767px;
         height: 26px;
+        margin-bottom: 61px;
     }
 `
 
 export const DivForm = styled.form`
     display: flex;
     flex-direction: column;
+    
+    .divButtons{
+        display: flex;
+        justify-content: space-between;
 
-    @media (min-width: 768px){
-        margin-top:-20px;
+        @media(min-width: 768px){
+            justify-content: space-around;
+        }
+
+        @media(min-width: 1366px){
+            justify-content: flex-start;
+        }
     }
 
-    @media (min-width: 1366px){
-        margin-top:30px;
+    @media(min-width: 1366px){
+        width: 588px;
     }
 
+    @media(min-width: 1920px){
+        width: 852px;
+        .divInputs{
+            flex-direction: row;
+            margin-bottom: 33px;
+        }
+    }
     
 `
 
@@ -110,22 +176,52 @@ export const NameInput = styled.input`
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #E8E8E8;
     border-radius: 2px;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    ::-webkit-input-placeholder {
+        width: 43px;
+        height: 17px;
+        font-size: 14px;
+        padding: 8px 0 8px 9px;
+        color: #CACCCF;
+    }
 
     @media (min-width: 768px){
         width: 598px;
         height: 69px;
+        margin-bottom: 17px;
+        ::-webkit-input-placeholder {
+            width: 87px;
+            height: 34px;
+            font-size: 28px;
+            padding: 16px 0 18px 19px;
+            color: #CACCCF;
+        }
     }
 
     @media (min-width: 1366px){
         width: 588px;
         height: 72px;
+        margin-bottom: 24px;
+        ::-webkit-input-placeholder {
+            width: 62px;
+            height: 24px;
+            font-size: 20px;
+            padding: 24px 0 24px 17px;
+            color: #CACCCF;
+        }
     }
 
     @media (min-width: 1920px){
         width: 413px;
         height: 73px;
-        margin-rigth:auto;
+        margin: 0 24px 0 0;
+        ::-webkit-input-placeholder {
+            width: 62px;
+            height: 24px;
+            font-size: 20px;
+            padding: 25px 0 24px 16px;
+            color: #CACCCF;
+        }
     }
 `
 
@@ -135,23 +231,52 @@ export const EmailInput = styled.input`
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #E8E8E8;
     border-radius: 2px;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    ::-webkit-input-placeholder {
+        width: 43px;
+        height: 17px;
+        font-size: 14px;
+        padding: 8px 0 8px 9px;
+        color: #CACCCF;
+    }
 
     @media (min-width: 768px){
         width: 598px;
         height: 69px;
+        margin-bottom: 17px;
+        ::-webkit-input-placeholder {
+            width: 92px;
+            height: 35px;
+            font-size: 29px;
+            padding: 16px 0 18px 19px;
+            color: #CACCCF;
+        }
     }
 
     @media (min-width: 1366px){
         width: 588px;
         height: 72px;
+        margin-bottom: 24px;
+        ::-webkit-input-placeholder {
+            width: 62px;
+            height: 24px;
+            font-size: 20px;
+            padding: 24px 0 24px 17px;
+            color: #CACCCF;
+        }
     }
 
     @media (min-width: 1920px){
         width: 415px;
         height: 73px;
-        margin-left:auto;
-        margin-top: -70px;
+        margin: 0;
+        ::-webkit-input-placeholder {
+            width: 62px;
+            height: 24px;
+            font-size: 20px;
+            padding: 25px 0 24px 16px;
+            color: #CACCCF;
+        }
     }
 `
 
@@ -161,21 +286,51 @@ export const TextInput = styled.textarea`
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #E8E8E8;
     border-radius: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
+    ::-webkit-input-placeholder {
+        width: 63px;
+        height: 17px;
+        font-size: 14px;
+        padding: 8px 0 8px 9px;
+        color: #CACCCF;
+    }
 
     @media (min-width: 768px){
         width: 598px;
         height: 144px;
+        margin-bottom: 49px;
+        ::-webkit-input-placeholder {
+            width: 127px;
+            height: 34px;
+            font-size: 28px;
+            padding: 16px 0 18px 19px;
+            color: #CACCCF;
+        }
     }
 
     @media (min-width: 1366px){
         width: 588px;
         height: 229px;
+        margin-bottom: 40px;
+        ::-webkit-input-placeholder {
+            width: 91px;
+            height: 24px;
+            font-size: 20px;
+            padding: 24px 0 24px 17px;
+            color: #CACCCF;
+        }
     }
 
     @media (min-width: 1920px){
         width: 852px;
         height: 229px;
+        ::-webkit-input-placeholder {
+            width: 91px;
+            height: 24px;
+            font-size: 20px;
+            padding: 25px 0 24px 16px;
+            color: #CACCCF;
+        }
     }
 `
 
@@ -186,24 +341,18 @@ export const EmailContactButton = styled.button`
     border-radius: 38px;
     color: #0E273B;
     font: normal normal normal 14px/17px Roboto;
-    margin-right: 150px;
     background: white;
 
     @media (min-width: 768px){
         width: 253px;
         height: 57px;
         font-weight: bold;
-        font: normal normal medium 20px/24px Roboto;
-        margin-top:30px;
-        margin-right:auto;
-        margin-left: 20px;
     }
 
     @media (min-width: 1366px){
         width: 188px;
         height: 48px;
-        font: normal normal medium 16px/24px Roboto;
-        margin-right:auto;
+        margin-right: 19px;
     }
 `
 
@@ -213,26 +362,17 @@ export const WhatsappContactButton = styled.button`
     border: 1px solid #172B4D;
     border-radius: 38px;
     color: #0E273B;
-    margin-left: 150px;
     font: normal normal normal 14px/17px Roboto;
-    margin-top: -34.5px;
     background: white;
 
     @media (min-width: 768px){
         width: 253px;
         height: 57px;
         font-weight: bold;
-        font: normal normal medium 20px/24px Roboto;
-        margin-left:auto;
-        margin-right: 20px;
-        margin-top: -57px;
     }
 
     @media (min-width: 1366px){
         width: 188px;
         height: 48px;
-        font: normal normal medium 16px/24px Roboto;
-        margin-left:230px;
-        margin-top:-48px
     }
 `
