@@ -25,14 +25,18 @@ const Form = () => {
                     <p>Talk to us</p>
                 </TitleContact>
                 <TextContact>
-                    <p>Lorem ipsum dolor sit amet, consectetur pretium pretium tempor.Lorem ipsum dolor </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur pretium pretium tempor.Lorem ipsum dolor</p>
                 </TextContact>
                 <DivForm>
-                    <NameInput type="text" placeholder="Name*"></NameInput>
-                    <EmailInput type="email" placeholder="Email*"></EmailInput>
+                    <div className="divInputs">
+                        <NameInput type="text" placeholder="Name*"></NameInput>
+                        <EmailInput type="email" placeholder="Email*"></EmailInput>
+                    </div>
                     <TextInput type="text" placeholder="Message*"></TextInput>
-                    <EmailContactButton type="button">Contact e-mail</EmailContactButton>
-                    <WhatsappContactButton type="button">Contact Whatsapp</WhatsappContactButton>
+                    <div className="divButtons">
+                        <EmailContactButton type="button">Contact e-mail</EmailContactButton>
+                        <WhatsappContactButton type="button">Contact Whatsapp</WhatsappContactButton>
+                    </div>
                 </DivForm>
             </DivContact>
         </Container>
