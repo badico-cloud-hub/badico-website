@@ -2,7 +2,7 @@ import React from "react"
 import LanguageProvider from "../providers/LanguageProvider"
 
 import Team from "../components/Team/index"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import HeroLayout from "../components/HeroLayout"
 import Companies from "../components/Companies"
