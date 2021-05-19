@@ -1,5 +1,5 @@
 import React from "react"
-import Members from "../Members/index"
+import Members from "./Members/index"
 import { TeamWrapper, Container, Title, Description } from "./TeamWrapper"
 
 const Team = () => {
