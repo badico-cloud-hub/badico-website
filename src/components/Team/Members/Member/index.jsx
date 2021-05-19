@@ -4,22 +4,20 @@ import {
   ImgProfile,
   Content,
   Name,
-  PositionContainer,
   Position,
-  Description,
+  ContainerContent,
 } from "./MemberWrapper"
 
 const Member = props => {
   return (
     <MemberWrapper>
-      <ImgProfile src="https://via.placeholder.com/150" />
-      <Content>
-        <Name>{props.name}</Name>
-        <PositionContainer>
+      <ContainerContent>
+        <ImgProfile src="https://via.placeholder.com/150" />
+        <Content>
+          <Name>{props.name}</Name>
           <Position>{props.position}</Position>
-          <Description>{props.description}</Description>
-        </PositionContainer>
-      </Content>
+        </Content>
+      </ContainerContent>
     </MemberWrapper>
   )
 }
