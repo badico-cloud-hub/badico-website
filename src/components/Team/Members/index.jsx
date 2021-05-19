@@ -20,6 +20,11 @@ const Members = () => {
         name="Danilo Sampaio"
         position="Fullstack Engineer"
       />
+      <Member
+        img=""
+        name="Renata Zadravec"
+        position="Business and People Manager"
+      />
     </MembersWrapper>
   )
 }
