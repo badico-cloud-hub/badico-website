@@ -2,10 +2,11 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const TeamWrapper = styled.div`
-  padding: 0 2rem;
+  width: 270px;
   display: flex;
   flex-direction: column;
-  font-family: GalanoGrotesque;
+  align-items: center;
+  margin: 97px auto 0 auto;
 `
 export const Container = styled.div`
   margin-bottom: 1rem;
@@ -18,7 +19,7 @@ export const Container = styled.div`
 `
 export const Title = styled.h2`
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1875rem;
   color: #02293f;
   margin: 0.5rem auto;
   text-align: center;
@@ -33,7 +34,7 @@ export const Title = styled.h2`
 `
 export const Description = styled.p`
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   width: 100%;
