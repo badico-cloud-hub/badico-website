@@ -43,13 +43,11 @@ export const Description = styled.p`
   max-width: 392px;
   margin: 0 auto 8px auto;
   text-align: center;
-
-  ${media.greaterThan("450px")`
-  font-size: 1rem;
-  `}
+  color: #52575C;
 
   ${media.greaterThan("768px")`
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
   `}
 `
 
