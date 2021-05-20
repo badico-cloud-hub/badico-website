@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import Member from "./Member/index"
+import {useWindowSize} from "../../../hooks/useWindowsSize"
 import { MembersWrapper } from "./MembersWrapper"
 
-const Members = () => {
+const Members = (props) => {
+  const size = useWindowSize()
+
+  let down = props.down
+  let height = props.height
+
   return (
-    <MembersWrapper>
+    <MembersWrapper height={size.width < 768 && height.mobile} overflow={down == false ? "hidden" : "visible"}>
       <Member
         img=""
         name="Lucas Badico"
@@ -24,6 +30,18 @@ const Members = () => {
         img=""
         name="Renata Zadravec"
         position="Business and People Manager"
+      />
+      <Member
+        img=""
+        name="Lucas Badico"
+        position="Cloud Engineer | CTO"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Pedro Soares"
+        position="Frontend Engineer"
+        opacity={down == false ? 0 : 1}
       />
     </MembersWrapper>
   )
