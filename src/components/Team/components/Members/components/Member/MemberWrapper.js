@@ -10,9 +10,10 @@ export const MemberWrapper = styled.div`
   opacity: ${props => props.opacity};
   transition: opacity 0.8s linear;
 
-  ${media.greaterThan("1150px")`
-  width: 80%;
-  max-width: 230px;
+  ${media.greaterThan("768px")`
+  width: 254px;
+  height: 353px;
+  margin-bottom: 40px;
   `}
 `
 
@@ -22,6 +23,9 @@ export const ContainerContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  ${media.greaterThan("768px")`
+  `}
 `
 
 export const ImgProfile = styled.img`
@@ -31,12 +35,10 @@ export const ImgProfile = styled.img`
   align-self: center;
   margin: 0 0 16px 0;
 
-  ${media.greaterThan("450px")`
-  width: 65%;
-  `}
-
   ${media.greaterThan("768px")`
-  width: 75%;
+  width: 214px;
+  height: 214px;
+  margin-bottom: 24px;
   `}
 `
 export const Content = styled.div`
@@ -54,12 +56,9 @@ export const Name = styled.h2`
   text-align: center;
   margin: 0;
 
-  ${media.greaterThan("450px")`
-  font-size: 0.85rem;
-  `}
-
   ${media.greaterThan("768px")`
-  font-size: 1.2rem;
+  font-size: 1.95rem;
+  margin-bottom: 16px;
   `}
 `
 
@@ -71,11 +70,7 @@ export const Position = styled.p`
   margin: 0;
   display: flex;
 
-  ${media.greaterThan("450px")`
-  font-size: 0.75rem;
-  `}
-
   ${media.greaterThan("768px")`
-  font-size: 1rem;
+  font-size: 1.5rem;
   `}
 `
