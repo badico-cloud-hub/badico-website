@@ -3,14 +3,11 @@ import Member from "./components/Member/index"
 import {useWindowSize} from "../../../../hooks/useWindowsSize"
 import { MembersWrapper } from "./MembersWrapper"
 
-const Members = (props) => {
+const Members = ({ height, down }) => {
   const size = useWindowSize()
 
-  let down = props.down
-  let height = props.height
-
   return (
-    <MembersWrapper height={size.width < 768 && height.mobile} overflow={down == false ? "hidden" : "visible"}>
+    <MembersWrapper height={size.width < 768 ? height.mobile : size.width >= 768 && height.tablet} overflow={down == false ? "hidden" : "visible"}>
       <Member
         img=""
         name="Lucas Badico"
@@ -41,6 +38,54 @@ const Members = (props) => {
         img=""
         name="Stephany Soares"
         position="UI/UX Designer"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Thamara Mendes"
+        position="Graphic Designer"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Camilla Vieira"
+        position="Graphic Designer"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Yasmy Santana"
+        position="Moviemaker"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Edson Júnior"
+        position="FullStack Trainee"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Fabio Seixas"
+        position="Fullstack Engineer"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Italo Feitosa"
+        position="Fullstack Engineer"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Yuri Androulis"
+        position="Frontend Engineer"
+        opacity={down == false ? 0 : 1}
+      />
+      <Member
+        img=""
+        name="Wellington Gomes"
+        position="CS Undergraduated"
         opacity={down == false ? 0 : 1}
       />
     </MembersWrapper>
