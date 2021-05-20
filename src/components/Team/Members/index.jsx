@@ -33,14 +33,14 @@ const Members = (props) => {
       />
       <Member
         img=""
-        name="Lucas Badico"
-        position="Cloud Engineer | CTO"
+        name="Ana Lúcia"
+        position="Finance Analyst"
         opacity={down == false ? 0 : 1}
       />
       <Member
         img=""
-        name="Pedro Soares"
-        position="Frontend Engineer"
+        name="Stephany Soares"
+        position="UI/UX Designer"
         opacity={down == false ? 0 : 1}
       />
     </MembersWrapper>
