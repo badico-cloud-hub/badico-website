@@ -39,7 +39,7 @@ export default {
   "capacities.cards.7": "Desenvolvimento de produto",
   "about.h1": "Sobre",
   "about.h2": "Quem somos",
-  "about.text.0": `Completamos, agora em abril, um ano ajudando nossos clientes com o Desenvolvimento de Softwares personalizados. Usando a tecnologia em favor do negócio dos nosso clientes, sempre resolvendo problemas complexos, conectando estratégia e execução.
+  "about.text.0": `Ajudamos nossos clientes com o Desenvolvimento de Softwares personalizados. Usando a tecnologia em favor do negócio dos nosso clientes, sempre resolvendo problemas complexos, conectando estratégia e execução.
 `,
   "about.text.1": `Disponibilizamos todas as etapas do desenvolvimento, desde a estratégia, design, arquitetura, testes,  até o produto chegar nas mãos do usuário. Trabalhamos sempre em parceria com nossos clientes para evoluir continuamente sua capacidade tecnológica a fim de trazer os melhores resultados com o menor tempo.
   Essa é a Badico!
