@@ -3,6 +3,8 @@ import media from "styled-media-query"
 
 export const TeamWrapper = styled.div`
   width: 270px;
+  height: ${props => props.height};
+  overflow: ${props => props.overflow};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,4 +51,18 @@ export const Description = styled.p`
   ${media.greaterThan("768px")`
   font-size: 1.2rem;
   `}
+`
+
+export const ButtonDrop = styled.button`
+  width: 214px;
+  height: 25px;
+  background: #E3F2F1;
+  border: 0;
+  border-radius: 27px;
+  margin: 23px 0 0 0;
+
+  svg {
+    transform: ${props => props.rotate};
+    transition: transform 0.4s linear;
+  }
 `
