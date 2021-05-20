@@ -7,6 +7,8 @@ export const MemberWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 16px 0;
+  opacity: ${props => props.opacity};
+  transition: opacity 0.8s linear;
 
   ${media.greaterThan("1150px")`
   width: 80%;
