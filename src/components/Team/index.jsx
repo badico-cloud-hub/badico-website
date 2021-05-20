@@ -6,28 +6,44 @@ import { TeamWrapper, Container, Title, Description, ButtonDrop } from "./TeamWr
 const Team = () => {
   const [down, setDown] = useState(false)
   const [height, setHeight] = useState({
-    mobile: "336px"
+    mobile: "336px",
+    tablet: "786px"
   })
   const [rotate, setRotate] = useState("rotate(0)")
 
   const dropDown = () => {
-    console.log(down)
     setDown(!down)
 
     setHeight( (prev) => {
-      if(prev.mobile == "504px"){
+      if (prev.mobile == "1176px"){
         return {
-          mobile: "336px"
+          mobile: "336px",
+          tablet: "786px"
         }
-      } else {
+      } 
+      if (prev.mobile =='336px') {
         return {
-          mobile: "504px"
+          mobile: "1176px",
+          tablet: "786px"
+
+        }
+      } 
+      if (prev.tablet == "786px") {
+        return {
+          mobile: "336px",
+          tablet: '2751px'
+        }
+      }
+      if (prev.tablet == '2751px') {
+        return {
+          mobile: "336px",
+          tablet: '786px'
         }
       }
     })
-
+    console.log("aqui", height)
     setRotate( (prev) => {
-      if( prev == "rotate(180deg)"){
+      if( prev === "rotate(180deg)"){
         return "rotate(0)"
       } else {
         return "rotate(180deg)"
