@@ -10,7 +10,7 @@ import {
 
 const Member = props => {
   return (
-    <MemberWrapper>
+    <MemberWrapper opacity={props.opacity}>
       <ContainerContent>
         <ImgProfile src="https://via.placeholder.com/150" />
         <Content>
