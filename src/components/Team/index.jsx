@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import Members from "./Members/index"
+import Members from "./components/Members/index"
 import Arrow from "../../images/arrow_down.svg"
 import { TeamWrapper, Container, Title, Description, ButtonDrop } from "./TeamWrapper"
 
