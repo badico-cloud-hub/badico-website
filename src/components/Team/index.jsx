@@ -1,47 +1,60 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import Members from "./components/Members/index"
 import Arrow from "../../images/arrow_down.svg"
+import {useWindowSize} from "../../hooks/useWindowsSize"
 import { TeamWrapper, Container, Title, Description, ButtonDrop } from "./TeamWrapper"
 
 const Team = () => {
   const [down, setDown] = useState(false)
-  const [height, setHeight] = useState({
-    mobile: "336px",
-    tablet: "786px"
-  })
+  const size = useWindowSize()
+  const [height, setHeight] = useState("")
   const [rotate, setRotate] = useState("rotate(0)")
+
+  useEffect( () => {
+    if(size.width < 768){
+      return setHeight("336px")
+    }
+    if(size.width >= 768 && size.width < 1366){
+      return setHeight("786px")
+    }
+    if(size.width >= 1366 && size.width < 1920){
+      return setHeight("391px")
+    }
+    if(size.width >= 1920){
+      return setHeight("439px")
+    }
+  }, [size.width])
 
   const dropDown = () => {
     setDown(!down)
 
     setHeight( (prev) => {
-      if (prev.mobile == "1176px"){
-        return {
-          mobile: "336px",
-          tablet: "786px"
-        }
+      if (prev =='336px') {
+        return "1176px"
       } 
-      if (prev.mobile =='336px') {
-        return {
-          mobile: "1176px",
-          tablet: "786px"
-
-        }
+      if (prev == "1176px"){
+        return "336px"
       } 
-      if (prev.tablet == "786px") {
-        return {
-          mobile: "336px",
-          tablet: '2751px'
-        }
+      if (prev == "786px") {
+        return '2751px'
       }
-      if (prev.tablet == '2751px') {
-        return {
-          mobile: "336px",
-          tablet: '786px'
-        }
+      if (prev == '2751px') {
+        return '786px'
+      }
+      if(prev == "391px"){
+        return "1955px"
+      }
+      if(prev == "1955px"){
+        return "391px"
+      }
+      if(prev == "439px"){
+        return "2195px"
+      }
+      if(prev == "2195px"){
+        return "439px"
       }
     })
-    console.log("aqui", height)
+    
     setRotate( (prev) => {
       if( prev === "rotate(180deg)"){
         return "rotate(0)"
