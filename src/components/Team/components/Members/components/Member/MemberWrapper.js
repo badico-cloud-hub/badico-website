@@ -15,6 +15,18 @@ export const MemberWrapper = styled.div`
   height: 353px;
   margin-bottom: 40px;
   `}
+
+  ${media.greaterThan("1366px")`
+  width: 252px;
+  height: 351px;
+  margin-bottom: 40px;
+  `}
+
+  ${media.greaterThan("1920px")`
+  width: 300px;
+  height: 399px;
+  margin-bottom: 40px;
+  `}
 `
 
 export const ContainerContent = styled.div`
@@ -23,9 +35,6 @@ export const ContainerContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  ${media.greaterThan("768px")`
-  `}
 `
 
 export const ImgProfile = styled.img`
@@ -40,6 +49,17 @@ export const ImgProfile = styled.img`
   height: 214px;
   margin-bottom: 24px;
   `}
+
+  ${media.greaterThan("1366px")`
+  width: 252px;
+  height: 252px;
+  margin-bottom: 24px;
+  `}
+
+  ${media.greaterThan("1920px")`
+  width: 300px;
+  height: 300px;
+  `}
 `
 export const Content = styled.div`
   width: 100%;
@@ -51,13 +71,18 @@ export const Content = styled.div`
 
 export const Name = styled.h2`
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 0.872rem;
   color: #02293f;
   text-align: center;
   margin: 0;
 
   ${media.greaterThan("768px")`
   font-size: 1.95rem;
+  margin-bottom: 16px;
+  `}
+
+  ${media.greaterThan("1366px")`
+  font-size: 1.5rem;
   margin-bottom: 16px;
   `}
 `
@@ -72,5 +97,9 @@ export const Position = styled.p`
 
   ${media.greaterThan("768px")`
   font-size: 1.5rem;
+  `}
+
+  ${media.greaterThan("1366px")`
+  font-size: 1.25rem;
   `}
 `
