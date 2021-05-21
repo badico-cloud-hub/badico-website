@@ -7,7 +7,7 @@ const Members = ({ height, down }) => {
   const size = useWindowSize()
 
   return (
-    <MembersWrapper height={size.width < 768 ? height.mobile : size.width >= 768 && height.tablet} overflow={down == false ? "hidden" : "visible"}>
+    <MembersWrapper height={height} overflow={down == false ? "hidden" : "visible"}>
       <Member
         img=""
         name="Lucas Badico"
@@ -27,6 +27,7 @@ const Members = ({ height, down }) => {
         img=""
         name="Renata Zadravec"
         position="Business and People Manager"
+        opacity={size.width >= 1366 && down == false ? 0 : 1}
       />
       <Member
         img=""
