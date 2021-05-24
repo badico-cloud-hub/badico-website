@@ -177,11 +177,12 @@ export const NameInput = styled.input`
     border: 2px solid #E8E8E8;
     border-radius: 2px;
     margin-bottom: 8px;
+    padding: 8px 0 8px 9px;
+    font-size: 14px;
     ::-webkit-input-placeholder {
         width: 43px;
         height: 17px;
         font-size: 14px;
-        padding: 8px 0 8px 9px;
         color: #CACCCF;
     }
 
@@ -189,11 +190,12 @@ export const NameInput = styled.input`
         width: 598px;
         height: 69px;
         margin-bottom: 17px;
+        padding: 16px 0 18px 19px;
+        font-size: 28px;
         ::-webkit-input-placeholder {
             width: 87px;
             height: 34px;
             font-size: 28px;
-            padding: 16px 0 18px 19px;
             color: #CACCCF;
         }
     }
@@ -202,11 +204,12 @@ export const NameInput = styled.input`
         width: 588px;
         height: 72px;
         margin-bottom: 24px;
+        padding: 24px 0 24px 17px;
+        font-size: 20px;
         ::-webkit-input-placeholder {
             width: 62px;
             height: 24px;
             font-size: 20px;
-            padding: 24px 0 24px 17px;
             color: #CACCCF;
         }
     }
@@ -215,11 +218,12 @@ export const NameInput = styled.input`
         width: 413px;
         height: 73px;
         margin: 0 24px 0 0;
+        padding: 25px 0 24px 16px;
+        font-size: 20px;
         ::-webkit-input-placeholder {
             width: 62px;
             height: 24px;
             font-size: 20px;
-            padding: 25px 0 24px 16px;
             color: #CACCCF;
         }
     }
@@ -232,11 +236,12 @@ export const EmailInput = styled.input`
     border: 2px solid #E8E8E8;
     border-radius: 2px;
     margin-bottom: 8px;
+    padding: 8px 0 8px 9px;
+    font-size: 14px;
     ::-webkit-input-placeholder {
         width: 43px;
         height: 17px;
         font-size: 14px;
-        padding: 8px 0 8px 9px;
         color: #CACCCF;
     }
 
@@ -244,11 +249,12 @@ export const EmailInput = styled.input`
         width: 598px;
         height: 69px;
         margin-bottom: 17px;
+        padding: 16px 0 18px 19px;
+        font-size: 29px;
         ::-webkit-input-placeholder {
             width: 92px;
             height: 35px;
             font-size: 29px;
-            padding: 16px 0 18px 19px;
             color: #CACCCF;
         }
     }
@@ -257,11 +263,12 @@ export const EmailInput = styled.input`
         width: 588px;
         height: 72px;
         margin-bottom: 24px;
+        padding: 24px 0 24px 17px;
+        font-size: 20px;
         ::-webkit-input-placeholder {
             width: 62px;
             height: 24px;
             font-size: 20px;
-            padding: 24px 0 24px 17px;
             color: #CACCCF;
         }
     }
@@ -270,11 +277,12 @@ export const EmailInput = styled.input`
         width: 415px;
         height: 73px;
         margin: 0;
+        padding: 25px 0 24px 16px;
+        font-size: 20px;
         ::-webkit-input-placeholder {
             width: 62px;
             height: 24px;
             font-size: 20px;
-            padding: 25px 0 24px 16px;
             color: #CACCCF;
         }
     }
@@ -287,11 +295,12 @@ export const TextInput = styled.textarea`
     border: 2px solid #E8E8E8;
     border-radius: 2px;
     margin-bottom: 19px;
+    font-size: 14px;
+    padding: 8px 0 8px 9px;
     ::-webkit-input-placeholder {
         width: 63px;
         height: 17px;
         font-size: 14px;
-        padding: 8px 0 8px 9px;
         color: #CACCCF;
     }
 
@@ -299,11 +308,12 @@ export const TextInput = styled.textarea`
         width: 598px;
         height: 144px;
         margin-bottom: 49px;
+        padding: 16px 0 18px 19px;
+        font-size: 28px;
         ::-webkit-input-placeholder {
             width: 127px;
             height: 34px;
             font-size: 28px;
-            padding: 16px 0 18px 19px;
             color: #CACCCF;
         }
     }
@@ -312,11 +322,12 @@ export const TextInput = styled.textarea`
         width: 588px;
         height: 229px;
         margin-bottom: 40px;
+        padding: 24px 0 24px 17px;
+        font-size: 20px;
         ::-webkit-input-placeholder {
             width: 91px;
             height: 24px;
             font-size: 20px;
-            padding: 24px 0 24px 17px;
             color: #CACCCF;
         }
     }
@@ -324,11 +335,12 @@ export const TextInput = styled.textarea`
     @media (min-width: 1920px){
         width: 852px;
         height: 229px;
+        padding: 25px 0 24px 16px;
+        font-size: 20px;
         ::-webkit-input-placeholder {
             width: 91px;
             height: 24px;
             font-size: 20px;
-            padding: 25px 0 24px 16px;
             color: #CACCCF;
         }
     }
