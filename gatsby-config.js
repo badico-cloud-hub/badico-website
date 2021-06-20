@@ -26,6 +26,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "4272224149504878",
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
     },
     {
