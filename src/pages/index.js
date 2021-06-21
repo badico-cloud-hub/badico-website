@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import HeroLayout from "../components/HeroLayout"
 import Companies from "../components/Companies"
 import FloatingButton from "../components/FloatingButton"
+import Craftmanship from "../components/Craftmanship"
 import CraftmanshipLayout from "../components/CraftmanshipLayout/index"
 import TechStacks from "../components/TechStacks"
 import Capacities from "../components/Capacities"
@@ -24,6 +25,7 @@ const IndexPage = () => {
           <HeroLayout language={language} />
           <FloatingButton language={language} />
           <Companies language={language} />
+          <Craftmanship language={language} />
           <CraftmanshipLayout language={language} />
           <TechStacks language={language} />
           <Capacities language={language} />
