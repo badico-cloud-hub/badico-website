@@ -10,6 +10,7 @@ import Craftmanship from "../components/Craftmanship"
 import TechStacks from "../components/TechStacks"
 import Capacities from "../components/Capacities"
 import Cases from "../components/Cases"
+import Team from "../components/Team/index"
 import About from "../components/About"
 import { WebsiteProvider } from "../contexts"
 
@@ -29,6 +30,7 @@ const IndexPage = () => {
           <TechStacks language={language} />
           <Capacities language={language} />
           <Cases language={language} />
+          <Team language={language} />
           <About language={language} />
         </Layout>
       </LanguageProvider>
