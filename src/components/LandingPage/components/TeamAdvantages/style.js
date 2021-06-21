@@ -43,11 +43,24 @@ export const TextContent = styled.div`
   padding: 60px 0px;
   background-color: #fdeadf;
 
+  .texts {
+    width: 88%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+  }
+
   @media (min-width: 768px) {
     padding: 60px 25px;
   }
   @media (min-width: 1024px) {
     padding: 60px 100px;
+    .texts {
+      width: 95%;
+    }
   }
   @media (min-width: 1366px) {
     margin-left: 30px;
@@ -71,10 +84,7 @@ export const Title = styled.h1`
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
-    width: 600px;
-  }
-  @media (min-width: 1024px) {
-    width: 900px;
+    width: 100%;
   }
 
   @media (min-width: 1366px) {
@@ -98,10 +108,7 @@ export const Text = styled.p`
 
   @media (min-width: 768px) {
     font-size: 20px;
-    width: 608px;
-  }
-  @media (min-width: 1024px) {
-    width: 780px;
+    width: 100%;
   }
 
   @media (min-width: 1366px) {
@@ -176,6 +183,16 @@ export const Advantage = styled.div`
   @media (min-width: 768px) {
     p {
       width: 80%;
+    }
+  }
+  @media (min-width: 1024px) {
+    p {
+      width: 70%;
+    }
+  }
+  @media (min-width: 1250px) {
+    p {
+      width: 60%;
     }
   }
   @media (min-width: 1366px) {

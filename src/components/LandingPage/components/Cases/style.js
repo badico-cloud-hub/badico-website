@@ -49,16 +49,22 @@ export const Text = styled.p`
 
   @media (min-width: 768px) {
     margin-bottom: 0px;
-    width: 608px;
+    width: 90%;
     font-size: 20px;
     line-height: 27px;
   }
 
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+  
   @media (min-width: 1366px) {
-    width: 1068px;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 8px;
+  }
+  @media (min-width: 1920px) {
+    width: 73%;
   }
 `
 

@@ -37,17 +37,12 @@ export const Title = styled.h1`
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
-    width: 608px;
+    width: 85%;
   }
 
   @media (min-width: 1366px) {
     font-size: 34px;
     line-height: 41px;
-    width: 814px;
-  }
-
-  @media (min-width: 1920px) {
-    width: 753px;
   }
 `
 
@@ -59,21 +54,19 @@ export const Text = styled.p`
   text-align: center;
 
   @media (min-width: 428px) {
-    width: 354px;
+    width: 80%;
   }
 
   @media (min-width: 768px) {
     font-size: 20px;
-    width: 608px;
   }
 
   @media (min-width: 1366px) {
     font-size: 24px;
     line-height: 29px;
-    width: 1088px;
   }
 
   @media (min-width: 1920px) {
-    width: 1068px;
+    width: 76%;
   }
 `
