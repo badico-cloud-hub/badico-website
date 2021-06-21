@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Calendly from "../Calendly"
-import Hourglass from "../../images/hourglass.svg"
+import Hourglass from "../../images/ampulheta.svg"
 import Wave from "../../images/wave.svg"
 import Ball from "../../images/ball.svg"
 import * as typeformEmbed from "@typeform/embed"
