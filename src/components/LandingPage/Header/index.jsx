@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import * as typeformEmbed from "@typeform/embed"
 import * as Styled from "./style"
-import LogoBadico from "../../images/logo.svg"
-import MenuIcon from "../../images/menu.svg"
-import Close from "../../images/close.svg"
-import lang from "../../../../intl/langs"
+import LogoBadico from "../images/logo.svg"
+import MenuIcon from "../images/menu.svg"
+import Close from "../images/close.svg"
+import lang from "../../../intl/langs"
 
 const Header = ({ language }) => {
   const [form, setForm] = useState(null)

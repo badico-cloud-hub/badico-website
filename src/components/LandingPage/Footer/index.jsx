@@ -11,16 +11,16 @@ import {
   SocialIcons,
   SocialIconsDesktop,
 } from "./styled"
-import Logobadico from "../../images/logo.svg"
-import ArrowUp from "../../images/seta-para-cima.svg"
-import FaceIcon from "../../images/facebook.svg"
-import InstaIcon from "../../images/instagram.svg"
-import GitIcon from "../../images/github.svg"
-// import YoutubeIcon from "../../images/youtube.svg"
+import Logobadico from "../images/logo.svg"
+import ArrowUp from "../images/seta-para-cima.svg"
+import FaceIcon from "../images/facebook.svg"
+import InstaIcon from "../images/instagram.svg"
+import GitIcon from "../images/github.svg"
+// import YoutubeIcon from "../images/youtube.svg"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import lang from "../../../../intl/langs"
+import lang from "../../../intl/langs"
 
 const Footer = ({ language }) => {
   const [form, setForm] = useState(null)

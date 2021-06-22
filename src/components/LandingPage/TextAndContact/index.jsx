@@ -1,6 +1,6 @@
 import React from "react"
-import ContactForm from "./components/ContactForm"
-import Text from "./components/TextIntroductory"
+import ContactForm from "./ContactForm"
+import Text from "./TextIntroductory"
 import * as Styled from "./style"
 // import Waveleft from "../../images/ondaleft.svg"
 // import Waveright from "../../images/ondaright.svg"

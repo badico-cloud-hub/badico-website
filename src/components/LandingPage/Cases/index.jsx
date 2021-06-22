@@ -1,7 +1,7 @@
 import React from "react"
 import * as Styled from "./style"
-import Gallery from "../../../Cases/components/Gallery"
-import lang from "../../../../intl/langs"
+import Gallery from "../../Cases/Gallery"
+import lang from "../../../intl/langs"
 
 const Cases = ({ language }) => {
   return (

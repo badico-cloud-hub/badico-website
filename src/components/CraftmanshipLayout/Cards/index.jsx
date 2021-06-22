@@ -1,8 +1,8 @@
 import React from "react"
 
-import Card from "./Components/Card"
+import Card from "./Card"
 import Wrapper from "./CardsWrapper"
-import lang from "../../../../intl/langs"
+import lang from "../../../intl/langs"
 
 const Cards = ({ language }) => {
   return (

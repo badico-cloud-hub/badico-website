@@ -1,6 +1,6 @@
 import React from "react"
 import * as Styled from "./style"
-import lang from "../../../../intl/langs"
+import lang from "../../../intl/langs"
 
 const TeamComplete = ({ language }) => {
   return (

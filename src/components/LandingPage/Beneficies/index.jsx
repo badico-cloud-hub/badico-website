@@ -1,11 +1,11 @@
 import React from "react"
 import * as Styled from "./style"
 
-import Decrease from "../../images/income.svg"
-import Increase from "../../images/increase.svg"
-import Diversification from "../../images/diversification.svg"
+import Decrease from "../images/income.svg"
+import Increase from "../images/increase.svg"
+import Diversification from "../images/diversification.svg"
 
-import lang from "../../../../intl/langs"
+import lang from "../../../intl/langs"
 
 const Beneficies = ({ language }) => {
   return (

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import Members from "./components/Members/index"
+import Members from "./Members/index"
 import Arrow from "../../images/arrow_down.svg"
 import {useWindowSize} from "../../hooks/useWindowsSize"
 import { TeamWrapper, Container, Title, Description, ButtonDrop } from "./TeamWrapper"

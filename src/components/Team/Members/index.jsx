@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import Member from "./components/Member/index"
-import {useWindowSize} from "../../../../hooks/useWindowsSize"
+import Member from "./Member/index"
+import {useWindowSize} from "../../../hooks/useWindowsSize"
 import { MembersWrapper } from "./MembersWrapper"
 
 const Members = ({ height, down }) => {

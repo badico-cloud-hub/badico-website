@@ -1,9 +1,9 @@
 import React from "react"
 import * as Styled from "./style"
-import CheckedIcon from "../../images/checkedicon.svg"
-import ComputerIcon from "../../images/computericon.svg"
-import DesktopComputerIcon from "../../images/computericon.svg"
-import lang from "../../../../intl/langs"
+import CheckedIcon from "../images/checkedicon.svg"
+import ComputerIcon from "../images/computericon.svg"
+import DesktopComputerIcon from "../images/computericon.svg"
+import lang from "../../../intl/langs"
 
 const TeamAdvantages = ({ language }) => {
   return (

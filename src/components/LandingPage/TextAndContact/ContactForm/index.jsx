@@ -1,7 +1,7 @@
 import React from "react"
-import Coder from "../../../../images/coder.svg"
+import Coder from "../../images/coder.svg"
 import * as Styled from "./style"
-import lang from "../../../../../../intl/langs"
+import lang from "../../../../intl/langs"
 
 const ContactForm = ({ language }) => {
   return (
