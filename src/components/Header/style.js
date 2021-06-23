@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import media from 'styled-media-query'
+import media from "styled-media-query"
 
 export const Container = styled.div`
   display: flex;
@@ -14,7 +14,8 @@ export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0e273b;
+  background: rgba(14,39,59,0.5);
+  backdrop-filter: blur(1px);
   width: 100%;
   height: 72px;
   top: 0;
@@ -22,9 +23,10 @@ export const HeaderWrapper = styled.div`
   z-index: 3;
   border-radius: 0px 0px 20px 20px;
 
-  ${media.greaterThan('1024px')`
-  height: 121px;
-  
+
+  ${media.greaterThan("1024px")`
+  height: 111px;
+  border-radius: 0px 0px 30px 30px;
   `}
 `
 export const BoxLogo = styled.div`
@@ -39,7 +41,7 @@ export const BoxLogo = styled.div`
     height: 40px;
   }
 
-  ${media.greaterThan('768px')`
+  ${media.greaterThan("768px")`
     width: 182px;
     height: 62px;
 
@@ -49,7 +51,7 @@ export const BoxLogo = styled.div`
     }
   `}
 
-  ${media.greaterThan('1024px')`
+  ${media.greaterThan("1024px")`
     width: 164px;
     height: 54px;
     margin-left: 140px;
@@ -60,7 +62,7 @@ export const BoxLogo = styled.div`
     }
   `}
 
-  ${media.greaterThan('1920px')`
+  ${media.greaterThan("1920px")`
     width: 200px;
     height: 64px;
     margin-left: 140px;
@@ -75,13 +77,13 @@ export const Ghost = styled.div`
   width: 10%;
   min-width: 72px;
   height: 42px;
-  background: #0e273b;
+  background: transparent;
 
-  ${media.greaterThan('768px')`
+  ${media.greaterThan("768px")`
     min-width: 110px;
-  `} 
+  `}
 
-  ${media.greaterThan('1024px')`
+  ${media.greaterThan("1024px")`
     display: none;
   `}
 `
