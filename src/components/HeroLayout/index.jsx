@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { openPopupWidget } from "react-calendly"
 import Calendly from "../Calendly"
 import Hourglass from "../../images/ampulheta.svg"
 import Wave from "../../images/wave.svg"
@@ -6,9 +7,12 @@ import Ball from "../../images/ball.svg"
 import * as typeformEmbed from "@typeform/embed"
 import * as Styled from "./styled"
 import lang from "../../intl/langs"
+import CloudButton from "../CloudButton"
 
 const HeroLayout = ({ language }) => {
   const [form, setForm] = useState(null)
+
+  const handleCaledlyAction = () => openPopupWidget({ url: "https://calendly.com/badico" })
 
   useEffect(() => {
     const contactForm = typeformEmbed.makePopup(
@@ -34,17 +38,15 @@ const HeroLayout = ({ language }) => {
           <Styled.Title>{lang[language]["hero.info.h1"]}</Styled.Title>
           <Styled.Text>{lang[language]["hero.info.p"]}</Styled.Text>
           <Styled.Buttons>
-            <Styled.ButtonContact
-              onClick={() => {
-                form.open()
-              }}
-            >
+
+            <CloudButton action={() => form.open()} type="secondary">
               {lang[language]["hero.buttons.0"]}
-              <span /> <span /> <span /> <span />
-            </Styled.ButtonContact>
-            <Calendly >
+            </CloudButton>
+
+            <CloudButton action={handleCaledlyAction} type="primary">
               {lang[language]["hero.buttons.1"]}
-            </Calendly>
+            </CloudButton>
+            
           </Styled.Buttons>
         </Styled.Info>
         <Styled.BoxImage>
