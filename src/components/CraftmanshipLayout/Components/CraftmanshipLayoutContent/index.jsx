@@ -1,7 +1,7 @@
 import React from "react"
 
 import { ContentWrapper, Content } from "./content"
-import lang from "../../intl/langs"
+import lang from "../../../../intl/langs"
 
 const CraftmanshipLayoutContent = ({ language }) => {
   return (
