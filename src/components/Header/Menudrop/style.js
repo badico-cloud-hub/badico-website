@@ -24,13 +24,18 @@ export const MenudropWrapper = styled.div`
         display: block;
     `}
   }
+
+  ${media.greaterThan('1024px')`
+    display: none;
+  `}
 `
 
 export const ButtonOpen = styled.button`
   display: flex;
   border: none;
   cursor: pointer;
-  background-color: #0e273b;
+  background: transparent;
+
   align-items: center;
   padding: 0;
 
@@ -56,6 +61,10 @@ export const ButtonClose = styled.button`
       props.isOpen &&
       css`
         display: flex;
+  `}
+
+  ${media.greaterThan('1024px')`
+    display: none;
   `}
 `
 
@@ -99,4 +108,8 @@ export const Nav = styled.nav`
     border: none;
     margin-bottom: 0;
   }
+
+  ${media.greaterThan('1024px')`
+    display: none;
+  `}
 `
