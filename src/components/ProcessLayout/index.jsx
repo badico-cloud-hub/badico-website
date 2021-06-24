@@ -29,7 +29,6 @@ const ProcessLayout = () => {
         <ProcessWrapper>
           <Container>
             <Title>Our Process</Title>
-            {/* <Producao className="prodImg"/> */}
             <BoxImage>
               <Producao className="prodImg" />
             </BoxImage>
