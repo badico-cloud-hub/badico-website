@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { openPopupWidget } from "react-calendly"
 import Calendly from "../Calendly"
+import Typeform from '../Typeform'
 import Hourglass from "../../images/ampulheta.svg"
 import Wave from "../../images/wave.svg"
 import Ball from "../../images/ball.svg"
@@ -39,9 +40,11 @@ const HeroLayout = ({ language }) => {
           <Styled.Text>{lang[language]["hero.info.p"]}</Styled.Text>
           <Styled.Buttons>
 
-            <CloudButton action={() => form.open()} type="secondary">
+            {/* <CloudButton action={() => form.open()} type="secondary">
               {lang[language]["hero.buttons.0"]}
-            </CloudButton>
+            </CloudButton> */}
+
+            <Typeform language={language}/>
 
             <CloudButton action={handleCaledlyAction} type="primary">
               {lang[language]["hero.buttons.1"]}
