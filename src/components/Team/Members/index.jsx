@@ -27,7 +27,7 @@ const Members = ({ height, down }) => {
         img=""
         name="Renata Zadravec"
         position="Business and People Manager"
-        opacity={size.width >= 1366 && down == false ? 0 : 1}
+        opacity={size.width >= 1024 && down == false ? 0 : 1}
       />
       <Member
         img=""
