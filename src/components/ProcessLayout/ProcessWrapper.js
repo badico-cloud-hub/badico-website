@@ -10,7 +10,7 @@ export const ProcessWrapper = styled.div`
     margin: 0 auto;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
     margin-top: 300px;
   
   `}
@@ -44,7 +44,7 @@ export const BoxImage = styled.div`
     display: none;
   }
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   display: inline-block;
   position: relative;
   left: 390px;
@@ -83,7 +83,7 @@ export const Steps = styled.div`
   height: 500px;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   .stepsDesktop{
     display: block;
     width: 660px;
@@ -127,7 +127,7 @@ export const Cards = styled.div`
     width: 100%;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   
   `}
 `
@@ -180,7 +180,7 @@ export const Card = styled.div`
   }
 `}
 
-${media.greaterThan("1366px")`
+${media.greaterThan("1024px")`
   height: 167px;
   width: 377px;
 
@@ -291,9 +291,10 @@ export const Content = styled.div`
   }
 `}
 
-  ${media.greaterThan("1366px")`
-  height: 201px;
+  ${media.greaterThan("1024px")`
+  height: 100%;
   width: 100%;
+
 
   h2 {
     font-size: 1.75rem;
