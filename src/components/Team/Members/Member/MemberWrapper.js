@@ -16,7 +16,7 @@ export const MemberWrapper = styled.div`
   margin-bottom: 40px;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   width: 252px;
   height: 351px;
   margin-bottom: 40px;
@@ -50,7 +50,7 @@ export const ImgProfile = styled.img`
   margin-bottom: 24px;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   width: 252px;
   height: 252px;
   margin-bottom: 24px;
@@ -81,7 +81,7 @@ export const Name = styled.h2`
   margin-bottom: 16px;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   font-size: 1.5rem;
   margin-bottom: 16px;
   `}
@@ -99,7 +99,7 @@ export const Position = styled.p`
   font-size: 1.5rem;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   font-size: 1.25rem;
   `}
 `
