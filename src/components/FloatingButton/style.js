@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const Container = styled.div`
   display: flex;
@@ -28,10 +29,6 @@ export const FloatingButton = styled.div`
     bottom: -120px;
     right: 0;
     z-index: -100;
-
-    @media (min-width: 1366px) {
-      display: none;
-    }
   }
 
   :hover {
@@ -46,24 +43,23 @@ export const FloatingButton = styled.div`
     display: none;
   }
 
-  @media (min-width: 428px) {
+  ${media.greaterThan("428px")`
     width: 93px;
     bottom: 14px;
-  }
+  `}
 
-  @media (min-width: 428px) {
-    width: 103px;
-    bottom: 7px;
-  }
-
-  @media (min-width: 1366px) {
+  ${media.greaterThan("1024px")`
     width: 122px;
     bottom: 16px;
-  }
 
-  @media (min-width: 1920px) {
+    .back{
+      /* display: none; */
+    }
+  `}
+
+  ${media.greaterThan('1920px')`
     width: 138px;
-  }
+  `}
 `
 
 export const ContactUs = styled.div`
@@ -111,16 +107,16 @@ export const ContactUs = styled.div`
     bottom: 10px;
     z-index: -100;
 
-    @media (min-width: 768px) {
+    ${media.greaterThan('768px')`
       width: 90px;
       height: 90px;
       right: -93px;
       bottom: -29px;
-    }
+    `}
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       display: none;
-    }
+    `}
   }
 
   .cloud2 {
@@ -137,16 +133,16 @@ export const ContactUs = styled.div`
     bottom: -19px;
     z-index: -100;
 
-    @media (min-width: 768px) {
+    ${media.greaterThan('768px')`
       width: 100px;
       height: 100px;
       right: -24px;
       bottom: -24px;
-    }
+    `}
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       display: none;
-    }
+    `}
   }
 
   .cloud3 {
@@ -162,14 +158,14 @@ export const ContactUs = styled.div`
     bottom: -68px;
     z-index: -100;
 
-    @media (min-width: 768px) {
+    ${media.greaterThan('768px')`
       right: 24px;
       bottom: -60px;
-    }
+    `}
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       display: none;
-    }
+    `}
   }
 
   .cloud4 {
@@ -185,20 +181,21 @@ export const ContactUs = styled.div`
     bottom: -35px;
     z-index: -100;
 
-    @media (min-width: 768px) {
-      bottom: -32px;
-    }
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('768px')`
+      bottom: -32px;
+    `}
+
+    ${media.greaterThan('1024px')`
       display: none;
-    }
+    `}
   }
 
   .buttons {
     display: flex;
     position: relative;
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       visibility: hidden;
       position: absolute;
       right: 10px;
@@ -210,7 +207,7 @@ export const ContactUs = styled.div`
       width: 477px;
       z-index: -1;
       box-shadow: 0px 3px 6px #00000029;
-    }
+    `}
   }
 
   .contact {
@@ -229,19 +226,19 @@ export const ContactUs = styled.div`
     line-height: 16px;
     min-height: 30px;
     align-items: center;
-    padding: 0 24px 0 14px;
+    padding: 0 0 0 14px;
     box-shadow: 0px 3px 6px #00000029;
 
-    @media (min-width: 428px) {
+    ${media.greaterThan('428px')`
       font-size: 16px;
       width: 173px;
       height: 35px;
       top: -118px;
       padding: 0 24px 0 24px;
       line-height: 18px;
-    }
+    `}
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       position: static;
       width: 215px;
       height: 56px;
@@ -250,8 +247,8 @@ export const ContactUs = styled.div`
       box-shadow: none;
       font-size: 20px;
       line-height: 24px;
-      color: #FFFFFF;
-      background: #27DEBF;
+      color: #ffffff;
+      background: #27debf;
       padding: 0;
 
       :after {
@@ -260,10 +257,10 @@ export const ContactUs = styled.div`
         height: 30px;
         position: absolute;
         left: 216px;
-        background: #FFFFFF;
+        background: #ffffff;
         opacity: 0.52;
       }
-    }
+    `}
   }
 
   .email {
@@ -286,9 +283,9 @@ export const ContactUs = styled.div`
       height: 17px;
     }
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       display: none;
-    }
+    `}
   }
 
   .calendarbutton {
@@ -310,7 +307,7 @@ export const ContactUs = styled.div`
     padding: 0 24px 0 14px;
     box-shadow: 0px 3px 6px #00000029;
 
-    @media (min-width: 428px) {
+    ${media.greaterThan('428px')`
       font-size: 16px;
       line-height: 18px;
       width: 180px;
@@ -318,21 +315,21 @@ export const ContactUs = styled.div`
       top: -47px;
       right: 106px;
       padding: 0 24px 0 24px;
-    }
+    `}
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       position: static;
       width: 223px;
       height: 56px;
       border-radius: 0;
-      background: #27DEBF;
+      background: #27debf;
       justify-content: center;
-      color: #FFFFFF;
+      color: #ffffff;
       box-shadow: none;
       font-size: 20px;
       line-height: 24px;
       padding: 0;
-    }
+    `}
   }
 
   .calendar {
@@ -355,8 +352,8 @@ export const ContactUs = styled.div`
       height: 22px;
     }
 
-    @media (min-width: 1366px) {
+    ${media.greaterThan('1024px')`
       display: none;
-    }
+    `}
   }
 `
