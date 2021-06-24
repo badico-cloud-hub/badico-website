@@ -6,7 +6,7 @@ export const Button = styled.button`
     border-radius: 30px;
     background: ${props => props.type === 'primary' ? '#27debf': 'transparent'};
     border: 2px solid #27debf;
-    margin: 0 0 0 24px;
+    margin: 0;
     line-height: 24px;
     font-size: 20px;
     color: ${props => props.type === 'primary' ? '#0e273b': '#27debf'};
