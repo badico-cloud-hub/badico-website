@@ -14,10 +14,10 @@ const Team = () => {
     if(size.width < 768){
       return setHeight("336px")
     }
-    if(size.width >= 768 && size.width < 1366){
+    if(size.width >= 768 && size.width < 1024){
       return setHeight("786px")
     }
-    if(size.width >= 1366 && size.width < 1920){
+    if(size.width >= 1024 && size.width < 1920){
       return setHeight("391px")
     }
     if(size.width >= 1920){

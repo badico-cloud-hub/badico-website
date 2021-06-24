@@ -14,7 +14,7 @@ export const TeamWrapper = styled.div`
   width: 590px;
   `}
 
-  ${media.greaterThan("1366px")`
+  ${media.greaterThan("1024px")`
   width: 884px;
   `}
 
