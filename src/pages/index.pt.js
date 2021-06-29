@@ -5,12 +5,15 @@ import SEO from "../components/seo"
 import HeroLayout from "../components/HeroLayout"
 import Companies from "../components/Companies"
 import FloatingButton from "../components/FloatingButton"
-import CraftmanshipLayout from "../components/CraftmanshipLayout/index"
+import CraftmanshipLayout from "../components/CraftmanshipLayout"
+import Craftmanship from "../components/Craftmanship"
 import TechStacks from "../components/TechStacks"
 import Capacities from "../components/Capacities"
 import Cases from "../components/Cases"
+import Team from "../components/Team/index"
 import About from "../components/About"
 import { WebsiteProvider } from "../contexts"
+import Process from "../components/ProcessLayout"
 
 const IndexPage = () => {
   const language = "pt"
@@ -23,10 +26,13 @@ const IndexPage = () => {
           <HeroLayout language={language} />
           <FloatingButton language={language} />
           <Companies language={language} />
+          <Craftmanship language={language} />
           <CraftmanshipLayout language={language} />
           <TechStacks language={language} />
+          <Process language={language}/>
           <Capacities language={language} />
           <Cases language={language} />
+          <Team language={language} />
           <About language={language} />
         </Layout>
       </LanguageProvider>

@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "../Container"
-import Gallery from "../Gallery"
+import Gallery from "./Gallery"
 import { Case, CaseWrapper, Title } from "./styled"
 
 const Cases = () => {

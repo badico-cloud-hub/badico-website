@@ -1,11 +1,11 @@
 import React from "react"
 import LanguageProvider from "../providers/LanguageProvider"
 import Layout from "../components/LayoutLandingPage"
-import TextAndContact from "../components/LandingPage/components/TextAndContact"
-import TeamComplete from "../components/LandingPage/components/TeamComplete"
-import Beneficies from "../components/LandingPage/components/Beneficies"
-import Cases from "../components/LandingPage/components/Cases"
-import TeamAdvantages from '../components/LandingPage/components/TeamAdvantages'
+import TextAndContact from "../components/LandingPage/TextAndContact"
+import TeamComplete from "../components/LandingPage/TeamComplete"
+import Beneficies from "../components/LandingPage/Beneficies"
+import Cases from "../components/LandingPage/Cases"
+import TeamAdvantages from '../components/LandingPage/TeamAdvantages'
 
 import { WebsiteProvider } from "../contexts"
 

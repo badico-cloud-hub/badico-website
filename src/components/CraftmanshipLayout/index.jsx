@@ -1,8 +1,8 @@
 import React from "react"
 
 import Container from "../Container/index"
-import Cards from "../Cards/index"
-import CraftmanshipLayoutContent from "../CraftmanshipLayoutContent/index"
+import Cards from "./Cards"
+import CraftmanshipLayoutContent from "./CraftmanshipLayoutContent"
 import Wrapper from "./CraftWrapper"
 
 const CraftmanshipLayout = ({ language }) => {

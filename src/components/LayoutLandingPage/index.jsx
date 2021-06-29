@@ -1,6 +1,6 @@
 import React from "react"
-import Header from "../LandingPage/components/Header"
-import Footer from "../LandingPage/components/Footer"
+import Header from "../LandingPage/Header"
+import Footer from "../LandingPage/Footer"
 
 import { LayoutWrapper } from "./style"
 
